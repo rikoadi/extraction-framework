@@ -75,7 +75,9 @@
 	{{PropertyMapping | templateProperty = genere9 | ontologyProperty = genre }}
 }}</text></revision></page><page><title>Mapping it:Asteroide</title><ns>212</ns><id>5775</id><revision><id>18653</id><timestamp>2012-05-24T16:38:02Z</timestamp><text>{{TemplateMapping
 | mapToClass = Asteroid
-}}</text></revision></page><page><title>Mapping it:Bio</title><ns>212</ns><id>4331</id><revision><id>16999</id><timestamp>2012-03-21T15:31:05Z</timestamp><text>{{TemplateMapping
+}}</text></revision></page><page><title>Mapping it:Auto</title><ns>212</ns><id>5835</id><revision><id>18802</id><timestamp>2012-06-06T15:26:17Z</timestamp><text>{{TemplateMapping
+| mapToClass = Automobile
+}}</text></revision></page><page><title>Mapping it:Bio</title><ns>212</ns><id>4331</id><revision><id>18826</id><timestamp>2012-06-07T16:21:58Z</timestamp><text>{{TemplateMapping
 | mapToClass = Person
 | mappings =
 &lt;!-- basic parameter --&gt;
@@ -142,6 +144,10 @@
     {{PropertyMapping | templateProperty = successivo11 | ontologyProperty = successor }}
     {{PropertyMapping | templateProperty = successivo12 | ontologyProperty = successor }}
     {{PropertyMapping | templateProperty = successivo13 | ontologyProperty = successor }}
+}}</text></revision></page><page><title>Mapping it:Cardinale della chiesa cattolica</title><ns>212</ns><id>5837</id><revision><id>18804</id><timestamp>2012-06-06T15:27:35Z</timestamp><text>{{TemplateMapping
+| mapToClass = Cardinal
+}}</text></revision></page><page><title>Mapping it:Carica pubblica</title><ns>212</ns><id>5809</id><revision><id>18776</id><timestamp>2012-06-06T14:48:33Z</timestamp><text>{{TemplateMapping
+| mapToClass = Politician
 }}</text></revision></page><page><title>Mapping it:Città</title><ns>212</ns><id>4335</id><revision><id>16991</id><timestamp>2012-03-20T14:00:43Z</timestamp><text>{{TemplateMapping
 | mapToClass = AdministrativeRegion
 | mappings =
@@ -162,6 +168,10 @@
         {{PropertyMapping | templateProperty = stato | ontologyProperty = locationCountry }}
         {{PropertyMapping | templateProperty = prefisso | ontologyProperty = areaCode  }}
         {{GeocoordinatesMapping | latitude = latitudine_d  | longitude = longitudine_d  | latitudeDegrees = latitudineGradi | latitudeMinutes = latitudinePrimi | latitudeSeconds = latitudineSecondi  | longitudeDegrees = longitudineGradi  | longitudeMinutes = longitudinePrimi  | longitudeSeconds = longitudineSecondi  | longitudeDirection = longitudineEW | latitudeDirection = latitudineNS }}
+}}</text></revision></page><page><title>Mapping it:Competizione sportiva</title><ns>212</ns><id>5841</id><revision><id>18808</id><timestamp>2012-06-06T15:30:41Z</timestamp><text>{{TemplateMapping
+| mapToClass = SportsEvent
+}}</text></revision></page><page><title>Mapping it:Composto chimico</title><ns>212</ns><id>5822</id><revision><id>18789</id><timestamp>2012-06-06T15:14:31Z</timestamp><text>{{TemplateMapping
+| mapToClass = ChemicalCompound
 }}</text></revision></page><page><title>Mapping it:Comune francese</title><ns>212</ns><id>4334</id><revision><id>16807</id><timestamp>2012-03-12T11:29:25Z</timestamp><text>{{TemplateMapping
 | mapToClass = Settlement
 | mappings =
@@ -250,6 +260,10 @@
         {{PropertyMapping | templateProperty = Categoria | ontologyProperty = category }}
 }}</text></revision></page><page><title>Mapping it:Edificio religioso</title><ns>212</ns><id>5769</id><revision><id>18644</id><timestamp>2012-05-24T16:27:11Z</timestamp><text>{{TemplateMapping
 | mapToClass = ReligiousBuilding
+}}</text></revision></page><page><title>Mapping it:Enzybox</title><ns>212</ns><id>5846</id><revision><id>18813</id><timestamp>2012-06-06T15:35:05Z</timestamp><text>{{TemplateMapping
+| mapToClass = Enzyme
+}}</text></revision></page><page><title>Mapping it:FictionTV</title><ns>212</ns><id>5808</id><revision><id>18775</id><timestamp>2012-06-06T14:47:30Z</timestamp><text>{{TemplateMapping
+| mapToClass = TelevisionShow
 }}</text></revision></page><page><title>Mapping it:Film</title><ns>212</ns><id>4332</id><revision><id>17035</id><timestamp>2012-03-23T18:03:47Z</timestamp><text>{{ TemplateMapping | mapToClass = Film | mappings = 
     {{ PropertyMapping | templateProperty = titoloitaliano | ontologyProperty = foaf:name }}
     {{ PropertyMapping | templateProperty = immagine | ontologyProperty = foaf:depiction }}
@@ -285,8 +299,98 @@
     {{ PropertyMapping | templateProperty = costumista | ontologyProperty = costumeDesigner }}
     {{ PropertyMapping | templateProperty = truccatore | ontologyProperty = makeupArtist }}
     {{ PropertyMapping | templateProperty = premi | ontologyProperty = award }}
+}}</text></revision></page><page><title>Mapping it:Fumetto e animazione</title><ns>212</ns><id>5820</id><revision><id>18819</id><timestamp>2012-06-06T15:55:40Z</timestamp><text>{{ConditionalMapping
+| cases =
+
+	{{Condition
+	| templateProperty = tipo
+	| operator = equals
+	| value = anime
+	| mapping =
+		{{TemplateMapping
+		| mapToClass = Anime
+		}}
+	}}
+	
+	{{Condition
+	| templateProperty = tipo
+	| operator = equals
+	| value = cartone
+	| mapping =
+		{{TemplateMapping
+		| mapToClass = Cartoon
+		}}
+  }}
+
+	{{Condition
+	| templateProperty = tipo
+	| operator = equals
+	| value = fumetto
+	| mapping =
+		{{TemplateMapping
+		| mapToClass = Comics
+		}}
+  }}
+
+	{{Condition
+	| templateProperty = tipo
+	| operator = equals
+	| value = manga
+	| mapping =
+		{{TemplateMapping
+		| mapToClass = Manga
+		}}
+  }}
+
+	{{Condition
+	| templateProperty = tipo
+	| operator = equals
+	| value = manhua
+	| mapping =
+		{{TemplateMapping
+		| mapToClass = Manhua
+		}}
+  }}
+
+	{{Condition
+	| templateProperty = tipo
+	| operator = equals
+	| value = manhwa
+	| mapping =
+		{{TemplateMapping
+		| mapToClass = Manhwa
+		}}
+  }}
+
+	{{Condition
+	| templateProperty = tipo
+	| operator = equals
+	| value = light novel
+	| mapping =
+		{{TemplateMapping
+		| mapToClass = LightNovel
+		}}
+  }}
+
+&lt;!-- Default generic class --&gt;
+  {{Condition
+  | operator = otherwise
+	| mapping =
+		{{TemplateMapping
+			| mapToClass = Work
+		}}
+	}}
+
+&lt;!-- TODO --&gt;
+| defaultMappings =
 }}</text></revision></page><page><title>Mapping it:Gamebox</title><ns>212</ns><id>5767</id><revision><id>18641</id><timestamp>2012-05-24T16:22:43Z</timestamp><text>{{TemplateMapping
 | mapToClass = VideoGame
+}}</text></revision></page><page><title>Mapping it:Gara ciclistica</title><ns>212</ns><id>5843</id><revision><id>18810</id><timestamp>2012-06-06T15:32:44Z</timestamp><text>{{TemplateMapping
+| mapToClass = CyclingCompetition
+}}</text></revision></page><page><title>Mapping it:Incontro di club</title><ns>212</ns><id>5806</id><revision><id>18773</id><timestamp>2012-06-06T14:45:09Z</timestamp><text>{{TemplateMapping
+| mapToClass = SportsEvent
+}}</text></revision></page><page><title>Mapping it:Incontro internazionale</title><ns>212</ns><id>5839</id><revision><id>18806</id><timestamp>2012-06-06T15:29:07Z</timestamp><text>{{TemplateMapping
+| mapToClass = SportsEvent
 }}</text></revision></page><page><title>Mapping it:Infobox Azienda</title><ns>212</ns><id>5074</id><revision><id>16672</id><timestamp>2012-02-17T23:50:28Z</timestamp><text>{{TemplateMapping
 | mapToClass = Company
 | mappings =
@@ -324,6 +428,18 @@
 	&lt;!-- {{PropertyMapping | templateProperty = slogan | ontologyProperty =  }} --&gt;
 	&lt;!-- {{PropertyMapping | templateProperty = note | ontologyProperty =  }} --&gt;
 	{{PropertyMapping | templateProperty = sito | ontologyProperty = foaf:homepage }}
+}}</text></revision></page><page><title>Mapping it:Infobox aeromobile</title><ns>212</ns><id>5825</id><revision><id>18792</id><timestamp>2012-06-06T15:16:56Z</timestamp><text>{{TemplateMapping
+| mapToClass = Aircraft
+}}</text></revision></page><page><title>Mapping it:Infobox conflitto</title><ns>212</ns><id>5833</id><revision><id>18800</id><timestamp>2012-06-06T15:24:30Z</timestamp><text>{{TemplateMapping
+| mapToClass = MilitaryConflict
+}}</text></revision></page><page><title>Mapping it:Infobox fiume</title><ns>212</ns><id>5821</id><revision><id>18788</id><timestamp>2012-06-06T15:13:37Z</timestamp><text>{{TemplateMapping
+| mapToClass = River
+}}</text></revision></page><page><title>Mapping it:Infobox isola</title><ns>212</ns><id>5834</id><revision><id>18801</id><timestamp>2012-06-06T15:25:19Z</timestamp><text>{{TemplateMapping
+| mapToClass = Island
+}}</text></revision></page><page><title>Mapping it:Infobox malattia</title><ns>212</ns><id>5844</id><revision><id>18811</id><timestamp>2012-06-06T15:33:32Z</timestamp><text>{{TemplateMapping
+| mapToClass = Disease
+}}</text></revision></page><page><title>Mapping it:Infobox nave</title><ns>212</ns><id>5824</id><revision><id>18791</id><timestamp>2012-06-06T15:16:16Z</timestamp><text>{{TemplateMapping
+| mapToClass = Ship
 }}</text></revision></page><page><title>Mapping it:Libro</title><ns>212</ns><id>5691</id><revision><id>18168</id><timestamp>2012-05-07T11:01:23Z</timestamp><text>{{TemplateMapping
 | mapToClass = Book
 | mappings =
@@ -362,8 +478,12 @@
 	{{PropertyMapping | templateProperty = iso2 | ontologyProperty = iso6392Code }}
 	{{PropertyMapping | templateProperty = iso3 | ontologyProperty = iso6393Code }}
 	{{PropertyMapping | templateProperty = sil | ontologyProperty = silCode }}
+}}</text></revision></page><page><title>Mapping it:Membro delle istituzioni italiane</title><ns>212</ns><id>5807</id><revision><id>18774</id><timestamp>2012-06-06T14:46:27Z</timestamp><text>{{TemplateMapping
+| mapToClass = Politician
 }}</text></revision></page><page><title>Mapping it:Minerale</title><ns>212</ns><id>5766</id><revision><id>18640</id><timestamp>2012-05-24T16:21:31Z</timestamp><text>{{TemplateMapping
 | mapToClass = Mineral
+}}</text></revision></page><page><title>Mapping it:Monarca</title><ns>212</ns><id>5829</id><revision><id>18796</id><timestamp>2012-06-06T15:20:58Z</timestamp><text>{{TemplateMapping
+| mapToClass = Monarch
 }}</text></revision></page><page><title>Mapping it:Montagna</title><ns>212</ns><id>5699</id><revision><id>18177</id><timestamp>2012-05-07T13:31:48Z</timestamp><text>{{TemplateMapping
 | mapToClass = Mountain
 | mappings =
@@ -391,6 +511,8 @@
     {{PropertyMapping | templateProperty = gruppo | ontologyProperty = alpsGroup }}
     {{PropertyMapping | templateProperty = sottogruppo | ontologyProperty = alpsSubgroup }}
     {{PropertyMapping | templateProperty = codice | ontologyProperty = alpsSoiusaCode }}
+}}</text></revision></page><page><title>Mapping it:Museo</title><ns>212</ns><id>5840</id><revision><id>18807</id><timestamp>2012-06-06T15:29:48Z</timestamp><text>{{TemplateMapping
+| mapToClass = Museum
 }}</text></revision></page><page><title>Mapping it:Onorificenze</title><ns>212</ns><id>5772</id><revision><id>18650</id><timestamp>2012-05-24T16:32:58Z</timestamp><text>{{TemplateMapping
 | mapToClass = Decoration
 }}</text></revision></page><page><title>Mapping it:Opera d'arte</title><ns>212</ns><id>5198</id><revision><id>17237</id><timestamp>2012-04-14T12:39:03Z</timestamp><text>{{TemplateMapping
@@ -459,6 +581,31 @@
     {{PropertyMapping | templateProperty = doppiatore italiano 8 | ontologyProperty = dubber }}
     {{PropertyMapping | templateProperty = doppiatore italiano 9 | ontologyProperty = dubber }}
     {{PropertyMapping | templateProperty = doppiatore italiano 10 | ontologyProperty = dubber }}
+}}</text></revision></page><page><title>Mapping it:Programma</title><ns>212</ns><id>5848</id><revision><id>18815</id><timestamp>2012-06-06T15:37:23Z</timestamp><text>{{ConditionalMapping
+| cases =
+
+&lt;!-- WARNING: there are some radio program entries that leave 'tipo' unset --&gt;
+	{{Condition
+	| templateProperty = tipo
+	| operator = equals
+	| value = radio
+	| mapping =
+		{{TemplateMapping
+		| mapToClass = RadioProgram
+		}}
+  }}
+
+&lt;!-- Otherwise it is a television program --&gt;
+  {{Condition
+  | operator = otherwise
+	| mapping =
+		{{TemplateMapping
+			| mapToClass = TelevisionShow
+		}}
+	}}
+
+}}</text></revision></page><page><title>Mapping it:Santo</title><ns>212</ns><id>5836</id><revision><id>18803</id><timestamp>2012-06-06T15:26:51Z</timestamp><text>{{TemplateMapping
+| mapToClass = Saint
 }}</text></revision></page><page><title>Mapping it:Software</title><ns>212</ns><id>5200</id><revision><id>17240</id><timestamp>2012-04-15T20:58:33Z</timestamp><text>{{TemplateMapping
 | mapToClass = Software
 | mappings =
@@ -476,7 +623,9 @@
 	{{PropertyMapping | templateProperty = sviluppatore | ontologyProperty = author }}
 	{{PropertyMapping | templateProperty = UltimaVersione | ontologyProperty = latestReleaseVersion }}
 	{{PropertyMapping | templateProperty = UltimaVersioneBeta | ontologyProperty = latestPreviewVersion }}
-}}</text></revision></page><page><title>Mapping it:Sportivo</title><ns>212</ns><id>5139</id><revision><id>17019</id><timestamp>2012-03-23T11:24:38Z</timestamp><text>{{ TemplateMapping | mapToClass = Athlete | mappings = 
+}}</text></revision></page><page><title>Mapping it:Sportivo</title><ns>212</ns><id>5139</id><revision><id>18824</id><timestamp>2012-06-07T16:20:15Z</timestamp><text>{{ TemplateMapping
+| mapToClass = Athlete
+| mappings = 
 &lt;!-- Missing mappings: Record, Ranking, Squadre, Incontri, RigaVuota, Palmares, Vittorie --&gt;
     {{ PropertyMapping | templateProperty = Nome | ontologyProperty = foaf:name }}
     {{ PropertyMapping | templateProperty = NomeCompleto | ontologyProperty = foaf:name }}
@@ -498,6 +647,10 @@
     {{ PropertyMapping | templateProperty = Nazionale | ontologyProperty = nationalTeam }}
     {{ PropertyMapping | templateProperty = Allenatore | ontologyProperty = trainer }}
     {{ PropertyMapping | templateProperty = Aggiornato | ontologyProperty = updated }}
+}}</text></revision></page><page><title>Mapping it:Squadra di calcio</title><ns>212</ns><id>5811</id><revision><id>18778</id><timestamp>2012-06-06T14:50:52Z</timestamp><text>{{TemplateMapping
+| mapToClass = SoccerClub
+}}</text></revision></page><page><title>Mapping it:Stagione squadra di calcio</title><ns>212</ns><id>5823</id><revision><id>18790</id><timestamp>2012-06-06T15:15:19Z</timestamp><text>{{TemplateMapping
+| mapToClass = SoccerLeagueSeason
 }}</text></revision></page><page><title>Mapping it:Tassobox</title><ns>212</ns><id>5203</id><revision><id>17244</id><timestamp>2012-04-16T16:09:02Z</timestamp><text>{{TemplateMapping
 | mapToClass = Species
 | mappings =
@@ -528,4 +681,10 @@
 	{{PropertyMapping | templateProperty = statocons_versione | ontologyProperty = conservationStatusSystem }}
 }}</text></revision></page><page><title>Mapping it:Torneo-tennis-4 colonne</title><ns>212</ns><id>5774</id><revision><id>18652</id><timestamp>2012-05-24T16:36:47Z</timestamp><text>{{TemplateMapping
 | mapToClass = TennisTournament
+}}</text></revision></page><page><title>Mapping it:Torneo-tennis-finale</title><ns>212</ns><id>5810</id><revision><id>18777</id><timestamp>2012-06-06T14:49:44Z</timestamp><text>{{TemplateMapping
+| mapToClass = TennisTournament
+}}</text></revision></page><page><title>Mapping it:Tracce</title><ns>212</ns><id>5838</id><revision><id>18805</id><timestamp>2012-06-06T15:28:06Z</timestamp><text>{{TemplateMapping
+| mapToClass = Album
+}}</text></revision></page><page><title>Mapping it:VinoDOC</title><ns>212</ns><id>5832</id><revision><id>18799</id><timestamp>2012-06-06T15:23:33Z</timestamp><text>{{TemplateMapping
+| mapToClass = ControlledDesignationOfOriginWine
 }}</text></revision></page></mediawiki>

@@ -1,1 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?><mediawiki xmlns="http://www.mediawiki.org/xml/export-0.6/"></mediawiki>
+<?xml version="1.0" encoding="UTF-8"?><mediawiki xmlns="http://www.mediawiki.org/xml/export-0.6/"><page><title>Mapping ja:ActorActress</title><ns>232</ns><id>5851</id><revision><id>18841</id><timestamp>2012-06-29T10:07:50Z</timestamp><text>{{TemplateMapping
+|mapToClass = Actor
+|correspondingClass = Person
+|mappings = 
+  {{ PropertyMapping | templateProperty = 生年 | ontologyProperty = birthYear }}
+  {{ PropertyMapping | templateProperty = 没年 | ontologyProperty = deathYear }}
+  {{ PropertyMapping | templateProperty = アカデミー賞 | ontologyProperty = academyAward }}
+  {{ PropertyMapping | templateProperty = ゴールデングローブ賞 | ontologyProperty = goldenGlobeAward }}
+  {{ PropertyMapping | templateProperty = エミー賞 | ontologyProperty = emmyAward }}
+  {{ PropertyMapping | templateProperty = トニー賞 | ontologyProperty = tonyAward }}
+  {{ PropertyMapping | templateProperty = ゴールデンラズベリー賞 | ontologyProperty = goldenRaspberryAward }}
+  {{ PropertyMapping | templateProperty = 全米映画俳優組合賞 | ontologyProperty = screenActorsGuildAward }}
+  {{ PropertyMapping | templateProperty = セザール賞 | ontologyProperty = cesarAward }}
+  {{ PropertyMapping | templateProperty = ゴヤ賞 | ontologyProperty = goyaAward }}
+  {{ PropertyMapping | templateProperty = グラミー賞 | ontologyProperty = grammyAward }}
+  {{ PropertyMapping | templateProperty = AFI賞 | ontologyProperty = afiAward }}
+  {{ PropertyMapping | templateProperty = ローレンス・オリヴィエ賞 | ontologyProperty = laurenceOlivierAward }}
+  {{ PropertyMapping | templateProperty = ジェミニ賞 | ontologyProperty = geminiAward }}
+  {{ PropertyMapping | templateProperty = アリエル賞 | ontologyProperty = arielAward }}
+  {{ PropertyMapping | templateProperty = フィルムフェア賞 | ontologyProperty = filmFareAward }}
+}}</text></revision></page><page><title>Mapping ja:Infobox 芸術家</title><ns>232</ns><id>5850</id><revision><id>18837</id><timestamp>2012-06-29T07:11:39Z</timestamp><text>{{TemplateMapping
+|mapToClass = Artist
+|mappings = 
+  {{ PropertyMapping | templateProperty = name | ontologyProperty = foaf:name }}
+  {{ PropertyMapping | templateProperty = birthdate | ontologyProperty = birthDate }}
+  {{ PropertyMapping | templateProperty = birth_date | ontologyProperty = birthDate }}
+  {{ PropertyMapping | templateProperty = deathdate | ontologyProperty = deathDate }}
+  {{ PropertyMapping | templateProperty = death_date | ontologyProperty = deathDate }}
+  {{ PropertyMapping | templateProperty = birthplace | ontologyProperty = birthPlace }}
+  {{ PropertyMapping | templateProperty = birth_place | ontologyProperty = birthPlace }}
+  {{ PropertyMapping | templateProperty = deathplace | ontologyProperty = deathPlace }}
+  {{ PropertyMapping | templateProperty = death_place | ontologyProperty = deathPlace }}
+  {{ PropertyMapping | templateProperty = birthname | ontologyProperty = birthName }}
+  {{ PropertyMapping | templateProperty = field | ontologyProperty = field }}
+  {{ PropertyMapping | templateProperty = influenced by | ontologyProperty = influencedBy }}
+  {{ PropertyMapping | templateProperty = influenced | ontologyProperty = influenced }}
+  {{ PropertyMapping | templateProperty = training | ontologyProperty = training }}
+  {{ PropertyMapping | templateProperty = nationality | ontologyProperty = nationality }}
+  {{ PropertyMapping | templateProperty = ethnicity | ontologyProperty = ethnicity }}
+  {{ PropertyMapping | templateProperty = movement | ontologyProperty = movement }}
+
+
+
+}}</text></revision></page><page><title>Mapping ja:基礎情報 会社</title><ns>232</ns><id>5849</id><revision><id>18829</id><timestamp>2012-06-18T10:17:25Z</timestamp><text>{{TemplateMapping
+|mapToClass = Company
+|mappings = 
+  {{ PropertyMapping | templateProperty = 社名 | ontologyProperty = foaf:name }}
+}}</text></revision></page></mediawiki>

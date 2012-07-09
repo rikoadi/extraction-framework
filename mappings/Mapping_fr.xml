@@ -87,8 +87,8 @@
 
 	&lt;!--{{PropertyMapping | templateProperty = influences | ontologyProperty = influencedBy }}--&gt;
 	&lt;!--{{PropertyMapping | templateProperty = website | ontologyProperty = foaf:homepage }}--&gt;
-}}</text></revision></page><page><title>Mapping fr:Infobox Bande dessinée</title><ns>210</ns><id>5103</id><revision><id>16791</id><timestamp>2012-03-07T16:54:49Z</timestamp><text>{{TemplateMapping
-| mapToClass = ComicBook
+}}</text></revision></page><page><title>Mapping fr:Infobox Bande dessinée</title><ns>210</ns><id>5103</id><revision><id>18844</id><timestamp>2012-07-08T11:11:02Z</timestamp><text>{{TemplateMapping
+| mapToClass = Comics
 }}</text></revision></page><page><title>Mapping fr:Infobox Biographie</title><ns>210</ns><id>4401</id><revision><id>14902</id><timestamp>2011-09-05T14:31:27Z</timestamp><text>{{TemplateMapping
 | mapToClass = Person
 | mappings =
@@ -344,14 +344,14 @@
 	{{PropertyMapping | templateProperty = source altitude | ontologyProperty = elevation | unit = metre }}
 	{{GeocoordinatesMapping | ontologyProperty = sourcePosition | source latitude = source_lat_d  | sourcelongitude = source_long_d  | }}
 	{{GeocoordinatesMapping | ontologyProperty = mouthPosition | embouchure latitude = mouth_lat_d  |  embouchure longitude = mouth_long_d  }}
-}}</text></revision></page><page><title>Mapping fr:Infobox Footballeur</title><ns>210</ns><id>4388</id><revision><id>14846</id><timestamp>2011-08-29T13:43:49Z</timestamp><text>{{TemplateMapping
+}}</text></revision></page><page><title>Mapping fr:Infobox Footballeur</title><ns>210</ns><id>4388</id><revision><id>18766</id><timestamp>2012-06-03T21:41:06Z</timestamp><text>{{TemplateMapping
 | mapToClass = SoccerPlayer
 | mappings =
 
         {{PropertyMapping | templateProperty = nom | ontologyProperty = foaf:name }}
 	{{PropertyMapping | templateProperty = nom_du_joueur | ontologyProperty = foaf:name }}
 	{{PropertyMapping | templateProperty = ville | ontologyProperty = city }}
-        {{PropertyMapping | templateProperty = pays | ontologyProperty = country }}
+        {{PropertyMapping | templateProperty = pays | ontologyProperty = nationality }}
 	{{PropertyMapping | templateProperty = date_de_naissance | ontologyProperty = birthDate }}
 	{{PropertyMapping | templateProperty = countryofbirth | ontologyProperty = birthPlace }}
 	{{PropertyMapping | templateProperty = date_de_décès | ontologyProperty = deathDate }}

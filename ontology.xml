@@ -117,7 +117,14 @@
 | rdfs:label@sl = žival
 | rdfs:label@ko = 동물
 | rdfs:subClassOf = Eukaryote
-}}</text></revision></page><page><title>OntologyClass:Arachnid</title><ns>200</ns><id>298</id><revision><id>11842</id><timestamp>2011-04-04T13:28:42Z</timestamp><text>{{Class
+}}</text></revision></page><page><title>OntologyClass:Anime</title><ns>200</ns><id>5814</id><revision><id>18781</id><timestamp>2012-06-06T15:02:05Z</timestamp><text>{{Class
+| rdfs:label@en = anime
+| rdfs:label@it = anime
+| rdfs:subClassOf = Cartoon
+| rdfs:comment@en = A style of animation originating in Japan&lt;ref name="anime"&gt;http://en.wikipedia.org/wiki/Anime&lt;/ref&gt;
+}}
+==References==
+&lt;references/&gt;</text></revision></page><page><title>OntologyClass:Arachnid</title><ns>200</ns><id>298</id><revision><id>11842</id><timestamp>2011-04-04T13:28:42Z</timestamp><text>{{Class
 | rdfs:label@en = arachnid
 | rdfs:label@fr = arachnides
 | rdfs:label@pt = aracnídeos
@@ -300,12 +307,7 @@
 | rdfs:subClassOf = Food
 | rdfs:comment@en = A drink, or beverage, is a liquid which is specifically prepared for human consumption.
 | rdfs:comment@de = Ein Getränk ist eine zum Trinken zubereitete Flüssigkeiten. Getränke werden entweder zum Stillen von Durst und damit zur Wasseraufnahme des Körpers, als Nahrungsmittel oder auch als reine Genussmittel aufgenommen.
-}}</text></revision></page><page><title>OntologyClass:Bibo:Book</title><ns>200</ns><id>2939</id><revision><id>10895</id><timestamp>2011-02-10T09:01:46Z</timestamp><text>{{Class
-| rdfs:label@en = book
-| rdfs:comment@en = A written or printed work of fiction or nonfiction, usually on sheets of paper fastened or bound together within covers
-}}
-
-http://purl.org/ontology/bibo/Book from the [http://en.wikipedia.org/wiki/Bibliographic_Ontology Bibliographic Ontology].</text></revision></page><page><title>OntologyClass:BiologicalDatabase</title><ns>200</ns><id>3134</id><revision><id>11930</id><timestamp>2011-04-05T18:50:13Z</timestamp><text>{{Class
+}}</text></revision></page><page><title>OntologyClass:BiologicalDatabase</title><ns>200</ns><id>3134</id><revision><id>11930</id><timestamp>2011-04-05T18:50:13Z</timestamp><text>{{Class
 | rdfs:label@en = Biological database
 | rdfs:label@fr = Base de données biologiques
 | rdfs:label@pt = Banco de dados biológico
@@ -435,6 +437,10 @@ http://purl.org/ontology/bibo/Book from the [http://en.wikipedia.org/wiki/Biblio
 | rdfs:label@pt = cardeal
 | rdfs:label@el = καρδινάλιος
 | rdfs:subClassOf = Cleric
+}}</text></revision></page><page><title>OntologyClass:Cartoon</title><ns>200</ns><id>5812</id><revision><id>18779</id><timestamp>2012-06-06T14:52:58Z</timestamp><text>{{Class
+| rdfs:label@en = cartoon
+| rdfs:label@it = cartone animato
+| rdfs:subClassOf = Work
 }}</text></revision></page><page><title>OntologyClass:Cave</title><ns>200</ns><id>327</id><revision><id>18578</id><timestamp>2012-05-20T16:55:39Z</timestamp><text>{{Class
 | labels = 
 {{label|en|cave}}
@@ -532,8 +538,9 @@ http://purl.org/ontology/bibo/Book from the [http://en.wikipedia.org/wiki/Biblio
 | rdfs:label@el = κωμικός
 | rdfs:label@pt = comediante
 | rdfs:subClassOf = Artist
-}}</text></revision></page><page><title>OntologyClass:ComicBook</title><ns>200</ns><id>5102</id><revision><id>16790</id><timestamp>2012-03-07T16:53:53Z</timestamp><text>{{Class
-| rdfs:label@en = comic book
+}}</text></revision></page><page><title>OntologyClass:Comics</title><ns>200</ns><id>5813</id><revision><id>18780</id><timestamp>2012-06-06T14:54:45Z</timestamp><text>{{Class
+| rdfs:label@en = comics
+| rdfs:label@it = fumetto
 | rdfs:subClassOf = WrittenWork
 }}</text></revision></page><page><title>OntologyClass:ComicsCharacter</title><ns>200</ns><id>338</id><revision><id>16171</id><timestamp>2011-11-08T06:40:22Z</timestamp><text>{{Class
 | rdfs:label@en = comics character
@@ -547,13 +554,14 @@ http://purl.org/ontology/bibo/Book from the [http://en.wikipedia.org/wiki/Biblio
 | rdfs:label@el = δημιουργός κόμιξ
 | rdfs:label@ko = 만화가
 | rdfs:subClassOf = Artist
-}}</text></revision></page><page><title>OntologyClass:Company</title><ns>200</ns><id>340</id><revision><id>16646</id><timestamp>2012-01-30T17:01:12Z</timestamp><text>{{Class
+}}</text></revision></page><page><title>OntologyClass:Company</title><ns>200</ns><id>340</id><revision><id>18827</id><timestamp>2012-06-18T09:41:14Z</timestamp><text>{{Class
 | rdfs:label@en = company
 | rdfs:label@de = Unternehmen
 | rdfs:label@fr = entreprise
 | rdfs:label@el = εταιρία
 | rdfs:label@pt = empresa
 | rdfs:label@ko = 회사
+| rdfs:label@ja = 会社
 | rdfs:subClassOf = Organisation
 }}</text></revision></page><page><title>OntologyClass:Congressman</title><ns>200</ns><id>341</id><revision><id>18445</id><timestamp>2012-05-19T15:10:34Z</timestamp><text>{{Class
 | rdfs:label@en = congressman
@@ -575,6 +583,12 @@ http://purl.org/ontology/bibo/Book from the [http://en.wikipedia.org/wiki/Biblio
 | rdfs:label@ko = 대륙
 | rdfs:subClassOf = PopulatedPlace
 | owl:equivalentClass = schema:Continent
+}}</text></revision></page><page><title>OntologyClass:ControlledDesignationOfOriginWine</title><ns>200</ns><id>5831</id><revision><id>18798</id><timestamp>2012-06-06T15:22:44Z</timestamp><text>{{Class
+| rdfs:label@en = Controlled designation of origin wine
+| rdfs:label@it = vino D.O.C.
+| rdfs:label@fr = vin A.O.C.
+| rdfs:comment@en = A quality assurance label for wines
+| rdfs:subClassOf = Wine
 }}</text></revision></page><page><title>OntologyClass:Convention</title><ns>200</ns><id>344</id><revision><id>16219</id><timestamp>2011-11-08T07:20:00Z</timestamp><text>{{Class
 | rdfs:label@en = convention
 | rdfs:label@el = συνέδριο
@@ -625,6 +639,10 @@ http://purl.org/ontology/bibo/Book from the [http://en.wikipedia.org/wiki/Biblio
 | rdfs:label@fr = cycadophytes
 | rdfs:label@pt = cicadácea
 | rdfs:subClassOf = Plant
+}}</text></revision></page><page><title>OntologyClass:CyclingCompetition</title><ns>200</ns><id>5842</id><revision><id>18809</id><timestamp>2012-06-06T15:31:38Z</timestamp><text>{{Class
+| rdfs:label@en = cycling competition
+| rdfs:label@it = gara ciclistica
+| rdfs:subClassOf = SportsEvent
 }}</text></revision></page><page><title>OntologyClass:CyclingLeague</title><ns>200</ns><id>2169</id><revision><id>11184</id><timestamp>2011-03-29T15:43:10Z</timestamp><text>{{Class
 | rdfs:label@en = cycling league
 | rdfs:label@el = Ομοσπονδία Ποδηλασίας
@@ -686,6 +704,10 @@ http://purl.org/ontology/bibo/Book from the [http://en.wikipedia.org/wiki/Biblio
 | rdfs:label@en = embryology
 | rdfs:label@fr = embryologie
 | rdfs:subClassOf = AnatomicalStructure
+}}</text></revision></page><page><title>OntologyClass:Enzyme</title><ns>200</ns><id>5845</id><revision><id>18812</id><timestamp>2012-06-06T15:34:19Z</timestamp><text>{{Class
+| rdfs:label@en = enzyme
+| rdfs:label@it = enzima
+| rdfs:subClassOf = Biomolecule
 }}</text></revision></page><page><title>OntologyClass:EthnicGroup</title><ns>200</ns><id>357</id><revision><id>16174</id><timestamp>2011-11-08T06:42:08Z</timestamp><text>{{Class
 | rdfs:label@en = ethnic group
 | rdfs:label@fr = groupe ethnique
@@ -948,6 +970,8 @@ http://purl.org/ontology/bibo/Book from the [http://en.wikipedia.org/wiki/Biblio
 | rdfs:label@pt = ideologia
 | rdfs:subClassOf = 
 | rdfs:comment@en = for example: Progressivism_in_the_United_States, Classical_liberalism
+}}</text></revision></page><page><title>OntologyClass:Infobox stazione ferroviaria</title><ns>200</ns><id>5827</id><revision><id>18794</id><timestamp>2012-06-06T15:18:35Z</timestamp><text>{{TemplateMapping
+| mapToClass = RailwayStation
 }}</text></revision></page><page><title>OntologyClass:Infrastructure</title><ns>200</ns><id>386</id><revision><id>12095</id><timestamp>2011-04-12T12:16:01Z</timestamp><text>{{Class
 | rdfs:label@en = infrastructure
 | rdfs:label@el = Υποδομή
@@ -1052,7 +1076,13 @@ http://purl.org/ontology/bibo/Book from the [http://en.wikipedia.org/wiki/Biblio
 | rdfs:label@fr = lieutenant
 | rdfs:label@pt = tenente
 | rdfs:subClassOf = Politician
-}}</text></revision></page><page><title>OntologyClass:Lighthouse</title><ns>200</ns><id>395</id><revision><id>18663</id><timestamp>2012-05-25T14:48:59Z</timestamp><text>{{Class
+}}</text></revision></page><page><title>OntologyClass:LightNovel</title><ns>200</ns><id>5817</id><revision><id>18784</id><timestamp>2012-06-06T15:04:41Z</timestamp><text>{{Class
+| rdfs:label@en = light novel
+| rdfs:subClassOf = Novel
+| rdfs:comment@en = A style of Japanese novel&lt;ref name="light novel"&gt;http://en.wikipedia.org/wiki/Light_novel&lt;/ref&gt;
+}}
+==References==
+&lt;references/&gt;</text></revision></page><page><title>OntologyClass:Lighthouse</title><ns>200</ns><id>395</id><revision><id>18663</id><timestamp>2012-05-25T14:48:59Z</timestamp><text>{{Class
 | rdfs:label@de = Leuchtturm
 | rdfs:label@en = lighthouse
 | rdfs:label@fr = phare
@@ -1087,7 +1117,26 @@ http://purl.org/ontology/bibo/Book from the [http://en.wikipedia.org/wiki/Biblio
 | rdfs:label@pt = mamífero
 | rdfs:subClassOf = Animal
 | owl:disjointWith = Fish
-}}</text></revision></page><page><title>OntologyClass:MartialArtist</title><ns>200</ns><id>4123</id><revision><id>14132</id><timestamp>2011-07-14T18:42:20Z</timestamp><text>{{Class
+}}</text></revision></page><page><title>OntologyClass:Manga</title><ns>200</ns><id>5815</id><revision><id>18782</id><timestamp>2012-06-06T15:02:57Z</timestamp><text>{{Class
+| rdfs:label@en = manga
+| rdfs:label@it = manga
+| rdfs:subClassOf = Comics
+| rdfs:comment@en = Manga are comics created in Japan&lt;ref name="manga"&gt;http://en.wikipedia.org/wiki/Manga&lt;/ref&gt;
+}}
+==References==
+&lt;references/&gt;</text></revision></page><page><title>OntologyClass:Manhua</title><ns>200</ns><id>5819</id><revision><id>18786</id><timestamp>2012-06-06T15:12:08Z</timestamp><text>{{Class
+| rdfs:label@en = manhua
+| rdfs:subClassOf = Comics
+| rdfs:comment@en = Comics originally produced in China&lt;ref name="manhua"&gt;http://en.wikipedia.org/wiki/Manhua&lt;/ref&gt;
+}}
+==References==
+&lt;references/&gt;</text></revision></page><page><title>OntologyClass:Manhwa</title><ns>200</ns><id>5818</id><revision><id>18785</id><timestamp>2012-06-06T15:11:27Z</timestamp><text>{{Class
+| rdfs:label@en = manhwa
+| rdfs:subClassOf = Comics
+| rdfs:comment@en = Korean term for comics and print cartoons&lt;ref name="manhwa"&gt;http://en.wikipedia.org/wiki/Manhwa&lt;/ref&gt;
+}}
+==References==
+&lt;references/&gt;</text></revision></page><page><title>OntologyClass:MartialArtist</title><ns>200</ns><id>4123</id><revision><id>14132</id><timestamp>2011-07-14T18:42:20Z</timestamp><text>{{Class
 | rdfs:label@en = martial artist
 | rdfs:subClassOf = Athlete
 }}</text></revision></page><page><title>OntologyClass:Mayor</title><ns>200</ns><id>400</id><revision><id>18446</id><timestamp>2012-05-19T15:11:09Z</timestamp><text>{{Class
@@ -1284,7 +1333,14 @@ http://purl.org/ontology/bibo/Book from the [http://en.wikipedia.org/wiki/Biblio
 | rdfs:label@en = non-profit organisation
 | rdfs:label@fr = organisation à but non lucratif
 | rdfs:subClassOf = Organisation
-}}</text></revision></page><page><title>OntologyClass:OfficeHolder</title><ns>200</ns><id>424</id><revision><id>16143</id><timestamp>2011-11-08T06:22:22Z</timestamp><text>{{Class
+}}</text></revision></page><page><title>OntologyClass:Novel</title><ns>200</ns><id>5816</id><revision><id>18783</id><timestamp>2012-06-06T15:03:40Z</timestamp><text>{{Class
+| rdfs:label@en = novel
+| rdfs:label@it = novella
+| rdfs:subClassOf = Book
+| rdfs:comment@en = A book of long narrative in literary prose&lt;ref name="novel"&gt;http://en.wikipedia.org/wiki/Novel&lt;/ref&gt;
+}}
+==References==
+&lt;references/&gt;</text></revision></page><page><title>OntologyClass:OfficeHolder</title><ns>200</ns><id>424</id><revision><id>16143</id><timestamp>2011-11-08T06:22:22Z</timestamp><text>{{Class
 | rdfs:label@en = office holder
 | rdfs:label@el = κάτοχος δημόσιου αξιώματος
 | rdfs:label@fr = titulaire
@@ -1532,6 +1588,10 @@ http://purl.org/ontology/bibo/Book from the [http://en.wikipedia.org/wiki/Biblio
 | rdfs:label@fr = ligue de courses radio-télécommandé
 | rdfs:comment@en = A group of sports teams or person that compete against each other in radio-controlled racing.
 | rdfs:subClassOf = SportsLeague
+}}</text></revision></page><page><title>OntologyClass:RadioProgram</title><ns>200</ns><id>5847</id><revision><id>18814</id><timestamp>2012-06-06T15:36:00Z</timestamp><text>{{Class
+| rdfs:label@en = radio program
+| rdfs:label@it = programma radiofonico
+| rdfs:subClassOf = Work
 }}</text></revision></page><page><title>OntologyClass:RadioStation</title><ns>200</ns><id>445</id><revision><id>13457</id><timestamp>2011-06-08T14:05:28Z</timestamp><text>{{Class
 | rdfs:label@en = radio station
 | rdfs:label@de = Radiosender
@@ -1547,6 +1607,10 @@ http://purl.org/ontology/bibo/Book from the [http://en.wikipedia.org/wiki/Biblio
 | rdfs:comment@en = A railway line is a transport service by trains that pull passengers or freight provided by an organization. Not to be mistaken for railway track, which is the structure consisting of the rails. Wikipedia do not clearly differentiate between both, so there is one infobox describing tracks and lines.
 | rdfs:comment@de = Eine Eisenbahnlinie im Verkehrswesen ist die regelmäßige Bedienung einer bestimmten Eisenbahnstrecke durch öffentliche Verkehrsmittel.
 | rdfs:subClassOf = RouteOfTransportation
+}}</text></revision></page><page><title>OntologyClass:RailwayStation</title><ns>200</ns><id>5826</id><revision><id>18793</id><timestamp>2012-06-06T15:17:43Z</timestamp><text>{{Class
+| rdfs:label@en = railway station
+| rdfs:label@it = stazione ferroviaria
+| rdfs:subClassOf = Station
 }}</text></revision></page><page><title>OntologyClass:RailwayTunnel</title><ns>200</ns><id>3391</id><revision><id>12349</id><timestamp>2011-04-20T17:14:46Z</timestamp><text>{{Class
 | rdfs:label@en = railway tunnel
 | rdfs:label@de = Eisenbahntunnel
@@ -2122,6 +2186,10 @@ http://purl.org/ontology/bibo/Book from the [http://en.wikipedia.org/wiki/Biblio
 | rdfs:label@ko = 웹사이트
 | rdfs:subClassOf = Work
 | owl:equivalentClass = schema:WebPage
+}}</text></revision></page><page><title>OntologyClass:Wine</title><ns>200</ns><id>5830</id><revision><id>18797</id><timestamp>2012-06-06T15:21:31Z</timestamp><text>{{Class
+| rdfs:label@en = wine
+| rdfs:label@it = vino
+| rdfs:subClassOf = Beverage
 }}</text></revision></page><page><title>OntologyClass:WineRegion</title><ns>200</ns><id>486</id><revision><id>9906</id><timestamp>2010-10-13T20:51:10Z</timestamp><text>{{Class
 | rdfs:label@en = wine region
 | rdfs:label@fr = région viticole
@@ -3726,9 +3794,10 @@ http://purl.org/ontology/bibo/Book from the [http://en.wikipedia.org/wiki/Biblio
 	| rdfs:domain= Place
 	| rdfs:range = xsd:string
 
-}}</text></revision></page><page><title>OntologyProperty:CurrentMember</title><ns>202</ns><id>744</id><revision><id>8555</id><timestamp>2010-05-28T15:40:57Z</timestamp><text>{{ObjectProperty
+}}</text></revision></page><page><title>OntologyProperty:CurrentMember</title><ns>202</ns><id>744</id><revision><id>18764</id><timestamp>2012-06-02T18:44:38Z</timestamp><text>{{ObjectProperty
 | rdfs:label@en = current member
 | rdfs:range = Person
+| rdfs:domain = SportsTeam
 }}</text></revision></page><page><title>OntologyProperty:CurrentPartner</title><ns>202</ns><id>746</id><revision><id>8556</id><timestamp>2010-05-28T15:41:06Z</timestamp><text>{{ObjectProperty
 | rdfs:label@en = current partner
 | rdfs:domain = FigureSkater
@@ -4220,12 +4289,14 @@ http://purl.org/ontology/bibo/Book from the [http://en.wikipedia.org/wiki/Biblio
 | rdfs:domain = Person
 | rdfs:label@en = dubber
 | rdfs:comment@en = the person who dubs another person e.g. an actor or a fictional character in movies
-}}</text></revision></page><page><title>OntologyProperty:Duration</title><ns>202</ns><id>5670</id><revision><id>18631</id><timestamp>2012-05-22T04:47:09Z</timestamp><text>{{Merge|runtime}}
+}}</text></revision></page><page><title>OntologyProperty:Duration</title><ns>202</ns><id>5670</id><revision><id>18820</id><timestamp>2012-06-07T13:24:14Z</timestamp><text>{{Merge|runtime}}
 
 {{DatatypeProperty
-| rdfs:label@en = duration
-| rdfs:comment@en = The duration of the item (movie, audio recording, event, etc.) in ISO 8601 date format&lt;ref name="schema:duration"&gt;http://schema.org/Event&lt;/ref&gt;
-| rdfs:domain = schema:Event
+| labels =
+{{label|en|duration}}
+| comments =
+{{comment|en|The duration of the item (movie, audio recording, event, etc.) in ISO 8601 date format&lt;ref name="schema:duration"&gt;http://schema.org/Event&lt;/ref&gt;}}
+| rdfs:domain = Event
 | rdfs:range = Time
 | owl:equivalentProperty = schema:duration
 }}
@@ -4748,6 +4819,9 @@ http://purl.org/ontology/bibo/Book from the [http://en.wikipedia.org/wiki/Biblio
 |rdfs:label@de = Familienname
 |rdfs:domain = owl:Thing
 |rdfs:range = xsd:string
+}}</text></revision></page><page><title>OntologyProperty:Foaf:gender</title><ns>202</ns><id>5805</id><revision><id>18771</id><timestamp>2012-06-06T09:15:22Z</timestamp><text>{{DatatypeProperty
+| rdfs:label@en = gender
+| rdfs:range = xsd:string
 }}</text></revision></page><page><title>OntologyProperty:Foaf:givenName</title><ns>202</ns><id>2295</id><revision><id>18510</id><timestamp>2012-05-19T15:50:24Z</timestamp><text>{{DatatypeProperty
 |rdfs:label@en = given name
 |rdfs:label@de = Vorname
@@ -5026,10 +5100,9 @@ http://purl.org/ontology/bibo/Book from the [http://en.wikipedia.org/wiki/Biblio
 | rdfs:label@en = Gemini Award
 | rdfs:domain = Actor
 | rdfs:range = Award
-}}</text></revision></page><page><title>OntologyProperty:Gender</title><ns>202</ns><id>3100</id><revision><id>18763</id><timestamp>2012-06-01T21:19:23Z</timestamp><text>{{ObjectProperty
+}}</text></revision></page><page><title>OntologyProperty:Gender</title><ns>202</ns><id>3100</id><revision><id>18772</id><timestamp>2012-06-06T10:09:25Z</timestamp><text>{{ObjectProperty
  |rdfs:label@en=gender
  |rdfs:label@de = Geschlecht
- |owl:equivalentProperty = foaf:gender
 }}</text></revision></page><page><title>OntologyProperty:GeneLocation</title><ns>202</ns><id>5049</id><revision><id>16624</id><timestamp>2012-01-16T18:38:39Z</timestamp><text>{{ObjectProperty
 |rdfs:label@en = Gene Location
 |rdfs:domain = Gene
@@ -5263,9 +5336,13 @@ http://purl.org/ontology/bibo/Book from the [http://en.wikipedia.org/wiki/Biblio
 | rdfs:label@pt = tem busto natural
 | rdfs:domain = Person
 | rdfs:range = xsd:string
-}}</text></revision></page><page><title>OntologyProperty:HasSurfaceForm</title><ns>202</ns><id>2441</id><revision><id>11539</id><timestamp>2011-04-01T10:47:46Z</timestamp><text>{{DatatypeProperty
+}}</text></revision></page><page><title>OntologyProperty:HasSurfaceForm</title><ns>202</ns><id>2441</id><revision><id>18830</id><timestamp>2012-06-28T13:37:18Z</timestamp><text>'''{{Reserved for DBpedia}}'''
+
+{{DatatypeProperty
 | rdfs:label@en = surface form, i.e the string after the pipe in internal links: &lt;nowiki&gt;[[resource|string]]&lt;/nowiki&gt;
 | rdfs:label@el = επιφάνεια από
+| comments = 
+{{comment|en|Reserved for DBpedia. {{Reserved for DBpedia}}}}
 | rdfs:range = xsd:string
 }}</text></revision></page><page><title>OntologyProperty:HasVariant</title><ns>202</ns><id>2269</id><revision><id>10153</id><timestamp>2010-11-08T17:49:21Z</timestamp><text>{{ObjectProperty
 | rdfs:label@en = variant or variation
@@ -6402,8 +6479,8 @@ http://purl.org/ontology/bibo/Book from the [http://en.wikipedia.org/wiki/Biblio
 | rdfs:comment@en = Mouse Genomic Informatics ID
 | rdfs:domain = Biomolecule
 | rdfs:range = xsd:string
-}}</text></revision></page><page><title>OntologyProperty:MilitaryBranch</title><ns>202</ns><id>1703</id><revision><id>16598</id><timestamp>2012-01-15T22:23:38Z</timestamp><text>{{ObjectProperty
-| rdfs:label@en = branch
+}}</text></revision></page><page><title>OntologyProperty:MilitaryBranch</title><ns>202</ns><id>1703</id><revision><id>18821</id><timestamp>2012-06-07T15:18:57Z</timestamp><text>{{ObjectProperty
+| rdfs:label@en = military branch
 | rdfs:comment@en =  The service branch (Army, Navy, etc.) a person is part of.
 | rdfs:domain = Person
 | rdfs:range = MilitaryUnit
@@ -9186,8 +9263,13 @@ http://purl.org/ontology/bibo/Book from the [http://en.wikipedia.org/wiki/Biblio
 | rdfs:domain = BaseballPlayer
 | rdfs:range = xsd:string
 | rdfs:comment = The side the player throws, Left, Right, or Unknown.
-}}</text></revision></page><page><title>OntologyProperty:Thumbnail</title><ns>202</ns><id>4377</id><revision><id>8931</id><timestamp>2010-05-28T16:33:14Z</timestamp><text>{{ObjectProperty
-| rdfs:label@en = thumbnail
+}}</text></revision></page><page><title>OntologyProperty:Thumbnail</title><ns>202</ns><id>4377</id><revision><id>18765</id><timestamp>2012-06-03T21:30:29Z</timestamp><text>{{Reserved for DBpedia}}
+
+{{ObjectProperty
+| labels =
+{{label|en|thumbnail}}
+| comments =
+{{comment|en|Reserved for DBpedia. {{Reserved for DBpedia}}}}
 }}</text></revision></page><page><title>OntologyProperty:TimeInSpace</title><ns>202</ns><id>1517</id><revision><id>8304</id><timestamp>2010-05-28T13:46:14Z</timestamp><text>{{DatatypeProperty
 | rdfs:label@en = time in space
 | rdfs:range = Time
