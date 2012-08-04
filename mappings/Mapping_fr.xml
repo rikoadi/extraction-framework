@@ -344,6 +344,10 @@
 	{{PropertyMapping | templateProperty = source altitude | ontologyProperty = elevation | unit = metre }}
 	{{GeocoordinatesMapping | ontologyProperty = sourcePosition | source latitude = source_lat_d  | sourcelongitude = source_long_d  | }}
 	{{GeocoordinatesMapping | ontologyProperty = mouthPosition | embouchure latitude = mouth_lat_d  |  embouchure longitude = mouth_long_d  }}
+}}</text></revision></page><page><title>Mapping fr:Infobox Cycliste</title><ns>210</ns><id>5855</id><revision><id>18930</id><timestamp>2012-07-26T12:03:44Z</timestamp><text>{{
+ TemplateMapping | mapToClass = Cyclist | mappings = 
+     {{ PropertyMapping | templateProperty = nom | ontologyProperty = foaf:name }}
+     {{ PropertyMapping | templateProperty = datenaissance | ontologyProperty = birthDate }}
 }}</text></revision></page><page><title>Mapping fr:Infobox Footballeur</title><ns>210</ns><id>4388</id><revision><id>18766</id><timestamp>2012-06-03T21:41:06Z</timestamp><text>{{TemplateMapping
 | mapToClass = SoccerPlayer
 | mappings =
@@ -363,6 +367,12 @@
 	{{PropertyMapping | templateProperty = position | ontologyProperty = position }}
         
         
+}}</text></revision></page><page><title>Mapping fr:Infobox Gare</title><ns>210</ns><id>5865</id><revision><id>19040</id><timestamp>2012-07-29T14:54:53Z</timestamp><text>{{TemplateMapping
+| mapToClass = RailwayStation
+}}</text></revision></page><page><title>Mapping fr:Infobox Handballeur</title><ns>210</ns><id>5861</id><revision><id>19036</id><timestamp>2012-07-28T21:30:43Z</timestamp><text>{{
+ TemplateMapping | mapToClass = HandballPlayer | mappings = 
+     {{ PropertyMapping | templateProperty = nom | ontologyProperty = foaf:name }}
+     {{ PropertyMapping | templateProperty = date_de_naissance | ontologyProperty = birthDate }}
 }}</text></revision></page><page><title>Mapping fr:Infobox Jeu vidéo</title><ns>210</ns><id>5061</id><revision><id>16645</id><timestamp>2012-01-29T21:47:12Z</timestamp><text>{{TemplateMapping
 | mapToClass = VideoGame
 | mappings =
@@ -385,6 +395,15 @@
 	{{PropertyMapping | templateProperty = licence | ontologyProperty = license }} 
 	{{PropertyMapping | templateProperty = version | ontologyProperty = latestReleaseVersion }} 
  	{{PropertyMapping | templateProperty = moteur de jeu | ontologyProperty = gameEngine }}         
+}}</text></revision></page><page><title>Mapping fr:Infobox Joueur de basket-ball</title><ns>210</ns><id>5862</id><revision><id>19037</id><timestamp>2012-07-28T21:34:22Z</timestamp><text>{{
+ TemplateMapping | mapToClass = BasketballPlayer | mappings = 
+     {{ PropertyMapping | templateProperty = nom_du_joueur | ontologyProperty = foaf:name }}
+     {{ PropertyMapping | templateProperty = date_de_naissance | ontologyProperty = birthDate }}
+     {{ PropertyMapping | templateProperty = pays | ontologyProperty = nationality }}
+}}</text></revision></page><page><title>Mapping fr:Infobox Joueur de tennis</title><ns>210</ns><id>5856</id><revision><id>18931</id><timestamp>2012-07-26T12:05:33Z</timestamp><text>{{
+ TemplateMapping | mapToClass = TennisPlayer | mappings = 
+     {{ PropertyMapping | templateProperty = Nom | ontologyProperty = foaf:name }}
+     {{ PropertyMapping | templateProperty = Date de naissance | ontologyProperty = birthDate }}
 }}</text></revision></page><page><title>Mapping fr:Infobox Langage de programmation</title><ns>210</ns><id>2929</id><revision><id>13934</id><timestamp>2011-06-27T14:28:45Z</timestamp><text>{{ TemplateMapping
 | mapToClass = ProgrammingLanguage
 | mappings = 
@@ -603,6 +622,12 @@
 	{{PropertyMapping | templateProperty = type | ontologyProperty = type }}
 	{{PropertyMapping | templateProperty = network | ontologyProperty = network }}
 	--&gt;
+}}</text></revision></page><page><title>Mapping fr:Infobox Nageur</title><ns>210</ns><id>5864</id><revision><id>19039</id><timestamp>2012-07-29T10:35:33Z</timestamp><text>{{
+ TemplateMapping | mapToClass = Swimmer 
+ | mappings = 
+     {{ PropertyMapping | templateProperty = nom | ontologyProperty = foaf:name }}
+     {{ PropertyMapping | templateProperty = date de naissance | ontologyProperty = birthDate }}
+     {{ PropertyMapping | templateProperty = nationalité | ontologyProperty = nationality }}
 }}</text></revision></page><page><title>Mapping fr:Infobox Ouvrage</title><ns>210</ns><id>4385</id><revision><id>14826</id><timestamp>2011-08-25T16:25:32Z</timestamp><text></text></revision></page><page><title>Mapping fr:Infobox Pays</title><ns>210</ns><id>5095</id><revision><id>16800</id><timestamp>2012-03-09T17:02:50Z</timestamp><text>{{TemplateMapping
 | mapToClass = Country
 | mappings =
@@ -728,7 +753,15 @@
     {{ PropertyMapping | templateProperty = conjoint | ontologyProperty = spouse }}
     {{ PropertyMapping | templateProperty = enfants | ontologyProperty = child }}
     {{ PropertyMapping | templateProperty = parti | ontologyProperty = party }}
-    }}</text></revision></page><page><title>Mapping fr:Infobox Région de France</title><ns>210</ns><id>2930</id><revision><id>15161</id><timestamp>2011-09-14T16:33:29Z</timestamp><text>{{TemplateMapping
+    }}</text></revision></page><page><title>Mapping fr:Infobox Rugbyman</title><ns>210</ns><id>5858</id><revision><id>18934</id><timestamp>2012-07-26T12:14:14Z</timestamp><text>{{
+ TemplateMapping | mapToClass = RugbyPlayer | mappings = 
+     {{ PropertyMapping | templateProperty = nom | ontologyProperty = foaf:name }}
+     {{ PropertyMapping | templateProperty = date_de_naissance | ontologyProperty = birthDate }}
+     {{PropertyMapping | templateProperty = pays | ontologyProperty = nationality }}
+	{{PropertyMapping | templateProperty = club | ontologyProperty = team }}
+	{{PropertyMapping | templateProperty = taille | ontologyProperty = height | unit = Length}}
+
+}}</text></revision></page><page><title>Mapping fr:Infobox Région de France</title><ns>210</ns><id>2930</id><revision><id>15161</id><timestamp>2011-09-14T16:33:29Z</timestamp><text>{{TemplateMapping
 | mapToClass = AdministrativeRegion
 | mappings =
          {{ConstantMapping | ontologyProperty = country | value = France }}

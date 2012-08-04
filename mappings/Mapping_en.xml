@@ -122,7 +122,7 @@
 	{{PropertyMapping | templateProperty = team_owners | ontologyProperty = owner }}
 	{{PropertyMapping | templateProperty = team_ presidents | ontologyProperty = president }}
 	{{PropertyMapping | templateProperty = nicknames | ontologyProperty = foaf:name }}
-}}</text></revision></page><page><title>Mapping en:Chembox</title><ns>204</ns><id>6</id><revision><id>17506</id><timestamp>2012-04-28T03:04:07Z</timestamp><text>{{TemplateMapping
+}}</text></revision></page><page><title>Mapping en:Chembox</title><ns>204</ns><id>6</id><revision><id>19145</id><timestamp>2012-07-31T13:28:02Z</timestamp><text>{{TemplateMapping
 | mapToClass = ChemicalCompound
 | correspondingClass = ChemicalCompound
 | mappings =
@@ -141,6 +141,7 @@
         {{PropertyMapping | templateProperty = PubChem | ontologyProperty = pubchem }}
         {{PropertyMapping | templateProperty = CASNo | ontologyProperty = casNumber }}
         {{PropertyMapping | templateProperty = InChI | ontologyProperty = inchi }}
+        {{PropertyMapping | templateProperty = UNII | ontologyProperty = fdaUniiCode }}
 }}</text></revision></page><page><title>Mapping en:Chembox Identifiers</title><ns>204</ns><id>2743</id><revision><id>11144</id><timestamp>2011-03-25T16:45:26Z</timestamp><text>{{TemplateMapping
 | mapToClass = ChemicalCompound
 | correspondingClass = ChemicalCompound
@@ -173,7 +174,7 @@
 	{{PropertyMapping | templateProperty = placeofdeath | ontologyProperty = deathPlace }}
 	{{PropertyMapping | templateProperty = countryofdeath | ontologyProperty = deathPlace }}
 	{{PropertyMapping | templateProperty = cricket team | ontologyProperty = team }}
-}}</text></revision></page><page><title>Mapping en:Drugbox</title><ns>204</ns><id>8</id><revision><id>9255</id><timestamp>2010-07-25T18:55:52Z</timestamp><text>{{TemplateMapping
+}}</text></revision></page><page><title>Mapping en:Drugbox</title><ns>204</ns><id>8</id><revision><id>19141</id><timestamp>2012-07-31T12:56:02Z</timestamp><text>{{TemplateMapping
 | mapToClass = Drug
 | mappings =
 	{{PropertyMapping | templateProperty = IUPAC_name | ontologyProperty = iupacName }}
@@ -188,6 +189,9 @@
 	{{PropertyMapping | templateProperty = melting_high | ontologyProperty = meltingPoint | unit = Temperature }}
 	{{PropertyMapping | templateProperty = boiling_point | ontologyProperty = boilingPoint | unit = Temperature }}
 	{{PropertyMapping | templateProperty = drug_name | ontologyProperty = foaf:name }}
+        {{PropertyMapping | templateProperty = UNII | ontologyProperty = fdaUniiCode }}
+        {{PropertyMapping | templateProperty = bioavailability | ontologyProperty = bioavailability}}
+        {{PropertyMapping | templateProperty = ChEBI | ontologyProperty = ChEBI}}
 }}</text></revision></page><page><title>Mapping en:Elementbox</title><ns>204</ns><id>9</id><revision><id>14315</id><timestamp>2011-07-17T11:09:25Z</timestamp><text>{{TemplateMapping
 | mapToClass = ChemicalElement
 | mappings =
@@ -6905,6 +6909,16 @@
 	{{PropertyMapping | templateProperty = area_km2 | ontologyProperty = areaTotal | unit = squareKilometre }}
 	{{PropertyMapping | templateProperty = density_km2 | ontologyProperty = populationDensity | unit = inhabitantsPerSquareKilometre }}
 	{{GeocoordinatesMapping | latitudeDegrees = latd  | latitudeMinutes = latm  | latitudeSeconds = lats  | latitudeDirection = latNS  | longitudeDegrees = longd  | longitudeMinutes = longm  | longitudeSeconds = longs  | longitudeDirection = longEW }}
+}}</text></revision></page><page><title>Mapping en:Infobox Ligament</title><ns>204</ns><id>5852</id><revision><id>18859</id><timestamp>2012-07-17T10:47:24Z</timestamp><text>{{TemplateMapping
+| mapToClass = Ligament
+| mappings =
+	{{PropertyMapping | templateProperty = Name | ontologyProperty = foaf:name }}
+	{{PropertyMapping | templateProperty = GraySubject | ontologyProperty = graySubject }}
+	{{PropertyMapping | templateProperty = GrayPage | ontologyProperty = grayPage }}
+	{{PropertyMapping | templateProperty = MeshName | ontologyProperty = meshName }}
+	{{PropertyMapping | templateProperty = MeshNumber | ontologyProperty = meshNumber }}
+	{{PropertyMapping | templateProperty = DorlandsPre | ontologyProperty = dorlandsPrefix }}
+	{{PropertyMapping | templateProperty = DorlandsSuf | ontologyProperty = dorlandsSuffix }}
 }}</text></revision></page><page><title>Mapping en:Infobox London station</title><ns>204</ns><id>3444</id><revision><id>14620</id><timestamp>2011-07-28T13:08:30Z</timestamp><text>{{ConditionalMapping
 
 | cases =
