@@ -18,10 +18,11 @@ import org.dbpedia.extraction.destinations.formatters.UriPolicy._
 import org.dbpedia.extraction.live.job.LiveExtractionJob
 import org.dbpedia.extraction.live.helper.{ExtractorStatus, LiveConfigReader}
 import org.dbpedia.extraction.live.core.LiveOptions
-import org.dbpedia.extraction.dump.extract.{PolicyParser, ExtractionJob}
+import org.dbpedia.extraction.dump.extract.{PolicyParser}
 import org.dbpedia.extraction.wikiparser.Namespace
 import collection.mutable.ArrayBuffer
 import org.dbpedia.extraction.live.storage.JSONCache
+import org.dbpedia.extraction.live.queue.LiveQueueItem
 
 
 /**
@@ -33,7 +34,7 @@ import org.dbpedia.extraction.live.storage.JSONCache
  * the required triples from the wikipage.
  */
 
-object LiveExtractionConfigLoader extends ActionListener
+object LiveExtractionConfigLoader
 {
   //This number is used for filling the recentlyUpdatedInstances array which is in Main class, this array is used
   //for statistics
@@ -41,7 +42,6 @@ object LiveExtractionConfigLoader extends ActionListener
 
   //    private var config : Config = null;
   private var extractors : List[RootExtractor] = null;
-  private var CurrentJob : ExtractionJob = null;
   private var reloadOntologyAndMapping = true;
   private var ontologyAndMappingsUpdateTime : Long = 0;
   val logger = Logger.getLogger("LiveExtractionConfigLoader");
@@ -62,9 +62,12 @@ object LiveExtractionConfigLoader extends ActionListener
 
   val commonsSource = null;
 
-  def actionPerformed(e: ActionEvent) =
-  {
-    reloadOntologyAndMapping = true;
+  val policies = {
+    val prop: Properties = new Properties
+    val policy: String = LiveOptions.options.get("uri-policy.main")
+    prop.setProperty("uri-policy.main", policy)
+    val policyParser = new PolicyParser(prop)
+    policyParser.parsePolicy(policy)
   }
 
   def reload(t : Long) =
@@ -93,6 +96,13 @@ object LiveExtractionConfigLoader extends ActionListener
     articlesDump
   }
 
+  def extractPage(item: LiveQueueItem, apiURL :String, landCode :String): Boolean =
+  {
+    val lang = Language.apply(landCode)
+    val articlesSource = WikiSource.fromPageIDs(List(item.getItemID), new URL(apiURL), lang);
+    startExtraction(articlesSource,lang)
+  }
+
 
   /**
    * Loads the configuration and creates extraction jobs for all configured languages.
@@ -100,90 +110,39 @@ object LiveExtractionConfigLoader extends ActionListener
    * @param configFile The configuration file
    * @return Non-strict Traversable over all configured extraction jobs i.e. an extractions job will not be created until it is explicitly requested.
    */
-  def startExtraction(articlesSource : Source) : Unit =
-  {
-    //        if(config.multihreadingMode)
-    if(LiveConfigReader.multihreadingMode)
-    {
-      val extractionJobs = convertExtractorMapToScalaMap(LiveConfigReader.extractorClasses).keySet.view.map(createExtractionJob(articlesSource))
-
-      for(extractionJob <- extractionJobs)
-      {
-        extractionJob.start();
-      }
-    }
-    else
-    {
-      startSingleThreadExtraction(articlesSource)(Language.apply(LiveOptions.options.get("language")));
-    }
-  }
-
-  def isMultithreading():Boolean =
-  {
-    //    config.multihreadingMode;
-    LiveConfigReader.multihreadingMode;
-  }
-
-  /**
-   * Creates an extraction job for a specific language.
-   */
-
-  private def createExtractionJob(articlesSource : Source)(language : Language) : LiveExtractionJob =
-  {
-
-    // In case of multi-threading
-    //Extractor
-    if(extractors == null || reloadOntologyAndMapping)
-    {
-      extractors = LoadOntologyAndMappings(articlesSource, language);
-      logger.log(Level.INFO, "Ontology and mappings reloaded");
-      reloadOntologyAndMapping = false;
-    }
-
-    new LiveExtractionJob(null, articlesSource, language, "Extraction Job for " + language.wikiCode + " Wikipedia");
-
-  }
-
-
-  private def startSingleThreadExtraction(articlesSource : Source)(language : Language):Unit =
+  def startExtraction(articlesSource : Source, language : Language):Boolean =
   {
     // In case of single threading
     //Extractor
-    if(extractors==null || reloadOntologyAndMapping)
-    {
-      extractors = LoadOntologyAndMappings(articlesSource, language);
-      logger.log(Level.INFO, "Ontology and mappings reloaded");
-      reloadOntologyAndMapping = false;
+    if(extractors==null || reloadOntologyAndMapping) {
+      this.synchronized {
+        if(extractors==null || reloadOntologyAndMapping) {
+          extractors = LoadOntologyAndMappings(articlesSource, language);
+          logger.log(Level.INFO, "Ontology and mappings reloaded");
+          reloadOntologyAndMapping = false;
+        }
+      }
     }
 
     //var liveDest : LiveUpdateDestination = null;
     val parser = WikiParser.getInstance()
+    var complete = false;
 
     for (cpage <- articlesSource.map(parser))
     {
 
       if(cpage.title.namespace == Namespace.Main ||
-        cpage.title.namespace == Namespace.File ||
+        cpage.title.namespace == Namespace.Template ||
         cpage.title.namespace == Namespace.Category)
       {
-        //liveDest = new LiveUpdateDestination(cpage.title, language.locale.getLanguage(),
-        //  cpage.id.toString)
 
-        //liveDest.setPageID(cpage.id);
-        //liveDest.setOAIID(LiveExtractionManager.oaiID);
 
-        // TODO move it out of here
-        val prop: Properties = new Properties
-        val policy: String = LiveOptions.options.get("uri-policy.main")
-        prop.setProperty("uri-policy.main", policy)
-        val policyParser = new PolicyParser(prop)
-        val policies = policyParser.parsePolicy(policy)
 
         val liveCache = new JSONCache(cpage.id, cpage.title.decoded)
 
         var destList = new ArrayBuffer[LiveDestination]()  // List of all final destinations
-        destList += new SPARULDestination(true) // add triples
-        destList += new SPARULDestination(false) // delete triples
+        destList += new SPARULDestination(true, policies) // add triples
+        destList += new SPARULDestination(false, policies) // delete triples
         destList += new JSONCacheUpdateDestination(liveCache)
         destList += new PublisherDiffDestination(policies)
         destList += new LoggerDestination(cpage.id, cpage.title.decoded) // Just to log extraction results
@@ -195,7 +154,6 @@ object LiveExtractionConfigLoader extends ActionListener
         val extractorRestrictDest = new ExtractorRestrictDestination ( LiveConfigReader.extractors.get(Language.apply(language.isoCode)), extractorDiffDest)
 
         extractorRestrictDest.open
-        //val startTime = System.currentTimeMillis
 
         //Add triples generated from active extractors
         extractors.foreach(extractor => {
@@ -209,32 +167,22 @@ object LiveExtractionConfigLoader extends ActionListener
                 logger.log(Level.FINE, "Error in " + extractor.extractor.getClass().getName() + "\nError Message: " + ex.getMessage, ex)
                 Seq()
               }
-
             }
-
           extractorRestrictDest.write(extractor.extractor.getClass().getName(), "", RequiredGraph, Seq(), Seq())
-          //liveDest.write(RequiredGraph, extractor.extractor.getClass().getName());
         });
 
         extractorRestrictDest.close
+        complete = true
 
-        //Remove triples generated from purge extractors
-        //liveDest.removeTriplesForPurgeExtractors();
-
-        //Keep triples generated from keep extractors
-        //liveDest.retainTriplesForKeepExtractors();
-
-        //liveDest.close();
-
-        //logger.log(Level.INFO, "page number " + cpage.id + " has been processed in " + (System.currentTimeMillis() - startTime));
-
-        //Updating information needed for statistics
-
-        // TODO: Remove statistics for now, we have triple store for basic statistics
-        //StatisticsData.addItem(cpage.title.decoded, strDBppage,strWikipage,0, System.currentTimeMillis)
+      }
+      else
+      {
+        // If not in the allowed namespace, delete cache (if exists)
+        JSONCache.deleteCacheOnlyItem(cpage.id)
       }
 
     }
+    complete
   }
 
   //This method loads the ontology and mappings
