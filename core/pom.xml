@@ -31,6 +31,10 @@
                                 <arg>../ontology.xml</arg> 
                                 <arg>../ontology.owl</arg> 
                             </args>
+                            <jvmArgs>
+                                <jvmArg>-Dhttp.proxyHost=152.118.24.10</jvmArg>
+                                <jvmArg>-Dhttp.proxyPort=8080</jvmArg>
+                            </jvmArgs>
                         </launcher>
 
                         <launcher>
@@ -39,6 +43,10 @@
                             <args>
                                 <arg>../mappings</arg> 
                             </args>
+                            <jvmArgs>
+                                <jvmArg>-Dhttp.proxyHost=152.118.24.10</jvmArg>
+                                <jvmArg>-Dhttp.proxyPort=8080</jvmArg>
+                            </jvmArgs>
                         </launcher>
 
                         <launcher>
@@ -67,7 +75,7 @@
         <dependency>
             <groupId>org.scalatest</groupId>
             <artifactId>scalatest_2.9.2</artifactId>
-            <version>1.7.2</version>
+            <version>1.8</version>
             <scope>test</scope>
         </dependency>
 

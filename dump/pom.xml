@@ -30,11 +30,11 @@
                                 <jvmArg>-server</jvmArg>
                             </jvmArgs>
                             <args>
-                                <arg>/home/release/wikipedia</arg>
-                                <arg>/home/release/data/projects/mediawiki/core/maintenance/tables.sql</arg>
+                                <arg>/home/riko/TA/dbpedia</arg>
+                                <arg>/home/riko/TA/tables.sql</arg>
                                 <arg>localhost</arg><!-- MySQL host:port -->
                                 <arg>true</arg><!-- require-download-complete -->
-                                <arg>10000-</arg><!-- languages and article count ranges, comma-separated -->
+                                <arg>id</arg><!-- languages and article count ranges, comma-separated -->
                             </args>
                         </launcher>
 
@@ -44,11 +44,8 @@
                             <jvmArgs>
                                 <jvmArg>-server</jvmArg>
                                 <jvmArg>-Xmx1024m</jvmArg>
-                                <!--
-                                <jvmArg>-Dhttp.proxyHost=proxy.server.com</jvmArg>
-                                <jvmArg>-Dhttp.proxyPort=80</jvmArg>
-                                <jvmArg>-Dhttp.nonProxyHosts="localhost|127.0.0.1"</jvmArg>
-                                -->
+                                <jvmArg>-Dhttp.proxyHost=152.118.24.10</jvmArg>
+                                <jvmArg>-Dhttp.proxyPort=8080</jvmArg>
                             </jvmArgs>
                         </launcher>
 
@@ -57,6 +54,8 @@
                             <mainClass>org.dbpedia.extraction.dump.compress.Compress</mainClass>
                             <jvmArgs>
                                 <jvmArg>-Xmx1024m</jvmArg>
+                                <jvmArg>-Dhttp.proxyHost=152.118.24.10</jvmArg>
+                                <jvmArg>-Dhttp.proxyPort=8080</jvmArg>
                             </jvmArgs>
                             <!-- mvn scala:run -Dlauncher=Compress "-DaddArgs=/data|/data-compressed" -->
                         </launcher>
@@ -64,13 +63,10 @@
                         <launcher>
                             <id>download</id>
                             <mainClass>org.dbpedia.extraction.dump.download.Download</mainClass>
-                            <!--
                             <jvmArgs>
-                                <jvmArg>-Dhttp.proxyHost=proxy.server.com</jvmArg>
-                                <jvmArg>-Dhttp.proxyPort=80</jvmArg>
-                                <jvmArg>-Dhttp.nonProxyHosts="localhost|127.0.0.1"</jvmArg> 
+								<jvmArg>-Dhttp.proxyHost=152.118.24.10</jvmArg>
+                                <jvmArg>-Dhttp.proxyPort=8080</jvmArg>
                             </jvmArgs>
-                            -->
                             <!-- ../run download config=download.properties -->
                         </launcher>
                         
