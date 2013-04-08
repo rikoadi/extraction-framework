@@ -13,13 +13,16 @@ CURRENTDIR="$( cd "$( dirname "$0" )" && pwd )"
 EXTRACTOR_CONFIG="${CURRENTDIR}/../../../dump/extraction.properties"
 
 #Get outputDir and DumpDir from config.properties
-OUTPUTDIR=`sed '/^\#/d' "${EXTRACTOR_CONFIG}" | grep 'outputDir'  | tail -n 1 | cut -d "=" -f2- | sed 's/^[[:space:]]*//;s/[[:space:]]*$//'`
-DUMPDIR=`sed '/^\#/d' "${EXTRACTOR_CONFIG}" | grep 'dumpDir'  | tail -n 1 | cut -d "=" -f2- | sed 's/^[[:space:]]*//;s/[[:space:]]*$//'`
+OUTPUTDIR=`sed '/^\#/d' "${EXTRACTOR_CONFIG}" | grep 'base-dir'  | tail -n 1 | cut -d "=" -f2- | sed 's/^[[:space:]]*//;s/[[:space:]]*$//'`
+DUMPDIR=`sed '/^\#/d' "${EXTRACTOR_CONFIG}" | grep 'base-dir'  | tail -n 1 | cut -d "=" -f2- | sed 's/^[[:space:]]*//;s/[[:space:]]*$//'`
 
 #download url, this is the prefix of links.txt lines
 DOWNLOAD_URL="http://downloads.dbpedia.org/current/links"
 
 CUR_LANG=$1
+
+#date version dump
+DATE_VERSION_CUR_LANG=`ls $OUTPUTDIR/${CUR_LANG}wiki | tail -2 | head -n 1`
 
 if [ ! "$CUR_LANG" ]
 then
@@ -63,13 +66,13 @@ echo "Creating datasets for language '$CUR_LANG'"
 echo -------------------------------------------------------------------------------
 
 
-SAMEAS_ORIGINAL_FILE="$OUTPUTDIR/$CUR_LANG/sameas-en-$CUR_LANG.nt"
+SAMEAS_ORIGINAL_FILE="$OUTPUTDIR/${CUR_LANG}wiki/$DATE_VERSION_CUR_LANG/${CUR_LANG}wiki-${DATE_VERSION_CUR_LANG}-sameas-en-${CUR_LANG}.nt"
 SAMEAS_FILE=$SAMEAS_ORIGINAL_FILE.tmp
 
 #reorder sameas triples to get english link first
 awk '{print $3 " " $1}' $SAMEAS_ORIGINAL_FILE | sort -k 1b,1 -u -o $SAMEAS_FILE
 
-OUTLINKDIR=$OUTPUTDIR/$CUR_LANG/links
+OUTLINKDIR=$OUTPUTDIR\/${CUR_LANG}wiki\/${DATE_VERSION_CUR_LANG}\/links
 if [ ! -d "$OUTLINKDIR" ]; then
 	mkdir $OUTLINKDIR
 fi
@@ -78,7 +81,7 @@ fi
 for LINE in `cat $LINKS $LINKSR`;do
 	DATASET_IN=$LINKSDIR\/$LINE
 	# generate dataset name with lang postfix	
-	DATASET_OUT=$(echo "$OUTLINKDIR/$LINE" | sed -e "s/\.nt/_$CUR_LANG.nt/g" )
+	DATASET_OUT=$(echo "$OUTLINKDIR/$LINE" | sed -e "s/\.nt/_${CUR_LANG}.nt/g" )
 	echo "Generating $DATASET_OUT"
 	if [ -f "$DATASET_OUT" ]; then
 		rm $DATASET_OUT

@@ -11,6 +11,7 @@ object DisambiguationExtractorConfig
          "es" -> " (desambiguación)",
          "eu" -> " (argipena)",
          "fr" -> " (homonymie)",
+         "id" -> " (disambiguasi)",
          "it" -> " (disambigua)",
          "ko" -> " (동음이의)",
          "nl" -> " (doorverwijspagina)", //TODO make it Set() for multiple “nl” -> " (disambigueren)"

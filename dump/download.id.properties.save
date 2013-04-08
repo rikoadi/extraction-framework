@@ -1,0 +1,25 @@
+# NOTE: format is not java.util.Properties, but org.dbpedia.extraction.dump.download.DownloadConfig
+
+# Default download server. It lists mirrors which may be faster. 
+base-url=http://dumps.wikimedia.org/
+
+# Replace by your target folder.
+base-dir=/home/riko/TA/dbpedia
+
+# Replace xx by your language.
+download=id:pages-articles.xml.bz2
+download=id:categorylinks.sql.gz
+download=id:imagelinks.sql.gz
+download=id:image.sql.gz
+download=id:langlinks.sql.gz
+download=id:templatelinks.sql.gz
+
+# Only needed for the ImageExtractor
+# download=commons:pages-articles.xml.bz2
+
+q# Unzip files while downloading? Not necessary, extraction will unzip on the fly. Let's save space.
+unzip=true
+
+# Sometimes connecting to the server fails, so we try five times with pauses of 10 seconds.
+retry-max=2
+retry-millis=10000

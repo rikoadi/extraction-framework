@@ -44,8 +44,21 @@
                             <jvmArgs>
                                 <jvmArg>-server</jvmArg>
                                 <jvmArg>-Xmx1024m</jvmArg>
+                                <!--
                                 <jvmArg>-Dhttp.proxyHost=152.118.24.10</jvmArg>
                                 <jvmArg>-Dhttp.proxyPort=8080</jvmArg>
+                                
+                                <jvmArg>-Dhttp.noProxyHosts="localhost|152.118.*.*|*.ui.ac.id"</jvmArg>
+
+                                
+                                <jvmArg>-Dhttps.proxyHost=152.118.24.10</jvmArg>
+                                <jvmArg>-Dhttps.proxyPort=8080</jvmArg>
+                                <jvmArg>-Dftp.proxyHost=152.118.24.10</jvmArg>
+                                <jvmArg>-Dftp.proxyPort=8080</jvmArg>
+                                <jvmArg>-Dftp.nonProxyHosts='localhost|152.118.*.*|*.ui.ac.id'</jvmArg>
+                                <jvmArg>-DsocksProxyHost=152.118.24.10</jvmArg>
+                                <jvmArg>-DsocksProxyPort=8080</jvmArg>
+                                -->
                             </jvmArgs>
                         </launcher>
 
@@ -56,6 +69,14 @@
                                 <jvmArg>-Xmx1024m</jvmArg>
                                 <jvmArg>-Dhttp.proxyHost=152.118.24.10</jvmArg>
                                 <jvmArg>-Dhttp.proxyPort=8080</jvmArg>
+                                <jvmArg>-Dhttp.nonProxyHosts="localhost|152.118.*.*|*.ui.ac.id"</jvmArg>
+                                <jvmArg>-Dhttps.proxyHost=152.118.24.10</jvmArg>
+                                <jvmArg>-Dhttps.proxyPort=8080</jvmArg>
+                                <jvmArg>-Dftp.proxyHost=152.118.24.10</jvmArg>
+                                <jvmArg>-Dftp.proxyPort=8080</jvmArg>
+                                <jvmArg>-Dftp.nonProxyHosts="localhost|152.118.*.*|*.ui.ac.id"</jvmArg>
+                                <jvmArg>-DsocksProxyHost=152.118.24.10</jvmArg>
+                                <jvmArg>-DsocksProxyPort=8080</jvmArg>
                             </jvmArgs>
                             <!-- mvn scala:run -Dlauncher=Compress "-DaddArgs=/data|/data-compressed" -->
                         </launcher>
@@ -64,8 +85,18 @@
                             <id>download</id>
                             <mainClass>org.dbpedia.extraction.dump.download.Download</mainClass>
                             <jvmArgs>
-								<jvmArg>-Dhttp.proxyHost=152.118.24.10</jvmArg>
+			        <jvmArg>-Dhttp.proxyHost=152.118.24.10</jvmArg>
                                 <jvmArg>-Dhttp.proxyPort=8080</jvmArg>
+                                <!--
+                                <jvmArg>-Dhttp.nonProxyHosts="localhost|152.118.*.*|*.ui.ac.id"</jvmArg>
+                                <jvmArg>-Dhttps.proxyHost=152.118.24.10</jvmArg>
+                                <jvmArg>-Dhttps.proxyPort=8080</jvmArg>
+                                <jvmArg>-Dftp.proxyHost=152.118.24.10</jvmArg>
+                                <jvmArg>-Dftp.proxyPort=8080</jvmArg>
+                                <jvmArg>-Dftp.nonProxyHosts="localhost|152.118.*.*|*.ui.ac.id"</jvmArg>
+                                <jvmArg>-DsocksProxyHost=152.118.24.10</jvmArg>
+                                <jvmArg>-DsocksProxyPort=8080</jvmArg>
+                                -->
                             </jvmArgs>
                             <!-- ../run download config=download.properties -->
                         </launcher>

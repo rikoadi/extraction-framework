@@ -73,6 +73,12 @@ object ParserUtilsConfig
             "billón" -> 12,
             "trillón" -> 18,
             "cuatrillón" -> 24
+        ),
+        "id" -> Map(
+            "ribu" -> 3,
+            "juta" -> 6,
+            "miliar" -> 9,
+            "triliun" -> 12
         )
     )
 

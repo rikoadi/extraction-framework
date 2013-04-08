@@ -51,7 +51,7 @@
                             <id>stats</id>
                             <mainClass>org.dbpedia.extraction.server.stats.CreateMappingStats</mainClass>
                             <args>
-                                <arg>/home/release/wikipedia</arg><!-- base dir -->
+                                <arg>/home/riko/TA/dbpedia</arg><!-- base dir -->
                                 <arg>src/main/statistics</arg><!-- statistics files dir -->
                                 <arg>false</arg><!-- pretty printing? ugly in log files. -->
                                 <!-- all additional args are languages, comma or whitespace separated -->

@@ -1,0 +1,594 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DBpedia Dump Extraction 3.8
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> maven-scala-plugin:2.15.2:run (default-cli) @ dump >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:2.3:resources (default-resources) @ dump ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/riko/TA/extraction-framework/dump/src/main/resources
+[INFO] 
+[INFO] --- maven-scala-plugin:2.15.2:compile (process-resources) @ dump ---
+[INFO] Checking for multiple versions of scala
+[INFO] includes = [**/*.scala,**/*.java,]
+[INFO] excludes = []
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ dump ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-scala-plugin:2.15.2:compile (compile) @ dump ---
+[INFO] Checking for multiple versions of scala
+[INFO] includes = [**/*.scala,**/*.java,]
+[INFO] excludes = []
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.3:testResources (default-testResources) @ dump ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/riko/TA/extraction-framework/dump/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ dump ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-scala-plugin:2.15.2:testCompile (test-compile) @ dump ---
+[INFO] Checking for multiple versions of scala
+[INFO] includes = [**/*.scala,**/*.java,]
+[INFO] excludes = []
+[WARNING] No source files found.
+[INFO] 
+[INFO] <<< maven-scala-plugin:2.15.2:run (default-cli) @ dump <<<
+[INFO] 
+[INFO] --- maven-scala-plugin:2.15.2:run (default-cli) @ dump ---
+[INFO] Checking for multiple versions of scala
+[INFO] launcher 'extraction' selected => org.dbpedia.extraction.dump.extract.Extraction
+Mar 15, 2013 9:12:40 PM org.dbpedia.extraction.mappings.Redirects$ loadFromCache
+INFO: Loading redirects from cache file /home/riko/TA/dbpedia/idwiki/20130217/idwiki-20130217-template-redirects.obj
+Mar 15, 2013 9:12:40 PM org.dbpedia.extraction.mappings.Redirects$ loadFromCache
+INFO: 6295 redirects loaded from cache file /home/riko/TA/dbpedia/idwiki/20130217/idwiki-20130217-template-redirects.obj
+Mar 15, 2013 9:12:40 PM org.dbpedia.extraction.mappings.MappingsLoader$ load
+INFO: Loading mappings (id)
+Mar 15, 2013 9:12:41 PM org.dbpedia.extraction.ontology.io.OntologyReader read
+INFO: Loading ontology pages
+Mar 15, 2013 9:12:44 PM org.dbpedia.extraction.ontology.io.OntologyReader read
+INFO: Loading ontology
+Mar 15, 2013 9:12:44 PM org.dbpedia.extraction.ontology.io.OntologyReader$ClassBuilder$$anonfun$13 apply
+WARNING: equivalent class 'dct:Location' of class 'Place' not found
+Mar 15, 2013 9:12:44 PM org.dbpedia.extraction.ontology.io.OntologyReader$PropertyBuilder$$anonfun$build$7 apply
+WARNING: Cannot use equivalent property 'foaf:img'
+Mar 15, 2013 9:12:44 PM org.dbpedia.extraction.ontology.io.OntologyReader read
+INFO: Ontology loaded
+Mar 15, 2013 9:12:45 PM org.dbpedia.extraction.mappings.MappingsLoader$ load
+INFO: Mappings loaded (id)
+Mar 15, 2013 9:12:45 PM org.dbpedia.extraction.dump.extract.ExtractionProgress start
+INFO: id: 2 extractors (MappingExtractor,MappingExtractor), 3 datasets (mappingbased_properties,specific_mappingbased_properties,instance_types) started
+id: extracted 2000 pages in 00:09.851s (per page: 4.9255 ms; failed pages: 0).
+id: extracted 4000 pages in 00:15.350s (per page: 3.8375 ms; failed pages: 0).
+id: extracted 6000 pages in 00:18.553s (per page: 3.0921666666666665 ms; failed pages: 0).
+id: extracted 8000 pages in 00:21.994s (per page: 2.74925 ms; failed pages: 0).
+id: extracted 10000 pages in 00:24.459s (per page: 2.4459 ms; failed pages: 0).
+id: extracted 12000 pages in 00:27.007s (per page: 2.250583333333333 ms; failed pages: 0).
+id: extracted 14000 pages in 00:29.045s (per page: 2.074642857142857 ms; failed pages: 0).
+id: extracted 16000 pages in 00:30.910s (per page: 1.931875 ms; failed pages: 0).
+id: extracted 18000 pages in 00:32.584s (per page: 1.8102222222222222 ms; failed pages: 0).
+id: extracted 20000 pages in 00:34.401s (per page: 1.72005 ms; failed pages: 0).
+id: extracted 22000 pages in 00:36.371s (per page: 1.6532272727272728 ms; failed pages: 0).
+id: extracted 24000 pages in 00:38.043s (per page: 1.585125 ms; failed pages: 0).
+id: extracted 26000 pages in 00:39.759s (per page: 1.5291923076923077 ms; failed pages: 0).
+id: extracted 28000 pages in 00:41.477s (per page: 1.4813214285714287 ms; failed pages: 0).
+id: extracted 30000 pages in 00:43.181s (per page: 1.4393666666666667 ms; failed pages: 0).
+id: extracted 32000 pages in 00:44.563s (per page: 1.39259375 ms; failed pages: 0).
+id: extracted 34000 pages in 00:45.582s (per page: 1.3406470588235293 ms; failed pages: 0).
+id: extracted 36000 pages in 00:46.957s (per page: 1.304361111111111 ms; failed pages: 0).
+id: extracted 38000 pages in 00:48.546s (per page: 1.2775263157894736 ms; failed pages: 0).
+id: extracted 40000 pages in 00:50.015s (per page: 1.250375 ms; failed pages: 0).
+id: extracted 42000 pages in 00:51.553s (per page: 1.227452380952381 ms; failed pages: 0).
+id: extracted 44000 pages in 00:53.077s (per page: 1.2062954545454545 ms; failed pages: 0).
+id: extracted 46000 pages in 00:54.480s (per page: 1.1843478260869564 ms; failed pages: 0).
+id: extracted 48000 pages in 00:55.815s (per page: 1.1628125 ms; failed pages: 0).
+id: extracted 50000 pages in 00:57.133s (per page: 1.14266 ms; failed pages: 0).
+id: extracted 52000 pages in 00:58.282s (per page: 1.1208076923076924 ms; failed pages: 0).
+id: extracted 54000 pages in 00:59.344s (per page: 1.098962962962963 ms; failed pages: 0).
+id: extracted 56000 pages in 00:59.892s (per page: 1.0695 ms; failed pages: 0).
+id: extracted 58000 pages in 01:00.567s (per page: 1.0442586206896551 ms; failed pages: 0).
+id: extracted 60000 pages in 01:01.733s (per page: 1.0288833333333334 ms; failed pages: 0).
+id: extracted 62000 pages in 01:03.116s (per page: 1.018 ms; failed pages: 0).
+id: extracted 64000 pages in 01:04.112s (per page: 1.00175 ms; failed pages: 0).
+id: extracted 66000 pages in 01:04.781s (per page: 0.981530303030303 ms; failed pages: 0).
+id: extracted 68000 pages in 01:05.661s (per page: 0.9656029411764706 ms; failed pages: 0).
+id: extracted 70000 pages in 01:06.700s (per page: 0.9528571428571428 ms; failed pages: 0).
+id: extracted 72000 pages in 01:07.495s (per page: 0.9374305555555555 ms; failed pages: 0).
+id: extracted 74000 pages in 01:08.484s (per page: 0.9254594594594595 ms; failed pages: 0).
+id: extracted 76000 pages in 01:09.615s (per page: 0.9159868421052632 ms; failed pages: 0).
+id: extracted 78000 pages in 01:10.874s (per page: 0.9086410256410257 ms; failed pages: 0).
+id: extracted 80000 pages in 01:12.220s (per page: 0.90275 ms; failed pages: 0).
+id: extracted 82000 pages in 01:13.289s (per page: 0.8937682926829268 ms; failed pages: 0).
+id: extracted 84000 pages in 01:14.405s (per page: 0.8857738095238096 ms; failed pages: 0).
+id: extracted 86000 pages in 01:15.784s (per page: 0.8812093023255814 ms; failed pages: 0).
+id: extracted 88000 pages in 01:16.852s (per page: 0.8733181818181818 ms; failed pages: 0).
+id: extracted 90000 pages in 01:18.044s (per page: 0.8671555555555556 ms; failed pages: 0).
+id: extracted 92000 pages in 01:19.065s (per page: 0.8594021739130435 ms; failed pages: 0).
+id: extracted 94000 pages in 01:20.470s (per page: 0.856063829787234 ms; failed pages: 0).
+id: extracted 96000 pages in 01:21.135s (per page: 0.84515625 ms; failed pages: 0).
+id: extracted 98000 pages in 01:21.778s (per page: 0.834469387755102 ms; failed pages: 0).
+id: extracted 100000 pages in 01:22.595s (per page: 0.82595 ms; failed pages: 0).
+id: extracted 102000 pages in 01:23.456s (per page: 0.8181960784313725 ms; failed pages: 0).
+id: extracted 104000 pages in 01:24.360s (per page: 0.8111538461538461 ms; failed pages: 0).
+id: extracted 106000 pages in 01:25.211s (per page: 0.8038773584905661 ms; failed pages: 0).
+id: extracted 108000 pages in 01:26.408s (per page: 0.800074074074074 ms; failed pages: 0).
+id: extracted 110000 pages in 01:27.886s (per page: 0.7989636363636363 ms; failed pages: 0).
+id: extracted 112000 pages in 01:29.086s (per page: 0.7954107142857143 ms; failed pages: 0).
+id: extracted 114000 pages in 01:30.364s (per page: 0.7926666666666666 ms; failed pages: 0).
+id: extracted 116000 pages in 01:31.523s (per page: 0.7889913793103448 ms; failed pages: 0).
+id: extracted 118000 pages in 01:32.810s (per page: 0.7865254237288135 ms; failed pages: 0).
+id: extracted 120000 pages in 01:33.744s (per page: 0.7812 ms; failed pages: 0).
+id: extracted 122000 pages in 01:34.680s (per page: 0.7760655737704918 ms; failed pages: 0).
+id: extracted 124000 pages in 01:35.790s (per page: 0.7725 ms; failed pages: 0).
+id: extracted 126000 pages in 01:37.213s (per page: 0.771531746031746 ms; failed pages: 0).
+id: extracted 128000 pages in 01:38.286s (per page: 0.767859375 ms; failed pages: 0).
+id: extracted 130000 pages in 01:39.545s (per page: 0.7657307692307692 ms; failed pages: 0).
+id: extracted 132000 pages in 01:40.582s (per page: 0.7619848484848485 ms; failed pages: 0).
+id: extracted 134000 pages in 01:41.715s (per page: 0.7590671641791045 ms; failed pages: 0).
+id: extracted 136000 pages in 01:42.890s (per page: 0.7565441176470589 ms; failed pages: 0).
+id: extracted 138000 pages in 01:44.090s (per page: 0.7542753623188406 ms; failed pages: 0).
+id: extracted 140000 pages in 01:45.118s (per page: 0.7508428571428571 ms; failed pages: 0).
+id: extracted 142000 pages in 01:46.206s (per page: 0.7479295774647887 ms; failed pages: 0).
+id: extracted 144000 pages in 01:47.602s (per page: 0.7472361111111111 ms; failed pages: 0).
+id: extracted 146000 pages in 01:48.593s (per page: 0.7437876712328767 ms; failed pages: 0).
+id: extracted 148000 pages in 01:49.492s (per page: 0.7398108108108108 ms; failed pages: 0).
+id: extracted 150000 pages in 01:50.739s (per page: 0.73826 ms; failed pages: 0).
+id: extracted 152000 pages in 01:51.946s (per page: 0.7364868421052632 ms; failed pages: 0).
+id: extracted 154000 pages in 01:52.969s (per page: 0.733564935064935 ms; failed pages: 0).
+id: extracted 156000 pages in 01:53.926s (per page: 0.7302948717948718 ms; failed pages: 0).
+id: extracted 158000 pages in 01:54.972s (per page: 0.7276708860759493 ms; failed pages: 0).
+id: extracted 160000 pages in 01:56.002s (per page: 0.7250125 ms; failed pages: 0).
+id: extracted 162000 pages in 01:57.071s (per page: 0.7226604938271605 ms; failed pages: 0).
+Mar 15, 2013 9:14:43 PM org.dbpedia.extraction.dump.extract.ExtractionJob$$anonfun$1 apply
+WARNING: error processing page 'title=Infobox Officeholder/doc;ns=10/Template/Templat;language:wiki=id,locale=in'
+org.dbpedia.extraction.wikiparser.impl.simple.TooManyErrorsException: Too many errors at '''tambahkan [[#Data pribadi|data pribadi]]''' (line: 309)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:112)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseProperty(SimpleWikiParser.scala:466)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTemplate(SimpleWikiParser.scala:444)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:265)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseProperty(SimpleWikiParser.scala:478)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTemplate(SimpleWikiParser.scala:444)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:265)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseProperty(SimpleWikiParser.scala:478)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTemplate(SimpleWikiParser.scala:444)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:265)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.apply(SimpleWikiParser.scala:70)
+	at org.dbpedia.extraction.dump.extract.ExtractionJob$$anonfun$1.apply(ExtractionJob.scala:29)
+	at org.dbpedia.extraction.dump.extract.ExtractionJob$$anonfun$1.apply(ExtractionJob.scala:25)
+	at org.dbpedia.extraction.util.SimpleWorkers$$anonfun$apply$1$$anon$2.process(Workers.scala:23)
+	at org.dbpedia.extraction.util.Workers$$anonfun$1$$anon$1.run(Workers.scala:131)
+
+id: extracted 164000 pages in 01:58.632s (per page: 0.7233658536585366 ms; failed pages: 1).
+id: extracted 166000 pages in 01:59.570s (per page: 0.7203012048192771 ms; failed pages: 1).
+id: extracted 168000 pages in 02:00.807s (per page: 0.7190892857142858 ms; failed pages: 1).
+id: extracted 170000 pages in 02:01.782s (per page: 0.7163647058823529 ms; failed pages: 1).
+id: extracted 172000 pages in 02:02.913s (per page: 0.714610465116279 ms; failed pages: 1).
+id: extracted 174000 pages in 02:03.792s (per page: 0.7114482758620689 ms; failed pages: 1).
+Mar 15, 2013 9:14:50 PM org.dbpedia.extraction.dump.extract.ExtractionJob$$anonfun$1 apply
+WARNING: error processing page 'title=Xpd;ns=10/Template/Templat;language:wiki=id,locale=in'
+org.dbpedia.extraction.wikiparser.impl.simple.TooManyErrorsException: Too many errors at '|10OpC={{xpda|gives={{{gives|gives}}}|p=10OpC|result={{{d|"}}}{{{1}}}{{{2}}}{{{3}}}{{{4}}}{{{5}}}{{{6}}}{{{7}}}{{{8}}}{{{9}}}{{{10}}}{{{{{{11}}}|{{{12|}}}}}}{{{13|}}}{{{d|"}}}|{{{d|"}}}|{{xpd/code|{{{1|}}}}}|{{xpd/code|{{{2|}}}}}|{{xpd/code|{{{3|}}}}}|{{xpd/code|{{{4|}}}}}|{{xpd/code|{{{5|}}}}}|{{{6}}}|{{xpd/code|{{{7|}}}}}|{{xpd/code|{{{8|}}}}}|{{xpd/code|{{{9|}}}}}|{{xpd/code|{{{10|}}}}}|{|{|{|{{{11}}}|&p|{{{12}}}|}|}|}|{{xpd/code|{{{13|}}}}}|{{{d|"}}}}}' (line: 29)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:112)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableCell(SimpleWikiParser.scala:573)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableRow(SimpleWikiParser.scala:555)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTable(SimpleWikiParser.scala:534)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:269)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableCell(SimpleWikiParser.scala:590)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableRow(SimpleWikiParser.scala:555)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTable(SimpleWikiParser.scala:534)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:269)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableCell(SimpleWikiParser.scala:590)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableRow(SimpleWikiParser.scala:555)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTable(SimpleWikiParser.scala:534)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:269)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableCell(SimpleWikiParser.scala:590)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableRow(SimpleWikiParser.scala:555)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTable(SimpleWikiParser.scala:534)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:269)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableCell(SimpleWikiParser.scala:590)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableRow(SimpleWikiParser.scala:555)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTable(SimpleWikiParser.scala:534)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:269)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableCell(SimpleWikiParser.scala:590)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableRow(SimpleWikiParser.scala:555)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTable(SimpleWikiParser.scala:534)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:269)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableCell(SimpleWikiParser.scala:590)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableRow(SimpleWikiParser.scala:555)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTable(SimpleWikiParser.scala:534)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:269)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableCell(SimpleWikiParser.scala:590)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableRow(SimpleWikiParser.scala:555)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTable(SimpleWikiParser.scala:534)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:269)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableCell(SimpleWikiParser.scala:590)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableRow(SimpleWikiParser.scala:555)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTable(SimpleWikiParser.scala:534)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:269)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableCell(SimpleWikiParser.scala:590)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableRow(SimpleWikiParser.scala:555)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTable(SimpleWikiParser.scala:534)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:269)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.apply(SimpleWikiParser.scala:70)
+	at org.dbpedia.extraction.dump.extract.ExtractionJob$$anonfun$1.apply(ExtractionJob.scala:29)
+	at org.dbpedia.extraction.dump.extract.ExtractionJob$$anonfun$1.apply(ExtractionJob.scala:25)
+	at org.dbpedia.extraction.util.SimpleWorkers$$anonfun$apply$1$$anon$2.process(Workers.scala:23)
+	at org.dbpedia.extraction.util.Workers$$anonfun$1$$anon$1.run(Workers.scala:131)
+
+id: extracted 176000 pages in 02:04.743s (per page: 0.7087670454545455 ms; failed pages: 2).
+id: extracted 178000 pages in 02:05.882s (per page: 0.7072022471910112 ms; failed pages: 2).
+id: extracted 180000 pages in 02:07.191s (per page: 0.7066166666666667 ms; failed pages: 2).
+id: extracted 182000 pages in 02:08.309s (per page: 0.7049945054945055 ms; failed pages: 2).
+id: extracted 184000 pages in 02:09.523s (per page: 0.703929347826087 ms; failed pages: 2).
+id: extracted 186000 pages in 02:10.472s (per page: 0.7014623655913979 ms; failed pages: 2).
+id: extracted 188000 pages in 02:11.404s (per page: 0.6989574468085107 ms; failed pages: 2).
+id: extracted 190000 pages in 02:13.615s (per page: 0.7032368421052632 ms; failed pages: 2).
+id: extracted 192000 pages in 02:15.065s (per page: 0.7034635416666667 ms; failed pages: 2).
+id: extracted 194000 pages in 02:16.088s (per page: 0.7014845360824742 ms; failed pages: 2).
+id: extracted 196000 pages in 02:17.110s (per page: 0.6995408163265306 ms; failed pages: 2).
+id: extracted 198000 pages in 02:18.158s (per page: 0.6977676767676768 ms; failed pages: 2).
+id: extracted 200000 pages in 02:19.724s (per page: 0.69862 ms; failed pages: 2).
+id: extracted 202000 pages in 02:21.536s (per page: 0.7006732673267326 ms; failed pages: 2).
+id: extracted 204000 pages in 02:23.048s (per page: 0.7012156862745098 ms; failed pages: 2).
+Mar 15, 2013 9:15:09 PM org.dbpedia.extraction.dump.extract.ExtractionJob$$anonfun$1 apply
+WARNING: error processing page 'title=Wikipedia iklan/bantuan;ns=10/Template/Templat;language:wiki=id,locale=in'
+org.dbpedia.extraction.wikiparser.impl.simple.TooManyErrorsException: Too many errors at '  <td>{{{ {{#expr:{{{ {{#expr:249+3*{{{1}}}+2}}}}}*3+2}}}}}</td>' (line: 1753)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:112)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTemplate(SimpleWikiParser.scala:427)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:265)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseParserFunction(SimpleWikiParser.scala:486)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTemplate(SimpleWikiParser.scala:438)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:265)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.apply(SimpleWikiParser.scala:70)
+	at org.dbpedia.extraction.dump.extract.ExtractionJob$$anonfun$1.apply(ExtractionJob.scala:29)
+	at org.dbpedia.extraction.dump.extract.ExtractionJob$$anonfun$1.apply(ExtractionJob.scala:25)
+	at org.dbpedia.extraction.util.SimpleWorkers$$anonfun$apply$1$$anon$2.process(Workers.scala:23)
+	at org.dbpedia.extraction.util.Workers$$anonfun$1$$anon$1.run(Workers.scala:131)
+
+id: extracted 206000 pages in 02:24.360s (per page: 0.7007766990291262 ms; failed pages: 3).
+id: extracted 208000 pages in 02:25.110s (per page: 0.6976442307692308 ms; failed pages: 3).
+id: extracted 210000 pages in 02:25.909s (per page: 0.6948047619047619 ms; failed pages: 3).
+id: extracted 212000 pages in 02:26.815s (per page: 0.6925235849056603 ms; failed pages: 3).
+id: extracted 214000 pages in 02:27.911s (per page: 0.6911728971962617 ms; failed pages: 3).
+id: extracted 216000 pages in 02:28.921s (per page: 0.6894490740740741 ms; failed pages: 3).
+id: extracted 218000 pages in 02:29.835s (per page: 0.6873165137614679 ms; failed pages: 3).
+id: extracted 220000 pages in 02:30.900s (per page: 0.6859090909090909 ms; failed pages: 3).
+id: extracted 222000 pages in 02:32.380s (per page: 0.6863963963963964 ms; failed pages: 3).
+id: extracted 224000 pages in 02:33.388s (per page: 0.6847678571428572 ms; failed pages: 3).
+id: extracted 226000 pages in 02:35.040s (per page: 0.6860176991150443 ms; failed pages: 3).
+id: extracted 228000 pages in 02:35.804s (per page: 0.6833508771929825 ms; failed pages: 3).
+id: extracted 230000 pages in 02:36.741s (per page: 0.6814826086956521 ms; failed pages: 3).
+id: extracted 232000 pages in 02:36.928s (per page: 0.6764137931034483 ms; failed pages: 3).
+id: extracted 234000 pages in 02:37.169s (per page: 0.6716623931623932 ms; failed pages: 3).
+id: extracted 236000 pages in 02:37.765s (per page: 0.6684957627118644 ms; failed pages: 3).
+id: extracted 238000 pages in 02:37.993s (per page: 0.6638361344537815 ms; failed pages: 3).
+id: extracted 240000 pages in 02:38.217s (per page: 0.6592375 ms; failed pages: 3).
+id: extracted 242000 pages in 02:38.687s (per page: 0.6557314049586777 ms; failed pages: 3).
+id: extracted 244000 pages in 02:38.897s (per page: 0.6512172131147541 ms; failed pages: 3).
+id: extracted 246000 pages in 02:39.285s (per page: 0.6475 ms; failed pages: 3).
+id: extracted 248000 pages in 02:39.600s (per page: 0.6435483870967742 ms; failed pages: 3).
+id: extracted 250000 pages in 02:39.947s (per page: 0.639788 ms; failed pages: 3).
+id: extracted 252000 pages in 02:40.330s (per page: 0.6362301587301588 ms; failed pages: 3).
+id: extracted 254000 pages in 02:40.604s (per page: 0.6322992125984251 ms; failed pages: 3).
+id: extracted 256000 pages in 02:41.306s (per page: 0.6301015625 ms; failed pages: 3).
+id: extracted 258000 pages in 02:41.777s (per page: 0.6270426356589147 ms; failed pages: 3).
+id: extracted 260000 pages in 02:42.062s (per page: 0.6233153846153846 ms; failed pages: 3).
+id: extracted 262000 pages in 02:42.278s (per page: 0.619381679389313 ms; failed pages: 3).
+id: extracted 264000 pages in 02:42.751s (per page: 0.6164810606060606 ms; failed pages: 3).
+id: extracted 266000 pages in 02:43.232s (per page: 0.6136541353383459 ms; failed pages: 3).
+id: extracted 268000 pages in 02:43.502s (per page: 0.6100820895522389 ms; failed pages: 3).
+id: extracted 270000 pages in 02:43.755s (per page: 0.6065 ms; failed pages: 3).
+id: extracted 272000 pages in 02:44.561s (per page: 0.6050036764705883 ms; failed pages: 3).
+id: extracted 274000 pages in 02:45.738s (per page: 0.6048832116788321 ms; failed pages: 3).
+id: extracted 276000 pages in 02:46.627s (per page: 0.6037210144927536 ms; failed pages: 3).
+id: extracted 278000 pages in 02:47.565s (per page: 0.6027517985611511 ms; failed pages: 3).
+id: extracted 280000 pages in 02:48.641s (per page: 0.6022892857142857 ms; failed pages: 3).
+id: extracted 282000 pages in 02:49.481s (per page: 0.6009964539007092 ms; failed pages: 3).
+id: extracted 284000 pages in 02:49.839s (per page: 0.5980246478873239 ms; failed pages: 3).
+id: extracted 286000 pages in 02:50.585s (per page: 0.596451048951049 ms; failed pages: 3).
+id: extracted 288000 pages in 02:51.268s (per page: 0.5946805555555555 ms; failed pages: 3).
+id: extracted 290000 pages in 02:51.755s (per page: 0.5922586206896552 ms; failed pages: 3).
+id: extracted 292000 pages in 02:52.226s (per page: 0.5898150684931507 ms; failed pages: 3).
+id: extracted 294000 pages in 02:52.882s (per page: 0.5880340136054422 ms; failed pages: 3).
+id: extracted 296000 pages in 02:53.184s (per page: 0.585081081081081 ms; failed pages: 3).
+id: extracted 298000 pages in 02:53.477s (per page: 0.5821375838926175 ms; failed pages: 3).
+id: extracted 300000 pages in 02:53.767s (per page: 0.5792233333333333 ms; failed pages: 3).
+id: extracted 302000 pages in 02:53.989s (per page: 0.5761225165562914 ms; failed pages: 3).
+id: extracted 304000 pages in 02:54.211s (per page: 0.5730625 ms; failed pages: 3).
+id: extracted 306000 pages in 02:54.730s (per page: 0.5710130718954248 ms; failed pages: 3).
+id: extracted 308000 pages in 02:55.009s (per page: 0.568211038961039 ms; failed pages: 3).
+id: extracted 310000 pages in 02:55.382s (per page: 0.5657483870967742 ms; failed pages: 3).
+id: extracted 312000 pages in 02:55.605s (per page: 0.5628365384615385 ms; failed pages: 3).
+id: extracted 314000 pages in 02:55.814s (per page: 0.5599171974522293 ms; failed pages: 3).
+id: extracted 316000 pages in 02:56.103s (per page: 0.5572879746835443 ms; failed pages: 3).
+id: extracted 318000 pages in 02:56.482s (per page: 0.5549748427672956 ms; failed pages: 3).
+id: extracted 320000 pages in 02:56.738s (per page: 0.55230625 ms; failed pages: 3).
+id: extracted 322000 pages in 02:57.374s (per page: 0.5508509316770186 ms; failed pages: 3).
+id: extracted 324000 pages in 02:58.298s (per page: 0.5503024691358025 ms; failed pages: 3).
+id: extracted 326000 pages in 02:59.446s (per page: 0.5504478527607362 ms; failed pages: 3).
+id: extracted 328000 pages in 03:00.386s (per page: 0.5499573170731707 ms; failed pages: 3).
+id: extracted 330000 pages in 03:01.583s (per page: 0.5502515151515152 ms; failed pages: 3).
+id: extracted 332000 pages in 03:02.323s (per page: 0.5491656626506024 ms; failed pages: 3).
+id: extracted 334000 pages in 03:03.591s (per page: 0.5496736526946108 ms; failed pages: 3).
+id: extracted 336000 pages in 03:04.311s (per page: 0.5485446428571429 ms; failed pages: 3).
+id: extracted 338000 pages in 03:04.861s (per page: 0.5469260355029586 ms; failed pages: 3).
+id: extracted 340000 pages in 03:05.584s (per page: 0.5458352941176471 ms; failed pages: 3).
+id: extracted 342000 pages in 03:06.573s (per page: 0.5455350877192983 ms; failed pages: 3).
+id: extracted 344000 pages in 03:07.201s (per page: 0.544188953488372 ms; failed pages: 3).
+id: extracted 346000 pages in 03:07.804s (per page: 0.5427861271676301 ms; failed pages: 3).
+id: extracted 348000 pages in 03:08.428s (per page: 0.5414597701149425 ms; failed pages: 3).
+id: extracted 350000 pages in 03:09.124s (per page: 0.5403542857142857 ms; failed pages: 3).
+id: extracted 352000 pages in 03:09.698s (per page: 0.5389147727272727 ms; failed pages: 3).
+id: extracted 354000 pages in 03:10.252s (per page: 0.5374350282485876 ms; failed pages: 3).
+id: extracted 356000 pages in 03:11.084s (per page: 0.5367528089887641 ms; failed pages: 3).
+id: extracted 358000 pages in 03:11.993s (per page: 0.5362932960893855 ms; failed pages: 3).
+id: extracted 360000 pages in 03:12.651s (per page: 0.5351416666666666 ms; failed pages: 3).
+id: extracted 362000 pages in 03:13.484s (per page: 0.5344861878453039 ms; failed pages: 3).
+id: extracted 364000 pages in 03:14.278s (per page: 0.5337307692307692 ms; failed pages: 3).
+id: extracted 366000 pages in 03:15.234s (per page: 0.5334262295081967 ms; failed pages: 3).
+id: extracted 368000 pages in 03:16.219s (per page: 0.5332038043478261 ms; failed pages: 3).
+id: extracted 370000 pages in 03:16.861s (per page: 0.5320567567567568 ms; failed pages: 3).
+id: extracted 372000 pages in 03:17.650s (per page: 0.5313172043010753 ms; failed pages: 3).
+id: extracted 374000 pages in 03:18.580s (per page: 0.5309625668449198 ms; failed pages: 3).
+id: extracted 376000 pages in 03:19.422s (per page: 0.530377659574468 ms; failed pages: 3).
+id: extracted 378000 pages in 03:20.686s (per page: 0.5309153439153439 ms; failed pages: 3).
+id: extracted 380000 pages in 03:21.519s (per page: 0.5303131578947369 ms; failed pages: 3).
+id: extracted 382000 pages in 03:22.477s (per page: 0.530044502617801 ms; failed pages: 3).
+id: extracted 384000 pages in 03:23.618s (per page: 0.5302552083333333 ms; failed pages: 3).
+id: extracted 386000 pages in 03:24.511s (per page: 0.529821243523316 ms; failed pages: 3).
+id: extracted 388000 pages in 03:25.628s (per page: 0.5299690721649485 ms; failed pages: 3).
+id: extracted 390000 pages in 03:26.586s (per page: 0.5297076923076923 ms; failed pages: 3).
+Mar 15, 2013 9:16:12 PM org.dbpedia.extraction.dump.extract.ExtractionJob$$anonfun$1 apply
+WARNING: error processing page 'title=Daftar penghargaan dan nominasi Muse;ns=0/Main/;language:wiki=id,locale=in'
+org.dbpedia.extraction.wikiparser.impl.simple.TooManyErrorsException: Too many errors at '! Tahun' (line: 446)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:112)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableCell(SimpleWikiParser.scala:573)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableRow(SimpleWikiParser.scala:555)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTable(SimpleWikiParser.scala:534)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:269)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableCell(SimpleWikiParser.scala:590)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableRow(SimpleWikiParser.scala:555)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTable(SimpleWikiParser.scala:534)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:269)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableCell(SimpleWikiParser.scala:573)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableRow(SimpleWikiParser.scala:555)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTable(SimpleWikiParser.scala:534)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:269)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableCell(SimpleWikiParser.scala:573)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableRow(SimpleWikiParser.scala:555)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTable(SimpleWikiParser.scala:534)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:269)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableCell(SimpleWikiParser.scala:573)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableRow(SimpleWikiParser.scala:555)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTable(SimpleWikiParser.scala:534)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:269)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableCell(SimpleWikiParser.scala:573)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableRow(SimpleWikiParser.scala:555)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTable(SimpleWikiParser.scala:534)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:269)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableCell(SimpleWikiParser.scala:573)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableRow(SimpleWikiParser.scala:555)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTable(SimpleWikiParser.scala:534)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:269)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableCell(SimpleWikiParser.scala:573)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableRow(SimpleWikiParser.scala:555)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTable(SimpleWikiParser.scala:534)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:269)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableCell(SimpleWikiParser.scala:590)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableRow(SimpleWikiParser.scala:555)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTable(SimpleWikiParser.scala:534)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:269)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.apply(SimpleWikiParser.scala:70)
+	at org.dbpedia.extraction.dump.extract.ExtractionJob$$anonfun$1.apply(ExtractionJob.scala:29)
+	at org.dbpedia.extraction.dump.extract.ExtractionJob$$anonfun$1.apply(ExtractionJob.scala:25)
+	at org.dbpedia.extraction.util.SimpleWorkers$$anonfun$apply$1$$anon$2.process(Workers.scala:23)
+	at org.dbpedia.extraction.util.Workers$$anonfun$1$$anon$1.run(Workers.scala:131)
+
+id: extracted 392000 pages in 03:27.929s (per page: 0.5304311224489796 ms; failed pages: 4).
+id: extracted 394000 pages in 03:29.318s (per page: 0.5312639593908629 ms; failed pages: 4).
+id: extracted 396000 pages in 03:30.228s (per page: 0.5308787878787878 ms; failed pages: 4).
+id: extracted 398000 pages in 03:31.215s (per page: 0.5306909547738693 ms; failed pages: 4).
+id: extracted 400000 pages in 03:32.162s (per page: 0.530405 ms; failed pages: 4).
+id: extracted 402000 pages in 03:33.252s (per page: 0.5304776119402985 ms; failed pages: 4).
+id: extracted 404000 pages in 03:34.501s (per page: 0.5309430693069307 ms; failed pages: 4).
+id: extracted 406000 pages in 03:35.685s (per page: 0.531243842364532 ms; failed pages: 4).
+id: extracted 408000 pages in 03:36.770s (per page: 0.5312990196078431 ms; failed pages: 4).
+id: extracted 410000 pages in 03:37.875s (per page: 0.5314024390243902 ms; failed pages: 4).
+id: extracted 412000 pages in 03:38.909s (per page: 0.5313325242718446 ms; failed pages: 4).
+id: extracted 414000 pages in 03:39.318s (per page: 0.5297536231884058 ms; failed pages: 4).
+id: extracted 416000 pages in 03:39.969s (per page: 0.5287716346153846 ms; failed pages: 4).
+id: extracted 418000 pages in 03:40.356s (per page: 0.5271674641148325 ms; failed pages: 4).
+id: extracted 420000 pages in 03:40.957s (per page: 0.5260880952380952 ms; failed pages: 4).
+id: extracted 422000 pages in 03:41.232s (per page: 0.5242464454976303 ms; failed pages: 4).
+id: extracted 424000 pages in 03:42.227s (per page: 0.5241202830188679 ms; failed pages: 4).
+id: extracted 426000 pages in 03:43.079s (per page: 0.5236596244131455 ms; failed pages: 4).
+id: extracted 428000 pages in 03:44.281s (per page: 0.5240210280373832 ms; failed pages: 4).
+id: extracted 430000 pages in 03:45.309s (per page: 0.5239744186046512 ms; failed pages: 4).
+id: extracted 432000 pages in 03:46.400s (per page: 0.524074074074074 ms; failed pages: 4).
+id: extracted 434000 pages in 03:47.554s (per page: 0.5243179723502304 ms; failed pages: 4).
+id: extracted 436000 pages in 03:48.745s (per page: 0.5246444954128441 ms; failed pages: 4).
+id: extracted 438000 pages in 03:49.874s (per page: 0.5248264840182648 ms; failed pages: 4).
+id: extracted 440000 pages in 03:50.939s (per page: 0.5248613636363636 ms; failed pages: 4).
+id: extracted 442000 pages in 03:51.455s (per page: 0.5236538461538461 ms; failed pages: 4).
+id: extracted 444000 pages in 03:52.695s (per page: 0.5240878378378379 ms; failed pages: 4).
+id: extracted 446000 pages in 03:54.237s (per page: 0.525195067264574 ms; failed pages: 4).
+id: extracted 448000 pages in 03:55.608s (per page: 0.5259107142857142 ms; failed pages: 4).
+id: extracted 450000 pages in 03:56.682s (per page: 0.52596 ms; failed pages: 4).
+Mar 15, 2013 9:16:43 PM org.dbpedia.extraction.dump.extract.ExtractionJob$$anonfun$1 apply
+WARNING: error processing page 'title=Linked;ns=10/Template/Templat;language:wiki=id,locale=in'
+org.dbpedia.extraction.wikiparser.impl.simple.TooManyErrorsException: Too many errors at '   | {{ {{{|safesubst:}}}ns:File}} | {{ {{{|safesubst:}}}ns:Category}} = [[:{{ {{{|safesubst:}}}FULLPAGENAME:{{{1|}}}}}{{ {{{|safesubst:}}}#if:{{{2|}}}|{{ {{{|safesubst:}}}!}}{{{2}}}}}]]' (line: 7)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:112)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableCell(SimpleWikiParser.scala:590)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableRow(SimpleWikiParser.scala:555)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTable(SimpleWikiParser.scala:534)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:269)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTemplate(SimpleWikiParser.scala:427)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:265)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableCell(SimpleWikiParser.scala:590)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableRow(SimpleWikiParser.scala:555)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTable(SimpleWikiParser.scala:534)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:269)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTemplate(SimpleWikiParser.scala:427)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:265)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.apply(SimpleWikiParser.scala:70)
+	at org.dbpedia.extraction.dump.extract.ExtractionJob$$anonfun$1.apply(ExtractionJob.scala:29)
+	at org.dbpedia.extraction.dump.extract.ExtractionJob$$anonfun$1.apply(ExtractionJob.scala:25)
+	at org.dbpedia.extraction.util.SimpleWorkers$$anonfun$apply$1$$anon$2.process(Workers.scala:23)
+	at org.dbpedia.extraction.util.Workers$$anonfun$1$$anon$1.run(Workers.scala:131)
+
+id: extracted 452000 pages in 03:58.025s (per page: 0.526603982300885 ms; failed pages: 5).
+id: extracted 454000 pages in 03:58.891s (per page: 0.5261916299559471 ms; failed pages: 5).
+id: extracted 456000 pages in 03:59.104s (per page: 0.5243508771929825 ms; failed pages: 5).
+id: extracted 458000 pages in 03:59.312s (per page: 0.5225152838427948 ms; failed pages: 5).
+id: extracted 460000 pages in 03:59.527s (per page: 0.5207108695652174 ms; failed pages: 5).
+id: extracted 462000 pages in 03:59.733s (per page: 0.5189025974025974 ms; failed pages: 5).
+id: extracted 464000 pages in 03:59.925s (per page: 0.5170797413793103 ms; failed pages: 5).
+id: extracted 466000 pages in 04:00.114s (per page: 0.5152660944206009 ms; failed pages: 5).
+id: extracted 468000 pages in 04:00.305s (per page: 0.5134722222222222 ms; failed pages: 5).
+id: extracted 470000 pages in 04:00.551s (per page: 0.5118106382978723 ms; failed pages: 5).
+id: extracted 472000 pages in 04:00.748s (per page: 0.5100593220338983 ms; failed pages: 5).
+id: extracted 474000 pages in 04:01.010s (per page: 0.5084599156118144 ms; failed pages: 5).
+id: extracted 476000 pages in 04:01.702s (per page: 0.5077773109243697 ms; failed pages: 5).
+id: extracted 478000 pages in 04:01.933s (per page: 0.5061359832635983 ms; failed pages: 5).
+id: extracted 480000 pages in 04:02.157s (per page: 0.50449375 ms; failed pages: 5).
+id: extracted 482000 pages in 04:02.853s (per page: 0.503844398340249 ms; failed pages: 5).
+id: extracted 484000 pages in 04:04.655s (per page: 0.5054855371900826 ms; failed pages: 5).
+id: extracted 486000 pages in 04:05.712s (per page: 0.5055802469135803 ms; failed pages: 5).
+id: extracted 488000 pages in 04:06.979s (per page: 0.5061045081967213 ms; failed pages: 5).
+id: extracted 490000 pages in 04:08.356s (per page: 0.5068489795918367 ms; failed pages: 5).
+id: extracted 492000 pages in 04:09.705s (per page: 0.5075304878048781 ms; failed pages: 5).
+id: extracted 494000 pages in 04:11.125s (per page: 0.5083502024291497 ms; failed pages: 5).
+id: extracted 496000 pages in 04:12.437s (per page: 0.508945564516129 ms; failed pages: 5).
+id: extracted 498000 pages in 04:14.372s (per page: 0.5107871485943775 ms; failed pages: 5).
+id: extracted 500000 pages in 04:15.585s (per page: 0.51117 ms; failed pages: 5).
+id: extracted 502000 pages in 04:16.765s (per page: 0.5114840637450199 ms; failed pages: 5).
+id: extracted 504000 pages in 04:17.087s (per page: 0.510093253968254 ms; failed pages: 5).
+id: extracted 506000 pages in 04:17.297s (per page: 0.50849209486166 ms; failed pages: 5).
+id: extracted 508000 pages in 04:17.868s (per page: 0.5076141732283465 ms; failed pages: 5).
+id: extracted 510000 pages in 04:18.367s (per page: 0.5066019607843137 ms; failed pages: 5).
+id: extracted 512000 pages in 04:18.917s (per page: 0.505697265625 ms; failed pages: 5).
+Mar 15, 2013 9:17:05 PM org.dbpedia.extraction.dump.extract.ExtractionJob$$anonfun$1 apply
+WARNING: error processing page 'title=Kejuaraan Sepak Bola U-17 Eropa UEFA;ns=0/Main/;language:wiki=id,locale=in'
+org.dbpedia.extraction.wikiparser.impl.simple.TooManyErrorsException: Too many errors at '!Semi finalis<sup>('''[[#1_2|1]]''')</sup>' (line: 358)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:112)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableCell(SimpleWikiParser.scala:590)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableRow(SimpleWikiParser.scala:555)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTable(SimpleWikiParser.scala:534)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:269)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseProperty(SimpleWikiParser.scala:478)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTemplate(SimpleWikiParser.scala:444)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:265)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseProperty(SimpleWikiParser.scala:466)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTemplate(SimpleWikiParser.scala:444)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:265)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableCell(SimpleWikiParser.scala:573)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableRow(SimpleWikiParser.scala:555)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTable(SimpleWikiParser.scala:534)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:269)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.apply(SimpleWikiParser.scala:70)
+	at org.dbpedia.extraction.dump.extract.ExtractionJob$$anonfun$1.apply(ExtractionJob.scala:29)
+	at org.dbpedia.extraction.dump.extract.ExtractionJob$$anonfun$1.apply(ExtractionJob.scala:25)
+	at org.dbpedia.extraction.util.SimpleWorkers$$anonfun$apply$1$$anon$2.process(Workers.scala:23)
+	at org.dbpedia.extraction.util.Workers$$anonfun$1$$anon$1.run(Workers.scala:131)
+
+Mar 15, 2013 9:17:05 PM org.dbpedia.extraction.dump.extract.ExtractionJob$$anonfun$1 apply
+WARNING: error processing page 'title=Toolbar;ns=10/Template/Templat;language:wiki=id,locale=in'
+org.dbpedia.extraction.wikiparser.impl.simple.TooManyErrorsException: Too many errors at '--></noinclude>{{ {{{|safesubst:}}}#if:{{{8|}}}|{{ {{{|safesubst:}}}int:{{{separator|pipe}}}-separator}}{{{8}}}}}<noinclude><!--' (line: 10)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:112)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseParserFunction(SimpleWikiParser.scala:486)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTemplate(SimpleWikiParser.scala:438)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:265)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableCell(SimpleWikiParser.scala:590)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableRow(SimpleWikiParser.scala:555)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTable(SimpleWikiParser.scala:534)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:269)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTemplate(SimpleWikiParser.scala:427)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:265)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableCell(SimpleWikiParser.scala:590)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableRow(SimpleWikiParser.scala:555)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTable(SimpleWikiParser.scala:534)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:269)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTemplate(SimpleWikiParser.scala:427)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:265)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableCell(SimpleWikiParser.scala:590)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableRow(SimpleWikiParser.scala:555)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTable(SimpleWikiParser.scala:534)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:269)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTemplate(SimpleWikiParser.scala:427)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:265)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableCell(SimpleWikiParser.scala:590)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTableRow(SimpleWikiParser.scala:555)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTable(SimpleWikiParser.scala:534)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:269)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseTemplate(SimpleWikiParser.scala:427)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.createNode(SimpleWikiParser.scala:265)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.parseUntil(SimpleWikiParser.scala:195)
+	at org.dbpedia.extraction.wikiparser.impl.simple.SimpleWikiParser.apply(SimpleWikiParser.scala:70)
+	at org.dbpedia.extraction.dump.extract.ExtractionJob$$anonfun$1.apply(ExtractionJob.scala:29)
+	at org.dbpedia.extraction.dump.extract.ExtractionJob$$anonfun$1.apply(ExtractionJob.scala:25)
+	at org.dbpedia.extraction.util.SimpleWorkers$$anonfun$apply$1$$anon$2.process(Workers.scala:23)
+	at org.dbpedia.extraction.util.Workers$$anonfun$1$$anon$1.run(Workers.scala:131)
+
+id: extracted 514000 pages in 04:20.303s (per page: 0.5064260700389105 ms; failed pages: 7).
+id: extracted 516000 pages in 04:21.604s (per page: 0.506984496124031 ms; failed pages: 7).
+id: extracted 518000 pages in 04:22.675s (per page: 0.5070945945945946 ms; failed pages: 7).
+id: extracted 520000 pages in 04:23.649s (per page: 0.5070173076923077 ms; failed pages: 7).
+id: extracted 522000 pages in 04:24.697s (per page: 0.5070823754789272 ms; failed pages: 7).
+id: extracted 524000 pages in 04:25.876s (per page: 0.5073969465648855 ms; failed pages: 7).
+id: extracted 526000 pages in 04:27.717s (per page: 0.5089676806083651 ms; failed pages: 7).
+id: extracted 528000 pages in 04:28.771s (per page: 0.5090359848484849 ms; failed pages: 7).
+id: extracted 530000 pages in 04:29.734s (per page: 0.5089320754716982 ms; failed pages: 7).
+id: extracted 530871 pages in 04:30.172s (per page: 0.5089221298582894 ms; failed pages: 7).
+Mar 15, 2013 9:17:15 PM org.dbpedia.extraction.dump.extract.ExtractionProgress end
+INFO: id: 2 extractors (MappingExtractor,MappingExtractor), 3 datasets (mappingbased_properties,specific_mappingbased_properties,instance_types) finished
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4:37.705s
+[INFO] Finished at: Fri Mar 15 21:17:15 WIT 2013
+[INFO] Final Memory: 7M/17M
+[INFO] ------------------------------------------------------------------------

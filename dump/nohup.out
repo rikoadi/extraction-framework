@@ -1,0 +1,27 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DBpedia Dump Extraction 3.8
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> maven-scala-plugin:2.15.2:run (default-cli) @ dump >>>
+Downloading: http://mojo.informatik.uni-erlangen.de/nexus/content/repositories/public-snapshots/org/sweble/wikitext/swc-engine/1.1.1-SNAPSHOT/maven-metadata.xml
+Downloading: http://mojo.informatik.uni-erlangen.de/nexus/content/repositories/public-releases/org/sweble/wikitext/swc-engine/1.1.1-SNAPSHOT/maven-metadata.xml
+Downloaded: http://mojo.informatik.uni-erlangen.de/nexus/content/repositories/public-snapshots/org/sweble/wikitext/swc-engine/1.1.1-SNAPSHOT/maven-metadata.xml (2 KB at 0.5 KB/sec)
+Downloading: http://mojo.informatik.uni-erlangen.de/nexus/content/repositories/public-releases/org/sweble/wikitext/sweble-wikitext/1.1.1-SNAPSHOT/maven-metadata.xml
+Downloading: http://mojo.informatik.uni-erlangen.de/nexus/content/repositories/public-snapshots/org/sweble/wikitext/sweble-wikitext/1.1.1-SNAPSHOT/maven-metadata.xml
+Downloaded: http://mojo.informatik.uni-erlangen.de/nexus/content/repositories/public-snapshots/org/sweble/wikitext/sweble-wikitext/1.1.1-SNAPSHOT/maven-metadata.xml (788 B at 0.3 KB/sec)
+Downloading: http://mojo.informatik.uni-erlangen.de/nexus/content/repositories/public-releases/org/sweble/sweble/1.1.1-SNAPSHOT/maven-metadata.xml
+Downloading: http://mojo.informatik.uni-erlangen.de/nexus/content/repositories/public-snapshots/org/sweble/sweble/1.1.1-SNAPSHOT/maven-metadata.xml
+Downloading: http://mojo.informatik.uni-erlangen.de/nexus/content/repositories/public/org/sweble/sweble/1.1.1-SNAPSHOT/maven-metadata.xml
+Downloaded: http://mojo.informatik.uni-erlangen.de/nexus/content/repositories/public-snapshots/org/sweble/sweble/1.1.1-SNAPSHOT/maven-metadata.xml (770 B at 0.2 KB/sec)
+Downloaded: http://mojo.informatik.uni-erlangen.de/nexus/content/repositories/public/org/sweble/sweble/1.1.1-SNAPSHOT/maven-metadata.xml (770 B at 0.1 KB/sec)
+Downloading: http://mojo.informatik.uni-erlangen.de/nexus/content/repositories/public-releases/de/fau/cs/osr/tooling/1.1.1-SNAPSHOT/maven-metadata.xml
+Downloading: http://mojo.informatik.uni-erlangen.de/nexus/content/repositories/public/de/fau/cs/osr/tooling/1.1.1-SNAPSHOT/maven-metadata.xml
+Downloading: http://mojo.informatik.uni-erlangen.de/nexus/content/repositories/public-snapshots/de/fau/cs/osr/tooling/1.1.1-SNAPSHOT/maven-metadata.xml
+Downloaded: http://mojo.informatik.uni-erlangen.de/nexus/content/repositories/public-snapshots/de/fau/cs/osr/tooling/1.1.1-SNAPSHOT/maven-metadata.xml (774 B at 0.3 KB/sec)
+Downloaded: http://mojo.informatik.uni-erlangen.de/nexus/content/repositories/public/de/fau/cs/osr/tooling/1.1.1-SNAPSHOT/maven-metadata.xml (774 B at 0.1 KB/sec)
+Downloading: http://mojo.informatik.uni-erlangen.de/nexus/content/repositories/public/org/sweble/wikitext/swc-parser-lazy/1.1.1-SNAPSHOT/maven-metadata.xml
+Downloading: http://mojo.informatik.uni-erlangen.de/nexus/content/repositories/public-releases/org/sweble/wikitext/swc-parser-lazy/1.1.1-SNAPSHOT/maven-metadata.xml
+Downloading: http://mojo.informatik.uni-erlangen.de/nexus/content/repositories/public-snapshots/org/sweble/wikitext/swc-parser-lazy/1.1.1-SNAPSHOT/maven-metadata.xml
