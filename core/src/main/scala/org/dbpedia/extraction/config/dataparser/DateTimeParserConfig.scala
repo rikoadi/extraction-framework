@@ -122,6 +122,16 @@ object DateTimeParserConfig
             "adina"                -> Map ("year" -> "1", "month"-> "2", "day" -> "3"),
             "adin parentesigabea"  -> Map ("year" -> "1", "month"-> "2", "day" -> "3")
         ),
+        "id" -> Map(
+            "Mula tanggal dan usia"          -> Map ("year" -> "3", "month"-> "2", "day" -> "1"),
+            "Tanggal lahir dan umur"         -> Map ("year" -> "3", "month"-> "2", "day" -> "1"),
+            "Tanggal kematian dan umur"      -> Map ("year" -> "3", "month"-> "2", "day" -> "1"),
+            "Umur pada tanggal"              -> Map ("year" -> "3", "month"-> "2", "day" -> "1"),
+            "umur"                           -> Map ("year" -> "3", "month"-> "2", "day" -> "1"),
+            "Tanggal lahir dan umur2/doc"    -> Map ("year" -> "3", "month"-> "2", "day" -> "1"),
+            "Tanggal lahir dan umur2"        -> Map ("year" -> "3", "month"-> "2", "day" -> "1"),
+            "lahirmati"                      -> Map ("year" -> "4", "month"-> "3", "day" -> "2"),
+        ),
         "it" -> Map(
             "Data nascita"        -> Map ("year" -> "3", "month"-> "2", "day" -> "1"),
             "data nascita"        -> Map ("year" -> "3", "month"-> "2", "day" -> "1"),
