@@ -87,6 +87,7 @@ for LINE in `cat $LINKS $LINKSR`;do
 		rm $DATASET_OUT
 	fi
 	join $SAMEAS_FILE $DATASET_IN | awk '{print $2 " " $3" " $4 " ." }' > $DATASET_OUT
+	gzip -c $DATASET_OUT > ${DATASET_OUT}.gz
 done	
 
 #remove temp file
@@ -99,4 +100,3 @@ echo "Generated triples for language '$CUR_LANG'"
 echo -------------------------------------------------------------------------------
 
 wc -l $OUTLINKDIR\/*.nt
-

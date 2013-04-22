@@ -130,7 +130,7 @@ object DateTimeParserConfig
             "umur"                           -> Map ("year" -> "3", "month"-> "2", "day" -> "1"),
             "Tanggal lahir dan umur2/doc"    -> Map ("year" -> "3", "month"-> "2", "day" -> "1"),
             "Tanggal lahir dan umur2"        -> Map ("year" -> "3", "month"-> "2", "day" -> "1"),
-            "lahirmati"                      -> Map ("year" -> "4", "month"-> "3", "day" -> "2"),
+            "lahirmati"                      -> Map ("year" -> "4", "month"-> "3", "day" -> "2")
         ),
         "it" -> Map(
             "Data nascita"        -> Map ("year" -> "3", "month"-> "2", "day" -> "1"),

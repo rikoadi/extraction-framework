@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><mediawiki xmlns="http://www.mediawiki.org/xml/export-0.6/"><page><title>Mapping sl:Infobox Actor</title><ns>268</ns><id>4054</id><revision><id>13867</id><timestamp>2011-06-27T07:16:49Z</timestamp><text>#redirect [[Mapping_sl:Infopolje_Igralec]]</text></revision></page><page><title>Mapping sl:Infobox Aircraft</title><ns>268</ns><id>3967</id><revision><id>13724</id><timestamp>2011-06-19T17:16:23Z</timestamp><text>{{TemplateMapping
+<?xml version="1.0" encoding="UTF-8"?><mediawiki xmlns="http://www.mediawiki.org/xml/export-0.8/"><page><title>Mapping sl:Infobox Actor</title><ns>268</ns><id>4054</id><revision><id>13867</id><timestamp>2011-06-27T07:16:49Z</timestamp><text>#redirect [[Mapping_sl:Infopolje_Igralec]]</text></revision></page><page><title>Mapping sl:Infobox Aircraft</title><ns>268</ns><id>3967</id><revision><id>13724</id><timestamp>2011-06-19T17:16:23Z</timestamp><text>{{TemplateMapping
 | mapToClass = Aircraft
 | mappings =
 	{{PropertyMapping | templateProperty = type | ontologyProperty = type }}

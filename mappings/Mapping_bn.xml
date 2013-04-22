@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><mediawiki xmlns="http://www.mediawiki.org/xml/export-0.6/"><page><title>Mapping bn:Infobox OS</title><ns>228</ns><id>5107</id><revision><id>19613</id><timestamp>2012-09-05T22:23:05Z</timestamp><text>{{TemplateMapping 
+<?xml version="1.0" encoding="UTF-8"?><mediawiki xmlns="http://www.mediawiki.org/xml/export-0.8/"><page><title>Mapping bn:Infobox OS</title><ns>228</ns><id>5107</id><revision><id>19613</id><timestamp>2012-09-05T22:23:05Z</timestamp><text>{{TemplateMapping 
 | mapToClass =  Software
 | mappings = 
    {{ PropertyMapping | templateProperty = name | ontologyProperty = foaf:name }}

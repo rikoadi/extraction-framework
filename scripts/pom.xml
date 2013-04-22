@@ -37,8 +37,8 @@
                             <mainClass>org.dbpedia.extraction.scripts.ProcessInterLanguageLinks</mainClass>
                             <jvmArgs>
                                 <jvmArg>-server</jvmArg>
-                                <jvmArg>-Xms5120m</jvmArg>
-                                <jvmArg>-Xmx7680m</jvmArg><!-- all languages (10000+ articles) need 6.5G (6656M) with .ttl and IRIs, 7.5G (7680M) with .nt and URIs (more and longer unique titles). -->
+                                <jvmArg>-Xms512m</jvmArg>
+                                <jvmArg>-Xmx768m</jvmArg><!-- all languages (10000+ articles) need 6.5G (6656M) with .ttl and IRIs, 7.5G (7680M) with .nt and URIs (more and longer unique titles). -->
                                 <jvmArg>-XX:+HeapDumpOnOutOfMemoryError</jvmArg>
                                 <jvmArg>-XX:+UseConcMarkSweepGC</jvmArg>
                                 <!-- <jvmArg>-XX:+PrintGC</jvmArg> -->

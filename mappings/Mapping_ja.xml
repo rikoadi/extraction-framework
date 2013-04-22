@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><mediawiki xmlns="http://www.mediawiki.org/xml/export-0.6/"><page><title>Mapping ja:AV女優</title><ns>232</ns><id>5901</id><revision><id>19517</id><timestamp>2012-08-17T02:06:30Z</timestamp><text>{{TemplateMapping
+<?xml version="1.0" encoding="UTF-8"?><mediawiki xmlns="http://www.mediawiki.org/xml/export-0.8/"><page><title>Mapping ja:AV女優</title><ns>232</ns><id>5901</id><revision><id>19517</id><timestamp>2012-08-17T02:06:30Z</timestamp><text>{{TemplateMapping
 |mapToClass = AdultActor
 |mappings = 
   {{ PropertyMapping | templateProperty = 名前 | ontologyProperty = foaf:name }}
@@ -150,6 +150,41 @@
     {{ PropertyMapping | templateProperty = 上映時間 | ontologyProperty = runtime | unit = Time }}
     {{ PropertyMapping | templateProperty = 言語 | ontologyProperty = language }}
     {{ PropertyMapping | templateProperty = 原作 | ontologyProperty = basedOn }}
+}}</text></revision></page><page><title>Mapping ja:Infobox Journal</title><ns>232</ns><id>6680</id><revision><id>24636</id><timestamp>2013-03-27T02:56:02Z</timestamp><text>{{TemplateMapping
+| mapToClass = AcademicJournal
+| mappings =
+	{{PropertyMapping | templateProperty = title | ontologyProperty = foaf:name }}
+	{{PropertyMapping | templateProperty = cover | ontologyProperty = picture }}
+	{{PropertyMapping | templateProperty = editor | ontologyProperty = editor }}
+	{{PropertyMapping | templateProperty = discipline | ontologyProperty = academicDiscipline }}
+	{{PropertyMapping | templateProperty = peer-reviewed | ontologyProperty = isPeerReviewed }}
+	{{PropertyMapping | templateProperty = language | ontologyProperty = language }}
+	{{PropertyMapping | templateProperty = former_names | ontologyProperty = formerName }}
+	{{PropertyMapping | templateProperty = abbreviation | ontologyProperty = abbreviation }}
+	{{PropertyMapping | templateProperty = publisher | ontologyProperty = publisher }}
+	{{PropertyMapping | templateProperty = country | ontologyProperty = country }}
+	{{PropertyMapping | templateProperty = frequency | ontologyProperty = frequencyOfPublication }}
+	{{DateIntervalMapping
+	| templateProperty = history
+	| startDateOntologyProperty = firstPublicationDate
+	| endDateOntologyProperty = finalPublicationDate
+	}}
+	{{DateIntervalMapping
+	| templateProperty = history
+	| startDateOntologyProperty = firstPublicationYear
+	| endDateOntologyProperty = finalPublicationYear
+	}}
+	{{PropertyMapping | templateProperty = openaccess | ontologyProperty = openAccessContent }}
+	{{PropertyMapping | templateProperty = license | ontologyProperty = license }}
+	{{PropertyMapping | templateProperty = impact | ontologyProperty = impactFactor }}
+	{{PropertyMapping | templateProperty = impact-year | ontologyProperty = impactFactorAsOf }}
+	{{PropertyMapping | templateProperty = website | ontologyProperty = foaf:homepage }}
+	{{PropertyMapping | templateProperty = JSTOR | ontologyProperty = jstor }}
+	{{PropertyMapping | templateProperty = OCLC | ontologyProperty = oclc }}
+	{{PropertyMapping | templateProperty = LCCN | ontologyProperty = lccn }}
+	{{PropertyMapping | templateProperty = CODEN | ontologyProperty = coden }}
+	{{PropertyMapping | templateProperty = ISSN | ontologyProperty = issn }}
+	{{PropertyMapping | templateProperty = eISSN | ontologyProperty = issn }}
 }}</text></revision></page><page><title>Mapping ja:Infobox Language</title><ns>232</ns><id>5896</id><revision><id>19395</id><timestamp>2012-08-07T15:15:14Z</timestamp><text>{{TemplateMapping
 | mapToClass = Language
 | mappings =
@@ -203,7 +238,37 @@
 	{{PropertyMapping | templateProperty = Blood | ontologyProperty = bloodType }}
 	{{PropertyMapping | templateProperty = Influences | ontologyProperty = influenced }}
 	{{PropertyMapping | templateProperty = School_background | ontologyProperty = school }}
-}}</text></revision></page><page><title>Mapping ja:Infobox Single</title><ns>232</ns><id>5889</id><revision><id>19378</id><timestamp>2012-08-07T14:58:24Z</timestamp><text>{{TemplateMapping
+}}</text></revision></page><page><title>Mapping ja:Infobox Scientist</title><ns>232</ns><id>6661</id><revision><id>24620</id><timestamp>2013-03-27T02:39:03Z</timestamp><text>{{ TemplateMapping | mapToClass = Scientist | mappings = 
+    {{ PropertyMapping | templateProperty = doctoral_advisor | ontologyProperty = doctoralAdvisor }}
+    {{ PropertyMapping | templateProperty = academic_advisors | ontologyProperty = academicAdvisor }}
+    {{ PropertyMapping | templateProperty = doctoral_students | ontologyProperty = doctoralStudent }}
+    {{ PropertyMapping | templateProperty = notable_students | ontologyProperty = notableStudent }}
+    {{ PropertyMapping | templateProperty = name | ontologyProperty = foaf:name }}
+    {{ PropertyMapping | templateProperty = birth_date | ontologyProperty = birthDate }}
+    {{ PropertyMapping | templateProperty = birth_place | ontologyProperty = birthPlace }}
+    {{ PropertyMapping | templateProperty = birth_name | ontologyProperty = birthName }}
+    {{ PropertyMapping | templateProperty = death_date | ontologyProperty = deathDate }}
+    {{ PropertyMapping | templateProperty = death_place | ontologyProperty = deathPlace }}
+    {{ PropertyMapping | templateProperty = death_cause | ontologyProperty = deathCause }}
+    {{ PropertyMapping | templateProperty = residence | ontologyProperty = residence }}
+    {{ PropertyMapping | templateProperty = citizenship | ontologyProperty = citizenship }}
+    {{ PropertyMapping | templateProperty = nationality | ontologyProperty = nationality }}
+    {{ PropertyMapping | templateProperty = spouse | ontologyProperty = spouse }}
+    {{ PropertyMapping | templateProperty = alma_mater | ontologyProperty = almaMater }}
+    {{ PropertyMapping | templateProperty = caption | ontologyProperty = depictionDescription }}
+    {{ PropertyMapping | templateProperty = field | ontologyProperty = field }}
+    {{ PropertyMapping | templateProperty = fields | ontologyProperty = field }}
+    {{ PropertyMapping | templateProperty = known_for | ontologyProperty = knownFor }}
+    {{ PropertyMapping | templateProperty = influences | ontologyProperty = influencedBy }}
+    {{ PropertyMapping | templateProperty = influenced | ontologyProperty = influenced }}
+    {{ PropertyMapping | templateProperty = awards | ontologyProperty = award }}
+    {{ PropertyMapping | templateProperty = prizes | ontologyProperty = award }} 
+    {{ PropertyMapping | templateProperty = work_institution | ontologyProperty = affiliation }}
+    {{ PropertyMapping | templateProperty = work_institutions | ontologyProperty = affiliation }}
+    {{ PropertyMapping | templateProperty = workplaces | ontologyProperty = affiliation }}
+    {{ PropertyMapping | templateProperty = imagesize | ontologyProperty = imageSize }}
+    {{ PropertyMapping | templateProperty = image_size | ontologyProperty = imageSize }}
+    {{ PropertyMapping | templateProperty = image_width | ontologyProperty = imageSize }} }}</text></revision></page><page><title>Mapping ja:Infobox Single</title><ns>232</ns><id>5889</id><revision><id>19378</id><timestamp>2012-08-07T14:58:24Z</timestamp><text>{{TemplateMapping
 |mapToClass = Single
 |mappings = 
   {{ PropertyMapping | templateProperty = Artist | ontologyProperty = artist }}
@@ -224,9 +289,11 @@
   {{ PropertyMapping | templateProperty = B-side | ontologyProperty = bSide }}
   {{ PropertyMapping | templateProperty = Album | ontologyProperty = album }}
   {{ PropertyMapping | templateProperty = Format | ontologyProperty = format }}
-}}</text></revision></page><page><title>Mapping ja:Infobox Software</title><ns>232</ns><id>5905</id><revision><id>19431</id><timestamp>2012-08-07T15:48:26Z</timestamp><text>{{TemplateMapping
+}}</text></revision></page><page><title>Mapping ja:Infobox Software</title><ns>232</ns><id>5905</id><revision><id>24764</id><timestamp>2013-04-05T10:53:40Z</timestamp><text>{{TemplateMapping
 |mapToClass = Software
 |mappings = 
+  {{ PropertyMapping | templateProperty = 名称 | ontologyProperty = foaf:name }}
+  {{ PropertyMapping | templateProperty = name | ontologyProperty = foaf:name}}
   {{ PropertyMapping | templateProperty = 対応OS | ontologyProperty = operatingSystem }}
   {{ PropertyMapping | templateProperty = オペレーティングシステム | ontologyProperty = operatingSystem }}
   {{ PropertyMapping | templateProperty = operating_system | ontologyProperty = operatingSystem }}
@@ -250,13 +317,15 @@
   {{ PropertyMapping | templateProperty = 開発者 | ontologyProperty = creator }}
   {{ PropertyMapping | templateProperty = developer | ontologyProperty = creator }}
   {{ PropertyMapping | templateProperty = frequently updated | ontologyProperty = frequentlyUpdated}}
-  {{ PropertyMapping | templateProperty = 最新版評価版発表日 | ontologyProperty = latestPreviewDate }}
+  {{ PropertyMapping | templateProperty = 最新評価版発表日 | ontologyProperty = latestPreviewDate }}
   {{ PropertyMapping | templateProperty = latest_preview_date | ontologyProperty = latestPreviewDate }}
   {{ PropertyMapping | templateProperty = latest preview date | ontologyProperty = latestPreviewDate }}
   {{ PropertyMapping | templateProperty = 最新評価バージョン | ontologyProperty = latestPreviewVersion }}
   {{ PropertyMapping | templateProperty = latest_preview_version | ontologyProperty = latestPreviewVersion }}
   {{ PropertyMapping | templateProperty = latest preview version | ontologyProperty = latestPreviewVersion }}
   {{ PropertyMapping | templateProperty = frequently_updated | ontologyProperty = frequentlyUpdated }}
+  {{ PropertyMapping | templateProperty = 公式サイト | ontologyProperty = foaf:homepage }}
+  {{ PropertyMapping | templateProperty = website | ontologyProperty = foaf:homepage }}
 }}</text></revision></page><page><title>Mapping ja:Infobox University</title><ns>232</ns><id>5910</id><revision><id>19504</id><timestamp>2012-08-17T01:10:58Z</timestamp><text>{{TemplateMapping
 | mapToClass = University
 | mappings =
@@ -365,7 +434,7 @@
   {{PropertyMapping | templateProperty = 代表チーム | ontologyProperty = nationalTeam }}
   {{PropertyMapping | templateProperty = 身長 | ontologyProperty = height | unit = Length}}
   {{PropertyMapping | templateProperty = 体重 | ontologyProperty = weight}}
-}}</text></revision></page><page><title>Mapping ja:Infobox road</title><ns>232</ns><id>5892</id><revision><id>19531</id><timestamp>2012-08-17T04:39:05Z</timestamp><text>{{TemplateMapping
+}}</text></revision></page><page><title>Mapping ja:Infobox journal</title><ns>232</ns><id>6681</id><revision><id>24637</id><timestamp>2013-03-27T02:56:02Z</timestamp><text>#REDIRECT [[Mapping ja:Infobox Journal]]</text></revision></page><page><title>Mapping ja:Infobox road</title><ns>232</ns><id>5892</id><revision><id>19531</id><timestamp>2012-08-17T04:39:05Z</timestamp><text>{{TemplateMapping
 | mapToClass = Road
 | mappings =
 	{{PropertyMapping | templateProperty = 名前 | ontologyProperty = foaf:name }}
@@ -435,6 +504,68 @@
 	{{PropertyMapping | templateProperty = 作品 | ontologyProperty = notableWork}}
 	{{PropertyMapping | templateProperty = 過去の代表番組 | ontologyProperty = notableWork}}
 	{{PropertyMapping | templateProperty = 現在の代表番組 | ontologyProperty = notableWork}}
+}}</text></revision></page><page><title>Mapping ja:Infobox フィギュアスケート選手</title><ns>232</ns><id>6645</id><revision><id>24476</id><timestamp>2013-03-27T00:23:23Z</timestamp><text>{{TemplateMapping
+| mapToClass = FigureSkater
+| mappings =
+	{{PropertyMapping | templateProperty = 代表国 | ontologyProperty = country }}
+	{{PropertyMapping | templateProperty = パートナー | ontologyProperty = currentPartner }}
+	{{PropertyMapping | templateProperty = 元パートナー | ontologyProperty = formerPartner }}
+	{{PropertyMapping | templateProperty = コーチ | ontologyProperty = coach }}
+	{{PropertyMapping | templateProperty = 元コーチ | ontologyProperty = formerCoach }}
+	{{PropertyMapping | templateProperty = 振付師 | ontologyProperty = choreographer }}
+	{{PropertyMapping | templateProperty = 元振付師 | ontologyProperty = formerChoreographer }}
+	{{PropertyMapping | templateProperty = 所属 | ontologyProperty = club }}
+	{{PropertyMapping | templateProperty = 名前 | ontologyProperty = foaf:name }}
+	{{PropertyMapping | templateProperty = 出生地 | ontologyProperty = birthPlace }}
+	{{PropertyMapping | templateProperty = 生年月日 | ontologyProperty = birthDate }}
+	{{PropertyMapping | templateProperty = 没年月日 | ontologyProperty = deathDate }}
+	{{PropertyMapping | templateProperty = 身長 | ontologyProperty = height | unit = Length }}
+	{{PropertyMapping | templateProperty = 引退 | ontologyProperty = activeYearsEndYear }}
+}}</text></revision></page><page><title>Mapping ja:Infobox プログラミング言語</title><ns>232</ns><id>6658</id><revision><id>24509</id><timestamp>2013-03-27T01:32:44Z</timestamp><text>{{ TemplateMapping
+| mapToClass = ProgrammingLanguage
+| mappings = 
+    {{ PropertyMapping | ontologyProperty = foaf:name | templateProperty = name }} 
+    {{ PropertyMapping | ontologyProperty = foaf:name | templateProperty = 名前 }} 
+    {{ PropertyMapping | ontologyProperty = developer | templateProperty = developer }} 
+    {{ PropertyMapping | ontologyProperty = developer | templateProperty = 開発者 }} 
+    {{ PropertyMapping | ontologyProperty = designer | templateProperty = designer }}
+    {{ PropertyMapping | ontologyProperty = designer | templateProperty = 設計者 }} 
+    {{ PropertyMapping | ontologyProperty = releaseDate| templateProperty = released }} 
+    {{ PropertyMapping | ontologyProperty = latestReleaseDate | templateProperty = latest_release_date }} 
+    {{ PropertyMapping | ontologyProperty = latestReleaseDate | templateProperty = latest release date }} 
+    {{ PropertyMapping | ontologyProperty = latestReleaseVersion | templateProperty = latest_release_version }} 
+    {{ PropertyMapping | ontologyProperty = latestReleaseVersion | templateProperty = latest release version }} 
+    {{ PropertyMapping | ontologyProperty = influencedBy | templateProperty = influenced_by }} 
+    {{ PropertyMapping | ontologyProperty = influencedBy | templateProperty = influenced by }} 
+    {{ PropertyMapping | ontologyProperty = influencedBy | templateProperty = 影響を受けた言語 }} 
+    {{ PropertyMapping | ontologyProperty = influenced | templateProperty = influenced }} 
+    {{ PropertyMapping | ontologyProperty = influenced | templateProperty = 影響を与えた言語 }} 
+    {{ PropertyMapping | ontologyProperty = foaf:page | templateProperty = website }} 
+    {{ PropertyMapping | ontologyProperty = foaf:page | templateProperty = ウェブサイト }} 
+    {{ PropertyMapping | ontologyProperty = license | templateProperty = license }} 
+    {{ PropertyMapping | ontologyProperty = license | templateProperty = ライセンス }} 
+}}</text></revision></page><page><title>Mapping ja:Infobox レースレポート</title><ns>232</ns><id>6671</id><revision><id>24593</id><timestamp>2013-03-27T02:23:58Z</timestamp><text>{{TemplateMapping
+| mapToClass = GrandPrix
+| mappings =
+	{{PropertyMapping | templateProperty = コース長 | ontologyProperty = course | unit = kilometre }}
+	{{PropertyMapping | templateProperty = レース距離 | ontologyProperty = distanceLaps }}
+	{{PropertyMapping | templateProperty = レース距離 | ontologyProperty = distance | unit = kilometre }}
+	{{PropertyMapping | templateProperty = PPドライバー | ontologyProperty = poleDriver }}
+	{{PropertyMapping | templateProperty = PPドライバー国旗 | ontologyProperty = poleDriverCountry }}
+	{{PropertyMapping | templateProperty = FLドライバー | ontologyProperty = fastestDriver }}
+	{{PropertyMapping | templateProperty = FLドライバー国旗 | ontologyProperty = fastestDriverCountry }}
+	{{PropertyMapping | templateProperty = 優勝ドライバー | ontologyProperty = firstDriver }}
+	{{PropertyMapping | templateProperty = 優勝ドライバー国旗 | ontologyProperty = firstDriverCountry }}
+	{{PropertyMapping | templateProperty = 2位ドライバー | ontologyProperty = secondDriver }}
+	{{PropertyMapping | templateProperty = 2位ドライバー国旗 | ontologyProperty = secondDriverCountry }}
+	{{PropertyMapping | templateProperty = 3位ドライバー | ontologyProperty = thirdDriver }}
+	{{PropertyMapping | templateProperty = 3位ドライバー国旗 | ontologyProperty = thirdDriverCountry }}
+	{{PropertyMapping | templateProperty = 国旗 | ontologyProperty = country }}
+	{{PropertyMapping | templateProperty = 日程 | ontologyProperty = date }}
+	{{PropertyMapping | templateProperty = シーズン | ontologyProperty = date }}
+	{{PropertyMapping | templateProperty = グランプリ名 | ontologyProperty = foaf:name }}
+	{{PropertyMapping | templateProperty = 開催サーキット所在地 | ontologyProperty = location }}
+	{{PropertyMapping | templateProperty = 開催サーキット | ontologyProperty = foaf:name }}
 }}</text></revision></page><page><title>Mapping ja:Infobox 人物</title><ns>232</ns><id>5886</id><revision><id>19408</id><timestamp>2012-08-07T15:31:38Z</timestamp><text>{{TemplateMapping 
 | mapToClass = Person 
 | mappings = 
@@ -578,10 +709,38 @@
     {{ PropertyMapping | templateProperty = awards | ontologyProperty = award }}
     {{ PropertyMapping | templateProperty = website | ontologyProperty = foaf:homepage }} 
     {{ PropertyMapping | templateProperty = image_size | ontologyProperty = imageSize }} 
-}}</text></revision></page><page><title>Mapping ja:Infobox 山</title><ns>232</ns><id>5900</id><revision><id>19422</id><timestamp>2012-08-07T15:45:51Z</timestamp><text>{{TemplateMapping
+}}</text></revision></page><page><title>Mapping ja:Infobox 哲学者</title><ns>232</ns><id>6665</id><revision><id>24575</id><timestamp>2013-03-27T02:13:37Z</timestamp><text>{{ TemplateMapping | mapToClass = Philosopher | mappings = 
+    {{ PropertyMapping | templateProperty = name | ontologyProperty = foaf:name }}
+    {{ PropertyMapping | templateProperty = 名前 | ontologyProperty = foaf:name }}
+    {{ PropertyMapping | templateProperty = birth_date | ontologyProperty = birthDate }}
+    {{ PropertyMapping | templateProperty = birth_date | ontologyProperty = birthYear }}
+    {{ PropertyMapping | templateProperty = 生年月日 | ontologyProperty = birthDate }}
+    {{ PropertyMapping | templateProperty = 生年月日 | ontologyProperty = birthYear }}
+    {{ PropertyMapping | templateProperty = birth_place | ontologyProperty = birthPlace }}
+    {{ PropertyMapping | templateProperty = death_date | ontologyProperty = deathDate }}
+    {{ PropertyMapping | templateProperty = 没年月日 | ontologyProperty = deathYear }}
+    {{ PropertyMapping | templateProperty = 没年月日 | ontologyProperty = deathDate }}
+    {{ PropertyMapping | templateProperty = death_date | ontologyProperty = deathYear }}
+    {{ PropertyMapping | templateProperty = death_place | ontologyProperty = deathPlace }}
+    {{ PropertyMapping | templateProperty = region | ontologyProperty = region }}
+    {{ PropertyMapping | templateProperty = 地域 | ontologyProperty = region }}
+    {{ PropertyMapping | templateProperty = era | ontologyProperty = era }}
+    {{ PropertyMapping | templateProperty = 時代 | ontologyProperty = era }}
+    {{ PropertyMapping | templateProperty = school_tradition | ontologyProperty = philosophicalSchool }}
+    {{ PropertyMapping | templateProperty = 学派 | ontologyProperty = philosophicalSchool }}
+    {{ PropertyMapping | templateProperty = main_interests | ontologyProperty = mainInterest }}
+    {{ PropertyMapping | templateProperty = 研究分野 | ontologyProperty = mainInterest }}
+    {{ PropertyMapping | templateProperty = notable_ideas | ontologyProperty = notableIdea }}
+    {{ PropertyMapping | templateProperty = 特記すべき概念 | ontologyProperty = notableIdea }}
+    {{ PropertyMapping | templateProperty = influences | ontologyProperty = influencedBy }}
+    {{ PropertyMapping | templateProperty = 影響を受けた人物 | ontologyProperty = influencedBy }}
+    {{ PropertyMapping | templateProperty = influenced | ontologyProperty = influenced }}
+    {{ PropertyMapping | templateProperty = 影響を与えた人物 | ontologyProperty = influenced }}
+}}</text></revision></page><page><title>Mapping ja:Infobox 山</title><ns>232</ns><id>5900</id><revision><id>24589</id><timestamp>2013-03-27T02:20:46Z</timestamp><text>{{TemplateMapping
 |mapToClass = Mountain
 |mappings = 
   {{ PropertyMapping | templateProperty = 名称 | ontologyProperty = foaf:name }}
+  {{ PropertyMapping | templateProperty = 所在地 | ontologyProperty = address }}
   {{ PropertyMapping | templateProperty = 画像 | ontologyProperty = foaf:depiction }}
   {{ PropertyMapping | templateProperty = 山系 | ontologyProperty = alpsGroup }}
   {{ PropertyMapping | templateProperty = 初登頂 | ontologyProperty = firstAscentYear }}
@@ -589,6 +748,7 @@
   {{ PropertyMapping | templateProperty = N(北緯)及びS(南緯) | ontologyProperty = geo:lat }}
   {{ PropertyMapping | templateProperty = 地図国コード| ontologyProperty = iso31661Code }}
   {{ PropertyMapping | templateProperty = 標高| ontologyProperty = elevation }}
+ {{ GeocoordinatesMapping | latitudeDegrees = 緯度度 | latitudeMinutes = 緯度分 | latitudeSeconds = 緯度秒 | longitudeDegrees = 経度度 | longitudeMinutes = 経度分 | longitudeSeconds = 経度秒 }}
 }}</text></revision></page><page><title>Mapping ja:Infobox 建築家</title><ns>232</ns><id>5888</id><revision><id>19346</id><timestamp>2012-08-07T14:23:22Z</timestamp><text>{{TemplateMapping
 |mapToClass = Architect
 |mappings = 
@@ -614,12 +774,16 @@
     {{ PropertyMapping | templateProperty = 密度 | ontologyProperty = density | unit = Density }}
     {{ PropertyMapping | templateProperty = 融点 | ontologyProperty = meltingPoint | unit = Temperature }}
     {{ PropertyMapping | templateProperty = 沸点 | ontologyProperty = boilingPoint | unit = Temperature }}
-}}</text></revision></page><page><title>Mapping ja:Infobox 河川</title><ns>232</ns><id>5899</id><revision><id>19411</id><timestamp>2012-08-07T15:36:01Z</timestamp><text>{{TemplateMapping
+}}</text></revision></page><page><title>Mapping ja:Infobox 河川</title><ns>232</ns><id>5899</id><revision><id>24458</id><timestamp>2013-03-26T08:02:40Z</timestamp><text>{{TemplateMapping
 |mapToClass = River
 |mappings = 
   {{ PropertyMapping | templateProperty = 河口 | ontologyProperty = riverMouth }}
   {{ PropertyMapping | templateProperty = 名称 | ontologyProperty = foaf:name }}
   {{ PropertyMapping | templateProperty = 画像 | ontologyProperty = foaf:depiction }}
+  {{ PropertyMapping | templateProperty = 標高 | ontologyProperty = elevation | unit = metre }}
+  {{ PropertyMapping | templateProperty = 延長 | ontologyProperty = length | unit = Length }}
+  {{ PropertyMapping | templateProperty = 流量 | ontologyProperty = discharge | unit = cubicMetrePerSecond }}
+  {{ PropertyMapping | templateProperty = 流域面積 | ontologyProperty = watershed | unit = squareKilometre }}
 }}</text></revision></page><page><title>Mapping ja:Infobox 漫画家</title><ns>232</ns><id>5898</id><revision><id>19414</id><timestamp>2012-08-07T15:41:29Z</timestamp><text>{{TemplateMapping
 | mapToClass = ComicsCreator
 | mappings =
@@ -637,6 +801,86 @@
 	{{PropertyMapping | templateProperty = 画像サイズ | ontologyProperty = imageSize }}
 	{{PropertyMapping | templateProperty = 職業 | ontologyProperty = occupation }}
 	{{PropertyMapping | templateProperty = 代表作 | ontologyProperty = notableWork }}
+}}</text></revision></page><page><title>Mapping ja:Infobox 空港</title><ns>232</ns><id>6673</id><revision><id>24627</id><timestamp>2013-03-27T02:45:03Z</timestamp><text>{{ TemplateMapping | mapToClass = Airport | mappings = 
+    {{ PropertyMapping | templateProperty = 名前 | ontologyProperty = foaf:name }}
+    {{ PropertyMapping | templateProperty = IATA | ontologyProperty = iataLocationIdentifier }}
+    {{ PropertyMapping | templateProperty = ICAO | ontologyProperty = icaoLocationIdentifier }}
+    {{ PropertyMapping | templateProperty = FAA | ontologyProperty = faaLocationIdentifier }}
+    {{ PropertyMapping | templateProperty = LID | ontologyProperty = locationIdentifier }}
+    &lt;!-- Airport summary --&gt;
+
+    {{ PropertyMapping | templateProperty = タイプ | ontologyProperty = type }}
+    {{ PropertyMapping | templateProperty = 画像 | ontologyProperty = foaf:img }}
+    {{ PropertyMapping | templateProperty = owner | ontologyProperty = owner }}
+    {{ PropertyMapping | templateProperty = 運営者 | ontologyProperty = operator }}
+    {{ PropertyMapping | templateProperty = owner-oper | ontologyProperty = owner }}
+    {{ PropertyMapping | templateProperty = owner-oper | ontologyProperty = operator }}
+    {{ PropertyMapping | templateProperty = city-served | ontologyProperty = city }}
+    {{ PropertyMapping | templateProperty = 設置場所 | ontologyProperty = location }}
+    {{ PropertyMapping | templateProperty = 標高 ft | ontologyProperty = elevation | unit = foot }}
+    {{ PropertyMapping | templateProperty = 標高 m | ontologyProperty = elevation | unit = metre }}
+    {{ PropertyMapping | templateProperty = 方向 滑走路1 | ontologyProperty = runwayDesignation }}
+    {{ PropertyMapping | templateProperty = 全長 滑走路1 m | ontologyProperty = runwayLength | unit = metre }}
+    {{ PropertyMapping | templateProperty = 全幅 滑走路1 | ontologyProperty = runwayWidth | unit = metre }}
+    {{ PropertyMapping | templateProperty = 表面 滑走路1 | ontologyProperty = runwaySurface }}
+    {{ PropertyMapping | templateProperty = 方向 滑走路2 | ontologyProperty = runwayDesignation }}
+    {{ PropertyMapping | templateProperty = 全長 滑走路2 m | ontologyProperty = runwayLength | unit = metre }}
+    {{ PropertyMapping | templateProperty = 全幅 滑走路2 | ontologyProperty = runwayWidth | unit = metre }}
+    {{ PropertyMapping | templateProperty = 表面 滑走路2 | ontologyProperty = runwaySurface }}
+    {{ PropertyMapping | templateProperty = 方向 滑走路3 | ontologyProperty = runwayDesignation }}
+    {{ PropertyMapping | templateProperty = 全長 滑走路3 m | ontologyProperty = runwayLength | unit = metre }}
+    {{ PropertyMapping | templateProperty = 全幅 滑走路3 | ontologyProperty = runwayWidth | unit = metre }}
+    {{ PropertyMapping | templateProperty = 表面 滑走路3 | ontologyProperty = runwaySurface }}
+    {{ PropertyMapping | templateProperty = 方向 滑走路4 | ontologyProperty = runwayDesignation }}
+    {{ PropertyMapping | templateProperty = 全長 滑走路4 m | ontologyProperty = runwayLength | unit = metre }}
+    {{ PropertyMapping | templateProperty = 全幅 滑走路4 | ontologyProperty = runwayWidth | unit = metre }}
+    {{ PropertyMapping | templateProperty = 表面 滑走路4 | ontologyProperty = runwaySurface }}
+    {{ PropertyMapping | templateProperty = 方向 滑走路5 | ontologyProperty = runwayDesignation }}
+    {{ PropertyMapping | templateProperty = 全長 滑走路5 m | ontologyProperty = runwayLength | unit = metre }}
+    {{ PropertyMapping | templateProperty = 全幅 滑走路5 | ontologyProperty = runwayWidth | unit = metre }}
+    {{ PropertyMapping | templateProperty = 表面 滑走路5 | ontologyProperty = runwaySurface }}
+    {{ PropertyMapping | templateProperty = 方向 滑走路6 | ontologyProperty = runwayDesignation }}
+    {{ PropertyMapping | templateProperty = 全長 滑走路6 m | ontologyProperty = runwayLength | unit = metre }}
+    {{ PropertyMapping | templateProperty = 全幅 滑走路6 | ontologyProperty = runwayWidth | unit = metre }}
+    {{ PropertyMapping | templateProperty = 表面 滑走路6 | ontologyProperty = runwaySurface }}
+    {{ DateIntervalMapping | templateProperty = built | startDateOntologyProperty = buildingStartDate | endDateOntologyProperty = buildingEndDate }}
+    {{ GeocoordinatesMapping | coordinates = coordinates }}
+{{GeocoordinatesMapping | latitudeDirection = N(北緯)及びS(南緯) | latitudeDegrees = 緯度度 | latitudeMinutes = 緯度分 | latitudeSeconds = 緯度秒 | longitudeDirection = E(東経)及びW(西経) | longitudeDegrees = 経度度 | longitudeMinutes = 経度分 | longitudeSeconds = 経度秒 }}
+    {{ PropertyMapping | templateProperty = ウェブサイト | ontologyProperty = foaf:homepage }}
+    &lt;!-- Military airports --&gt;
+
+    {{ PropertyMapping | templateProperty = commander | ontologyProperty = commander }}
+    {{ DateIntervalMapping | templateProperty = used | startDateOntologyProperty = openingDate | endDateOntologyProperty = dateOfAbandonment }} }}</text></revision></page><page><title>Mapping ja:Infobox 組織</title><ns>232</ns><id>6674</id><revision><id>24623</id><timestamp>2013-03-27T02:42:29Z</timestamp><text>{{TemplateMapping
+|mapToClass = Organisation
+|mappings =
+	{{PropertyMapping | templateProperty = name | ontologyProperty = foaf:name}}
+	{{PropertyMapping | templateProperty = 名称 | ontologyProperty = foaf:name}}
+	{{PropertyMapping | templateProperty = abbreviation | ontologyProperty = abbreviation}}
+	{{PropertyMapping | templateProperty = 略称 | ontologyProperty = abbreviation}}
+	{{PropertyMapping | templateProperty = affiliations | ontologyProperty = affiliation}}
+	{{PropertyMapping | templateProperty = motto | ontologyProperty = motto}}
+	{{PropertyMapping | templateProperty = formation | ontologyProperty = formationDate}}
+	{{PropertyMapping | templateProperty = formation | ontologyProperty = formationYear}}
+	{{PropertyMapping | templateProperty = extinction | ontologyProperty = extinctionDate}}
+	{{PropertyMapping | templateProperty = extinction | ontologyProperty = extinctionYear}}
+	{{PropertyMapping | templateProperty = type | ontologyProperty = type}}
+	{{PropertyMapping | templateProperty = 種類 | ontologyProperty = type}}
+	{{PropertyMapping | templateProperty = status | ontologyProperty = status}}
+	{{PropertyMapping | templateProperty = purpose | ontologyProperty = purpose}}
+	{{PropertyMapping | templateProperty = headquarters | ontologyProperty = headquarter}}
+	{{PropertyMapping | templateProperty = 本部 | ontologyProperty = headquarter}}
+	{{PropertyMapping | templateProperty = location | ontologyProperty = location }}
+	{{GeocoordinatesMapping | coordinates = coords }}
+	{{PropertyMapping | templateProperty = region_served | ontologyProperty = regionServed}}
+	{{PropertyMapping | templateProperty = membership | ontologyProperty = membership}}
+	{{PropertyMapping | templateProperty = language | ontologyProperty = language}}
+	{{PropertyMapping | templateProperty = main_organ | ontologyProperty = mainOrgan}}
+	{{PropertyMapping | templateProperty = parent_organization | ontologyProperty = parentOrganisation}}
+	{{PropertyMapping | templateProperty = num_staff | ontologyProperty = numberOfStaff}}
+	{{PropertyMapping | templateProperty = num_volunteers | ontologyProperty = numberOfVolunteers}}
+	{{PropertyMapping | templateProperty = budget | ontologyProperty = budget | unit = Currency}}
+	{{PropertyMapping | templateProperty = website | ontologyProperty =　foaf:homepage}}
+	{{PropertyMapping | templateProperty = ウェブサイト | ontologyProperty =　foaf:homepage}}
 }}</text></revision></page><page><title>Mapping ja:Infobox 絵画作品</title><ns>232</ns><id>5918</id><revision><id>19536</id><timestamp>2012-08-17T09:50:36Z</timestamp><text>{{TemplateMapping 
 |mapToClass = Artwork
 |mappings = 
@@ -652,6 +896,17 @@
   {{ PropertyMapping | templateProperty = other_title_1 | ontologyProperty = title }}
   {{ PropertyMapping | templateProperty = other_title_2 | ontologyProperty = title }}
   {{ PropertyMapping | templateProperty = city | ontologyProperty = location }}
+}}</text></revision></page><page><title>Mapping ja:Infobox 航空機</title><ns>232</ns><id>6669</id><revision><id>24641</id><timestamp>2013-03-27T02:58:18Z</timestamp><text>{{ TemplateMapping | mapToClass = Aircraft | mappings = 
+    {{ PropertyMapping | templateProperty = 用途 | ontologyProperty = type }}
+    {{ PropertyMapping | templateProperty = 製造者 | ontologyProperty = manufacturer }}
+    {{PropertyMapping | templateProperty = 名称 | ontologyProperty = foaf:name }}
+    {{PropertyMapping | templateProperty = 運用者 | ontologyProperty = aircraftUser }}
+    {{PropertyMapping | templateProperty = キャプション | ontologyProperty = caption }}
+    {{PropertyMapping | templateProperty = 画像 | ontologyProperty = picture }}
+    {{PropertyMapping | templateProperty = 初飛行年月日 | ontologyProperty = firstFlight }}
+    {{PropertyMapping | templateProperty = 生産数 | ontologyProperty = numberBuilt }}
+    {{PropertyMapping | templateProperty = 運用開始年月日 | ontologyProperty = introduced }}
+    {{PropertyMapping | templateProperty = 分類 | ontologyProperty = aircraftType }}
 }}</text></revision></page><page><title>Mapping ja:Infobox 芸術家</title><ns>232</ns><id>5850</id><revision><id>19015</id><timestamp>2012-07-28T04:15:03Z</timestamp><text>{{ TemplateMapping | mapToClass = Artist | mappings = 
     {{ PropertyMapping | templateProperty = name | ontologyProperty = foaf:name }}
     {{ PropertyMapping | templateProperty = birthdate | ontologyProperty = birthDate }}
@@ -800,6 +1055,146 @@
   {{PropertyMapping | templateProperty = 出場（得点） | ontologyProperty = goalsInLeague }}
   {{PropertyMapping | templateProperty = 代表出場（得点） | ontologyProperty = goalsInNationalTeam }}
 
+}}</text></revision></page><page><title>Mapping ja:世界の市</title><ns>232</ns><id>6677</id><revision><id>24647</id><timestamp>2013-03-27T03:04:21Z</timestamp><text>{{ TemplateMapping | mapToClass = City | mappings = 
+    {{ PropertyMapping | templateProperty = 正式名称 | ontologyProperty = foaf:name }}
+    {{ PropertyMapping | templateProperty = 画像 | ontologyProperty = foaf:img }}
+	{{PropertyMapping | templateProperty = 総面積(平方キロ) | ontologyProperty = areaTotal | unit = squareKilometre }}
+	{{PropertyMapping | templateProperty = 陸上面積(平方キロ) | ontologyProperty = areaLand | unit = squareKilometre }}
+	{{PropertyMapping | templateProperty = 水面面積(平方キロ) | ontologyProperty = areaWater | unit = squareKilometre }}
+	{{PropertyMapping | templateProperty = 総面積(平方マイル) | ontologyProperty = areaTotal | unit = squareMile }}
+	{{PropertyMapping | templateProperty = 陸上面積(平方マイル) | ontologyProperty = areaLand | unit = squareMile }}
+	{{PropertyMapping | templateProperty = 水面面積(平方マイル) | ontologyProperty = areaWater | unit = squareMile }}
+	{{PropertyMapping | templateProperty = 水面面積比率 | ontologyProperty = percentageOfAreaWater }}
+	{{PropertyMapping | templateProperty = 都市圏面積(平方キロ) | ontologyProperty = areaUrban | unit = squareKilometre }}
+	{{PropertyMapping | templateProperty = 市街地面積(平方マイル) | ontologyProperty = areaUrban | unit = squareMile }}
+	{{PropertyMapping | templateProperty = 人口の時点 | ontologyProperty = populationAsOf }}
+	{{PropertyMapping | templateProperty = 総人口 | ontologyProperty = populationTotal }}
+	{{PropertyMapping | templateProperty = 人口密度(平方マイル当たり) | ontologyProperty = populationDensity | unit = inhabitantsPerSquareMile }}
+	{{PropertyMapping | templateProperty = 都市圏人口 | ontologyProperty = populationMetro }}
+	{{PropertyMapping | templateProperty = 都市圏人口密度(平方マイル) | ontologyProperty = populationMetroDensity | unit = inhabitantsPerSquareMile }}
+	{{PropertyMapping | templateProperty = 市街地人口 | ontologyProperty = populationUrban }}
+	{{PropertyMapping | templateProperty = 市街地人口密度(平方マイル) | ontologyProperty = populationUrbanDensity | unit = inhabitantsPerSquareMile }}
+	{{PropertyMapping | templateProperty = 公式ウェブサイト | ontologyProperty = foaf:homepage }}
+    {{ GeocoordinatesMapping | latitudeDirection = E(東経)及びW(西経) | latitudeDegrees = 緯度度 | latitudeMinutes = 緯度分 | latitudeSeconds = 緯度秒
+      | longitudeDirection = N(北緯)及びS(南緯) | longitudeDegrees = 経度度 | longitudeMinutes = 経度分 | longitudeSeconds = 経度秒 }}
+}}</text></revision></page><page><title>Mapping ja:世界遺産概要表</title><ns>232</ns><id>6668</id><revision><id>24554</id><timestamp>2013-03-27T02:03:31Z</timestamp><text>{{TemplateMapping
+| mapToClass = WorldHeritageSite
+| mappings =
+  {{PropertyMapping | templateProperty = url_no | ontologyProperty = id }}
+  {{PropertyMapping | templateProperty = ja_name | ontologyProperty = foaf:name }}
+  {{PropertyMapping | templateProperty = en_name | ontologyProperty = foaf:name }}
+  {{PropertyMapping | templateProperty = fr_name | ontologyProperty = foaf:name }}
+  {{PropertyMapping | templateProperty = org_url | ontologyProperty = foaf:homepage }}
+  {{GeocoordinatesMapping | latitudeDirection = E(東経)及びW(西経)_ | latitudeDegrees = 緯度度 | latitudeMinutes = 緯度分 | latitudeSeconds = 緯度秒 | longitudeDirection = N(北緯)及びS(南緯)_ | longitudeDegrees = 経度度 | longitudeMinutes = 経度分 | longitudeSeconds = 経度秒 }}
+}}</text></revision></page><page><title>Mapping ja:中華圏の人物</title><ns>232</ns><id>6655</id><revision><id>24583</id><timestamp>2013-03-27T02:18:34Z</timestamp><text>{{TemplateMapping 
+| mapToClass = Person 
+| mappings = 
+   {{ PropertyMapping | templateProperty = 氏名 | ontologyProperty = foaf:name }}
+   {{ PropertyMapping | templateProperty = 名前 | ontologyProperty = foaf:name }}
+   {{ PropertyMapping | templateProperty = 和名 | ontologyProperty = alias }}
+   {{ PropertyMapping | templateProperty = 繁体字 | ontologyProperty = alias }}
+   {{ PropertyMapping | templateProperty = 出身地 | ontologyProperty = birthPlace }}
+   {{ PropertyMapping | templateProperty = 出生 | ontologyProperty = birthDate }}
+   {{ PropertyMapping | templateProperty = 死去 | ontologyProperty = deathDate }}
+   {{ PropertyMapping | templateProperty = 死没地 | ontologyProperty = deathPlace }}
+   {{ PropertyMapping | templateProperty = 業績 | ontologyProperty = knownFor }}
+   {{ PropertyMapping | templateProperty = 国籍 | ontologyProperty = nationality }}
+   {{ PropertyMapping | templateProperty = ふりがな | ontologyProperty = alias }}
+   {{ PropertyMapping | templateProperty = 職業 | ontologyProperty = occupation }}
+   {{ PropertyMapping | templateProperty = 遺体発見 | ontologyProperty = bodyDiscovered }}
+   {{ PropertyMapping | templateProperty = 住居 | ontologyProperty = residence }}
+   {{ PropertyMapping | templateProperty = 民族 | ontologyProperty = ethnicity }}
+   {{ PropertyMapping | templateProperty = 死因 | ontologyProperty = deathCause }}
+   {{ PropertyMapping | templateProperty = 教育 | ontologyProperty = education }}
+   {{ PropertyMapping | templateProperty = 雇用者 | ontologyProperty = employer }}
+   {{ PropertyMapping | templateProperty = 給料 | ontologyProperty = salary }}
+   {{ PropertyMapping | templateProperty = 身長 | ontologyProperty = height }}
+   {{ PropertyMapping | templateProperty = 体重 | ontologyProperty = weight }}
+   {{ PropertyMapping | templateProperty = 前任者 | ontologyProperty = predecessor }}
+   {{ PropertyMapping | templateProperty = 後任者 | ontologyProperty = successor }}
+   {{ PropertyMapping | templateProperty = 敵対者 | ontologyProperty = opponent }}
+   {{ PropertyMapping | templateProperty = 政党 | ontologyProperty = party }}
+   {{ PropertyMapping | templateProperty = 取締役会 | ontologyProperty = board }}
+   {{ PropertyMapping | templateProperty = 宗教 | ontologyProperty = religion }}
+   {{ PropertyMapping | templateProperty = 配偶者 | ontologyProperty = spouse }}
+   {{ PropertyMapping | templateProperty = 非婚配偶者 | ontologyProperty = partner }}
+   {{ PropertyMapping | templateProperty = 子供 | ontologyProperty = child }}
+   {{ PropertyMapping | templateProperty = 親 | ontologyProperty = parent }}
+   {{ PropertyMapping | templateProperty = 親戚 | ontologyProperty = relative }}
+   {{ PropertyMapping | templateProperty = 受賞 | ontologyProperty = award }}
+   {{ PropertyMapping | templateProperty = 公式サイト | ontologyProperty = foaf:homepage }}
+   {{ PropertyMapping | templateProperty = 肩書き | ontologyProperty = title }}
+   {{ PropertyMapping | templateProperty = 画像 | ontologyProperty = foaf:depiction }}
+   {{ PropertyMapping | templateProperty = 画像サイズ | ontologyProperty = imageSize }}
+   {{ PropertyMapping | templateProperty = imagesize | ontologyProperty = imageSize }}
+   {{ PropertyMapping | templateProperty = image_size | ontologyProperty = imageSize }}
+
+&lt;!-- taken from Infobox_Person --&gt;
+	{{PropertyMapping | templateProperty = name | ontologyProperty = foaf:name }}
+	{{PropertyMapping | templateProperty = birthdate | ontologyProperty = birthDate }}
+	{{PropertyMapping | templateProperty = birth_date | ontologyProperty = birthDate }}
+	{{PropertyMapping | templateProperty = birth_date | ontologyProperty = birthYear }}
+	{{PropertyMapping | templateProperty = birthplace | ontologyProperty = birthPlace }}
+	{{PropertyMapping | templateProperty = birth_place | ontologyProperty = birthPlace }}
+	{{PropertyMapping | templateProperty = deathdate | ontologyProperty = deathDate }}
+	{{PropertyMapping | templateProperty = death_date | ontologyProperty = deathDate }}
+	{{PropertyMapping | templateProperty = death_date | ontologyProperty = deathYear }}
+	{{PropertyMapping | templateProperty = deathplace | ontologyProperty = deathPlace }}
+	{{PropertyMapping | templateProperty = death_place | ontologyProperty = deathPlace }}
+	{{PropertyMapping | templateProperty = nationality | ontologyProperty = nationality }}
+	{{PropertyMapping | templateProperty = nationality | ontologyProperty = stateOfOrigin}}
+	{{PropertyMapping | templateProperty = other_names | ontologyProperty = alias }}
+	{{PropertyMapping | templateProperty = known_for | ontologyProperty = knownFor }}
+	{{PropertyMapping | templateProperty = occupation | ontologyProperty = occupation }}
+	{{IntermediateNodeMapping | nodeClass = PersonFunction | correspondingProperty = occupation
+	| mappings =
+		{{PropertyMapping | templateProperty = occupation | ontologyProperty = title }}
+		{{DateIntervalMapping | templateProperty = years_active | startDateOntologyProperty = functionStartDate | endDateOntologyProperty = functionEndDate}}
+		{{DateIntervalMapping | templateProperty = years_active | startDateOntologyProperty = functionStartYear | endDateOntologyProperty = functionEndYear}}
+	}}
+&lt;!-- end of basic parameters  --&gt;
+	{{GeocoordinatesMapping | ontologyProperty = restingPlacePosition | coordinates = resting_place_coordinates }}
+	{{DateIntervalMapping | templateProperty = years_active | startDateOntologyProperty = activeYearsStartYear| endDateOntologyProperty = activeYearsEndYear }}
+	{{IntermediateNodeMapping | nodeClass = PersonFunction | correspondingProperty = personFunction
+	| mappings =
+		{{PropertyMapping | templateProperty = title | ontologyProperty = title }}
+		{{DateIntervalMapping | templateProperty = term | startDateOntologyProperty = functionStartDate | endDateOntologyProperty = functionEndDate}}
+		{{DateIntervalMapping | templateProperty = term | startDateOntologyProperty = functionStartYear | endDateOntologyProperty = functionEndYear}}
+	}}
+	{{PropertyMapping | templateProperty = birth_name | ontologyProperty = birthName }}
+	{{PropertyMapping | templateProperty = birthname | ontologyProperty = birthName }}
+	{{PropertyMapping | templateProperty = body_discovered | ontologyProperty = bodyDiscovered }}
+	{{PropertyMapping | templateProperty = death_cause | ontologyProperty = deathCause }}
+	{{PropertyMapping | templateProperty = resting_place | ontologyProperty = restingPlace }}
+	{{PropertyMapping | templateProperty = residence | ontologyProperty = residence }}
+	{{PropertyMapping | templateProperty = ethnicity | ontologyProperty = ethnicity }}
+	{{PropertyMapping | templateProperty = citizenship | ontologyProperty = citizenship }}
+	{{PropertyMapping | templateProperty = education | ontologyProperty = education }}
+	{{PropertyMapping | templateProperty = alma_mater | ontologyProperty = almaMater }}
+	{{PropertyMapping | templateProperty = employer | ontologyProperty = employer }}
+	{{PropertyMapping | templateProperty = home_town | ontologyProperty = hometown }}
+	{{PropertyMapping | templateProperty = salary | ontologyProperty = salary | unit = Currency }}
+	{{PropertyMapping | templateProperty = networth | ontologyProperty = networth | unit = Currency }}
+	{{PropertyMapping | templateProperty = height | ontologyProperty = height | unit = Length }}
+	{{PropertyMapping | templateProperty = weight | ontologyProperty = weight | unit = Mass }}
+	{{PropertyMapping | templateProperty = title | ontologyProperty = title }}
+	{{PropertyMapping | templateProperty = predecessor | ontologyProperty = predecessor }}
+	{{PropertyMapping | templateProperty = successor | ontologyProperty = successor }}
+	{{PropertyMapping | templateProperty = party | ontologyProperty = party }}
+	{{PropertyMapping | templateProperty = opponents | ontologyProperty = opponent }}
+	{{PropertyMapping | templateProperty = boards | ontologyProperty = board }}
+	{{PropertyMapping | templateProperty = religion | ontologyProperty = religion }}
+	{{PropertyMapping | templateProperty = spouse | ontologyProperty = spouse }}
+	{{PropertyMapping | templateProperty = partner | ontologyProperty = partner }}
+	{{PropertyMapping | templateProperty = children | ontologyProperty = child }}
+	{{PropertyMapping | templateProperty = relations | ontologyProperty = relation }}
+	{{PropertyMapping | templateProperty = callsign | ontologyProperty = callSign }}
+	{{PropertyMapping | templateProperty = relatives | ontologyProperty = relative }}
+	{{PropertyMapping | templateProperty = awards | ontologyProperty = award }}
+	{{PropertyMapping | templateProperty = pseudonym | ontologyProperty = pseudonym }}
+	{{PropertyMapping | templateProperty = parents | ontologyProperty = parent }}
+	{{PropertyMapping | templateProperty = website | ontologyProperty = foaf:homepage }}
+
 }}</text></revision></page><page><title>Mapping ja:公園</title><ns>232</ns><id>5883</id><revision><id>19647</id><timestamp>2012-09-27T08:41:54Z</timestamp><text>{{TemplateMapping
 |mapToClass = Park
 |mappings = 
@@ -823,7 +1218,27 @@
   {{ PropertyMapping | templateProperty = type | ontologyProperty = category }}
   {{ GeocoordinatesMapping | latitudeDirection = E(東経)及びW(西経)_ | latitudeDegrees = 緯度度 | latitudeMinutes = 緯度分 | latitudeSeconds = 緯度秒 | longitudeDirection = N(北緯)及びS(南緯)_ | longitudeDegrees = 経度度 | longitudeMinutes = 経度分 | longitudeSeconds = 経度秒 }}
 
-}}</text></revision></page><page><title>Mapping ja:博物館</title><ns>232</ns><id>5878</id><revision><id>19649</id><timestamp>2012-09-27T08:54:45Z</timestamp><text>{{ TemplateMapping 
+}}</text></revision></page><page><title>Mapping ja:医療機関</title><ns>232</ns><id>6660</id><revision><id>24633</id><timestamp>2013-03-27T02:52:13Z</timestamp><text>{{TemplateMapping
+| mapToClass = Hospital
+| mappings =
+	{{PropertyMapping | templateProperty = 名称 | ontologyProperty = foaf:name }}
+	{{PropertyMapping | templateProperty = 正式名称 | ontologyProperty = foaf:name }}
+	{{PropertyMapping | templateProperty = 英語名称 | ontologyProperty = foaf:name }}
+	{{PropertyMapping | templateProperty = 開設者 | ontologyProperty = foundedBy }}
+	{{PropertyMapping | templateProperty = 所在地 | ontologyProperty = location }}
+	{{PropertyMapping | templateProperty = 所在地郵便番号 | ontologyProperty = postalCode }}
+	{{PropertyMapping | templateProperty = 許可病床数 | ontologyProperty = bedCount }}
+	{{PropertyMapping | templateProperty = 一般病床数 | ontologyProperty = bedCount }}
+	{{PropertyMapping | templateProperty = 精神病床数 | ontologyProperty = bedCount }}
+	{{PropertyMapping | templateProperty = 感染症病床数 | ontologyProperty = bedCount }}
+	{{PropertyMapping | templateProperty = 療養病床数 | ontologyProperty = bedCount }}
+	{{PropertyMapping | templateProperty = 開設年月日 | ontologyProperty = openingDate }}
+	{{PropertyMapping | templateProperty = 開設年月日 | ontologyProperty = openingYear }}
+	{{PropertyMapping | templateProperty = 地方公営企業法 | ontologyProperty = legalForm }}
+	{{PropertyMapping | templateProperty = 画像 | ontologyProperty = foaf:img}}
+	{{ GeocoordinatesMapping | latitudeDirection = E(東経)及びW(西経)_ | latitudeDegrees = 緯度度 | latitudeMinutes = 緯度分 | latitudeSeconds = 緯度秒
+      | longitudeDirection = N(北緯)及びS(南緯)_ | longitudeDegrees = 経度度 | longitudeMinutes = 経度分 | longitudeSeconds = 経度秒 }}
+}}</text></revision></page><page><title>Mapping ja:博物館</title><ns>232</ns><id>5878</id><revision><id>24498</id><timestamp>2013-03-27T01:03:53Z</timestamp><text>{{ TemplateMapping 
 | mapToClass = Museum 
 | mappings =
     {{ PropertyMapping | templateProperty = 名称 | ontologyProperty = foaf:name }}
@@ -832,9 +1247,12 @@
     {{ PropertyMapping | templateProperty = 正式名称 | ontologyProperty = foaf:name }}
     {{ PropertyMapping | templateProperty = native_name | ontologyProperty = foaf:name }}
     {{ PropertyMapping | templateProperty = native_name_lang | ontologyProperty = language }}
+    {{ PropertyMapping | templateProperty = 画像 | ontologyProperty = foaf:img }}
     {{ PropertyMapping | templateProperty = 所在地 | ontologyProperty = location }}
+    {{ PropertyMapping | templateProperty = 事業主体 | ontologyProperty = operatedBy }}
     {{ PropertyMapping | templateProperty = 開館 | ontologyProperty = foundingDate }}
     {{ PropertyMapping | templateProperty = 閉館 | ontologyProperty = dissolved }}
+    {{ PropertyMapping | templateProperty = 所在地郵便番号 | ontologyProperty = postalCode }}
     {{ PropertyMapping | templateProperty = dissolved | ontologyProperty = dissolved }}
     {{ PropertyMapping | templateProperty = 収蔵作品数 | ontologyProperty = collection }}
     {{ PropertyMapping | templateProperty = 専門分野 | ontologyProperty = type }}
@@ -851,11 +1269,46 @@
     {{ PropertyMapping | templateProperty = network | ontologyProperty = network }}
     {{ PropertyMapping | templateProperty = website | ontologyProperty = foaf:homepage }}
     {{ PropertyMapping | templateProperty = URL | ontologyProperty = foaf:homepage }}
-    {{ GeocoordinatesMapping | latitudeDirection = E(東経)及びW(西経)_ | latitudeDegrees = 緯度度 | latitudeMinutes = 緯度分 | latitudeSeconds = 緯度秒 | longitudeDirection = N(北緯)及びS(南緯)_ | longitudeDegrees = 経度度 | longitudeMinutes = 経度分 | longitudeSeconds = 経度秒 }}
+    {{ GeocoordinatesMapping | latitudeDirection = E(東経)及びW(西経) | latitudeDegrees = 緯度度 | latitudeMinutes = 緯度分 | latitudeSeconds = 緯度秒 | longitudeDirection = N(北緯)及びS(南緯) | longitudeDegrees = 経度度 | longitudeMinutes = 経度分 | longitudeSeconds = 経度秒 }}
     {{ GeocoordinatesMapping | latitude = latitude | longitude = longitude 
 　　　　| latitudeDirection  = lat_dir | latitudeDegrees    = lat_deg | latitudeMinutes    = lat_min | latitudeSeconds    = lat_sec
 　　　　| longitudeDirection = lon_dir | longitudeDegrees   = lon_deg | longitudeMinutes   = lon_min | longitudeSeconds   = lon_sec　}} 
-}}</text></revision></page><page><title>Mapping ja:基礎情報 テレビ番組</title><ns>232</ns><id>5891</id><revision><id>19440</id><timestamp>2012-08-07T16:23:43Z</timestamp><text>{{TemplateMapping
+}}</text></revision></page><page><title>Mapping ja:商業施設</title><ns>232</ns><id>6653</id><revision><id>24482</id><timestamp>2013-03-27T00:39:09Z</timestamp><text>{{ TemplateMapping
+| mapToClass = ShoppingMall
+| mappings = 
+    {{ PropertyMapping | templateProperty = 所在地 | ontologyProperty = address }}
+    {{ PropertyMapping | templateProperty = 商業施設面積 | ontologyProperty = floorArea }}
+    {{ GeocoordinatesMapping | latitudeDegrees = 緯度度 | latitudeMinutes = 緯度分 | latitudeSeconds = 緯度秒
+      | longitudeDegrees = 経度度 | longitudeMinutes = 経度分 | longitudeSeconds = 経度秒 }}
+}}</text></revision></page><page><title>Mapping ja:図書館</title><ns>232</ns><id>6656</id><revision><id>24515</id><timestamp>2013-03-27T01:36:38Z</timestamp><text>{{TemplateMapping
+| mapToClass = Library
+| mappings =
+	{{PropertyMapping | templateProperty = 名称 | ontologyProperty =  foaf:name }}
+	{{PropertyMapping | templateProperty = 所在地 | ontologyProperty = location }}
+	{{PropertyMapping | templateProperty = 蔵書数 | ontologyProperty = collectionSize }}
+	{{PropertyMapping | templateProperty = 開館 | ontologyProperty = foundingDate }}
+	{{PropertyMapping | templateProperty = 地図国コード | ontologyProperty = country }}
+
+        {{ GeocoordinatesMapping | latitudeDirection = E(東経)及びW(西経) | latitudeDegrees = 緯度度 | latitudeMinutes = 緯度分 | latitudeSeconds = 緯度秒
+      | longitudeDirection = N(北緯)及びS(南緯) | longitudeDegrees = 経度度 | longitudeMinutes = 経度分 | longitudeSeconds = 経度秒 }}
+}}
+
+&lt;!--
+Template Properties not mapped yet:
+
+| 所在地郵便番号     = 
+| 画像     =
+| 所在地郵便番号     =
+| 開館    =
+| 事業主体    =
+| 専門分野    =
+| 管理運営    =
+| 前身    =
+| 正式名称    =
+| 愛称    =
+| 位置    =
+| 画像説明    =
+--&gt;</text></revision></page><page><title>Mapping ja:基礎情報 テレビ番組</title><ns>232</ns><id>5891</id><revision><id>19440</id><timestamp>2012-08-07T16:23:43Z</timestamp><text>{{TemplateMapping
 |mapToClass = TelevisionShow
 |mappings = 
   {{ PropertyMapping | templateProperty = 番組名 | ontologyProperty = foaf:name }}
@@ -910,6 +1363,28 @@
   {{ PropertyMapping | templateProperty = 従業員数 | ontologyProperty = numberOfEmployees }}
  
   {{ PropertyMapping | templateProperty = 外部リンク | ontologyProperty = foaf:homepage }}
+}}</text></revision></page><page><title>Mapping ja:基礎情報 書籍</title><ns>232</ns><id>6644</id><revision><id>24457</id><timestamp>2013-03-26T07:51:06Z</timestamp><text>{{TemplateMapping
+| mapToClass = Book
+| mappings = 
+ {{PropertyMapping | templateProperty = title | ontologyProperty = foaf:name }}
+ {{PropertyMapping | templateProperty = orig_title | ontologyProperty = foaf:name }}
+ {{PropertyMapping | templateProperty = translator | ontologyProperty = translator }}
+ {{PropertyMapping | templateProperty = author | ontologyProperty = author }}
+ {{PropertyMapping | templateProperty = illustrator | ontologyProperty = illustrator }}
+ {{PropertyMapping | templateProperty = country | ontologyProperty = country }}
+ {{PropertyMapping | templateProperty = language | ontologyProperty = language }}
+ {{PropertyMapping | templateProperty = genre | ontologyProperty = literaryGenre }}
+ &lt;!-- use dc:publisher instead --&gt;
+ {{PropertyMapping | templateProperty = publisher | ontologyProperty = publisher }}
+ {{PropertyMapping | templateProperty = published | ontologyProperty = publicationDate }}
+ {{PropertyMapping | templateProperty = type | ontologyProperty = mediaType }}
+ {{PropertyMapping | templateProperty = pages | ontologyProperty = numberOfPages }}
+&lt;!-- How to extract several IDs with embedded content?
+ {{PropertyMapping | templateProperty = id | ontologyProperty = id }}
+--&gt;
+ {{PropertyMapping | templateProperty = website | ontologyProperty = foaf:homepage }}
+ {{PropertyMapping | templateProperty = preceded_by | ontologyProperty = previousWork }}
+ {{PropertyMapping | templateProperty = followed_by | ontologyProperty = subsequentWork }}
 }}</text></revision></page><page><title>Mapping ja:基礎情報 都道府県</title><ns>232</ns><id>5921</id><revision><id>19548</id><timestamp>2012-08-24T07:51:52Z</timestamp><text>{{TemplateMapping
 | mapToClass = AdministrativeRegion
 | mappings =
@@ -967,6 +1442,12 @@
     {{ GeocoordinatesMapping | latitudeDirection = E(東経)及びW(西経)_ | latitudeDegrees = 緯度度 | latitudeMinutes = 緯度分 | latitudeSeconds = 緯度秒
       | longitudeDirection = N(北緯)及びS(南緯)_ | longitudeDegrees = 経度度 | longitudeMinutes = 経度分 | longitudeSeconds = 経度秒 }}
 
+}}</text></revision></page><page><title>Mapping ja:天体 基本</title><ns>232</ns><id>6684</id><revision><id>25039</id><timestamp>2013-04-21T12:44:32Z</timestamp><text>{{TemplateMapping 
+| mapToClass = CelestialBody
+| mappings = 
+   {{ PropertyMapping | templateProperty = 色 | ontologyProperty = colour }}
+   {{ PropertyMapping | templateProperty = 画像ファイル | ontologyProperty = foaf:img }}
+   {{ PropertyMapping | templateProperty = 幅 | ontologyProperty = width }}
 }}</text></revision></page><page><title>Mapping ja:女性モデル</title><ns>232</ns><id>5915</id><revision><id>19518</id><timestamp>2012-08-17T02:09:22Z</timestamp><text>{{TemplateMapping
 | mapToClass = Model
 | mappings =
@@ -1010,6 +1491,59 @@
 	{{ PropertyMapping | templateProperty = 本部所在地 | ontologyProperty = headquarter }}
 	{{ PropertyMapping | templateProperty = ウェブサイト | ontologyProperty = foaf:homepage }}
 	{{ PropertyMapping | templateProperty = 国名 | ontologyProperty = country }}
+}}</text></revision></page><page><title>Mapping ja:政治家</title><ns>232</ns><id>6654</id><revision><id>24544</id><timestamp>2013-03-27T01:55:34Z</timestamp><text>{{TemplateMapping
+| mapToClass = Politician
+| mappings =
+	{{PropertyMapping | templateProperty = 人名 | ontologyProperty = foaf:name }}
+	{{PropertyMapping | templateProperty = 生年月日 | ontologyProperty = birthDate }}
+	{{PropertyMapping | templateProperty = 出生地 | ontologyProperty = birthPlace }}
+	{{PropertyMapping | templateProperty = 没年月日 | ontologyProperty = deathDate }}
+	{{PropertyMapping | templateProperty = 死没地 | ontologyProperty = deathPlace }}
+	{{PropertyMapping | templateProperty = 出身校 | ontologyProperty = school }}
+	{{PropertyMapping | templateProperty = 所属政党 | ontologyProperty = party }}
+	{{PropertyMapping | templateProperty = 配偶者 | ontologyProperty = spouse }}
+	{{PropertyMapping | templateProperty = 職名 | ontologyProperty = occupation }}
+{{PropertyMapping | templateProperty = 職名2 | ontologyProperty = occupation }}
+{{PropertyMapping | templateProperty = 職名3 | ontologyProperty = occupation }}
+{{PropertyMapping | templateProperty = 職名4 | ontologyProperty = occupation }}
+{{PropertyMapping | templateProperty = 職名5 | ontologyProperty = occupation }}
+	{{PropertyMapping | templateProperty = ウェブサイト | ontologyProperty = foaf:homepage }}
+	{{PropertyMapping | templateProperty = 就任日 | ontologyProperty = activeYearsStartDate }}
+	{{PropertyMapping | templateProperty = 就任日2 | ontologyProperty = activeYearsStartDate }}
+	{{PropertyMapping | templateProperty = 就任日3 | ontologyProperty = activeYearsStartDate }}
+	{{PropertyMapping | templateProperty = 就任日4 | ontologyProperty = activeYearsStartDate }}
+	{{PropertyMapping | templateProperty = 就任日5 | ontologyProperty = activeYearsStartDate }}
+	{{PropertyMapping | templateProperty = 就任日6 | ontologyProperty = activeYearsStartDate }}
+	{{PropertyMapping | templateProperty = 就任日7 | ontologyProperty = activeYearsStartDate }}
+	{{PropertyMapping | templateProperty = 就任日8 | ontologyProperty = activeYearsStartDate }}
+	{{PropertyMapping | templateProperty = 就任日9 | ontologyProperty = activeYearsStartDate }}
+       {{PropertyMapping | templateProperty = 就任日10 | ontologyProperty = activeYearsStartDate }}
+       {{PropertyMapping | templateProperty = 就任日11 | ontologyProperty = activeYearsStartDate }}
+       {{PropertyMapping | templateProperty = 就任日12 | ontologyProperty = activeYearsStartDate }}
+       {{PropertyMapping | templateProperty = 就任日13 | ontologyProperty = activeYearsStartDate }}
+        {{PropertyMapping | templateProperty = 就任日14 | ontologyProperty = activeYearsStartDate }}
+        {{PropertyMapping | templateProperty = 就任日15 | ontologyProperty = activeYearsStartDate }}
+	{{PropertyMapping | templateProperty = 退任日 | ontologyProperty = activeYearsEndDate }}
+	{{PropertyMapping | templateProperty = 退任日2 | ontologyProperty = activeYearsEndDate }}
+	{{PropertyMapping | templateProperty = 退任日3 | ontologyProperty = activeYearsEndDate }}
+	{{PropertyMapping | templateProperty = 退任日4 | ontologyProperty = activeYearsEndDate }}
+	{{PropertyMapping | templateProperty = 退任日5 | ontologyProperty = activeYearsEndDate }}
+	{{PropertyMapping | templateProperty = 退任日6 | ontologyProperty = activeYearsEndDate }}
+	{{PropertyMapping | templateProperty = 退任日7 | ontologyProperty = activeYearsEndDate }}
+	{{PropertyMapping | templateProperty = 退任日8 | ontologyProperty = activeYearsEndDate }}
+	{{PropertyMapping | templateProperty = 退任日9 | ontologyProperty = activeYearsEndDate }}
+{{PropertyMapping | templateProperty = 退任日10 | ontologyProperty = activeYearsEndDate }}
+{{PropertyMapping | templateProperty = 退任日11 | ontologyProperty = activeYearsEndDate }}
+{{PropertyMapping | templateProperty = 退任日12 | ontologyProperty = activeYearsEndDate }}
+{{PropertyMapping | templateProperty = 退任日13 | ontologyProperty = activeYearsEndDate }}
+{{PropertyMapping | templateProperty = 退任日14 | ontologyProperty = activeYearsEndDate }}
+{{PropertyMapping | templateProperty = 退任日15 | ontologyProperty = activeYearsEndDate }}
+	{{PropertyMapping | templateProperty = 選挙区 | ontologyProperty = region }}
+	{{PropertyMapping | templateProperty = 選挙区2 | ontologyProperty = region }}
+	{{PropertyMapping | templateProperty = 選挙区3 | ontologyProperty = region }}
+	{{PropertyMapping | templateProperty = 選挙区4 | ontologyProperty = region }}
+	{{PropertyMapping | templateProperty = 選挙区5 | ontologyProperty = region }}	
+{{PropertyMapping | templateProperty = 画像サイズ | ontologyProperty = imageSize }}
 }}</text></revision></page><page><title>Mapping ja:日本の中学校</title><ns>232</ns><id>5914</id><revision><id>19652</id><timestamp>2012-09-27T09:08:44Z</timestamp><text>{{ TemplateMapping | mapToClass = School | mappings = 
     {{ PropertyMapping | templateProperty = 校名 | ontologyProperty = foaf:name }}
     {{ PropertyMapping | templateProperty = 過去校名 | ontologyProperty = formerName }}
@@ -1027,7 +1561,13 @@
     {{ PropertyMapping | templateProperty = 外部リンク | ontologyProperty = foaf:homepage }}
     {{ GeocoordinatesMapping | latitudeDirection = E(東経)及びW(西経)_ | latitudeDegrees = 緯度度 | latitudeMinutes = 緯度分 | latitudeSeconds = 緯度秒
       | longitudeDirection = N(北緯)及びS(南緯)_ | longitudeDegrees = 経度度 | longitudeMinutes = 経度分 | longitudeSeconds = 経度秒 }}
-}}</text></revision></page><page><title>Mapping ja:日本の人物</title><ns>232</ns><id>5884</id><revision><id>19321</id><timestamp>2012-08-07T13:56:03Z</timestamp><text></text></revision></page><page><title>Mapping ja:日本の小学校</title><ns>232</ns><id>5913</id><revision><id>19651</id><timestamp>2012-09-27T09:07:47Z</timestamp><text>{{ TemplateMapping | mapToClass = School | mappings = 
+}}</text></revision></page><page><title>Mapping ja:日本の人物</title><ns>232</ns><id>5884</id><revision><id>19321</id><timestamp>2012-08-07T13:56:03Z</timestamp><text></text></revision></page><page><title>Mapping ja:日本の寺院</title><ns>232</ns><id>6675</id><revision><id>24602</id><timestamp>2013-03-27T02:29:11Z</timestamp><text>{{ TemplateMapping | mapToClass = Temple | mappings = 
+    {{ PropertyMapping | ontologyProperty = foaf:name | templateProperty = 名称 }}
+    {{ PropertyMapping | ontologyProperty = address | templateProperty = 所在地 }}
+    {{ PropertyMapping | ontologyProperty = foaf:img | templateProperty = 画像 }}
+    {{ PropertyMapping | ontologyProperty = foaf:page | templateProperty = 公式HP }}
+  {{ GeocoordinatesMapping | latitudeDegrees = 緯度度 | latitudeMinutes = 緯度分 | latitudeSeconds = 緯度秒 | longitudeDegrees = 経度度 | longitudeMinutes = 経度分 | longitudeSeconds = 経度秒 }}
+}}</text></revision></page><page><title>Mapping ja:日本の小学校</title><ns>232</ns><id>5913</id><revision><id>19651</id><timestamp>2012-09-27T09:07:47Z</timestamp><text>{{ TemplateMapping | mapToClass = School | mappings = 
     {{ PropertyMapping | templateProperty = 校名 | ontologyProperty = foaf:name }}
     {{ PropertyMapping | templateProperty = 過去校名 | ontologyProperty = formerName }}
     {{ PropertyMapping | templateProperty = 校訓 | ontologyProperty = motto }}
@@ -1044,6 +1584,54 @@
     {{ PropertyMapping | templateProperty = 外部リンク | ontologyProperty = foaf:homepage }}
     {{ GeocoordinatesMapping | latitudeDirection = E(東経)及びW(西経)_ | latitudeDegrees = 緯度度 | latitudeMinutes = 緯度分 | latitudeSeconds = 緯度秒
       | longitudeDirection = N(北緯)及びS(南緯)_ | longitudeDegrees = 経度度 | longitudeMinutes = 経度分 | longitudeSeconds = 経度秒 }}
+}}</text></revision></page><page><title>Mapping ja:日本の市</title><ns>232</ns><id>6664</id><revision><id>24541</id><timestamp>2013-03-27T01:53:38Z</timestamp><text>{{TemplateMapping
+| mapToClass = City
+| mappings =
+	{{PropertyMapping | templateProperty = 自治体名 | ontologyProperty = foaf:name }}
+	{{PropertyMapping | templateProperty = 郵便番号 | ontologyProperty = postalCode }}
+	{{PropertyMapping | templateProperty = 都道府県 | ontologyProperty = location }}
+	{{PropertyMapping | templateProperty = 所在地 | ontologyProperty = location }}
+	{{PropertyMapping | templateProperty = 外部リンク | ontologyProperty = foaf:homepage }}
+	{{PropertyMapping | templateProperty = 画像 | ontologyProperty = foaf:img }}
+	{{PropertyMapping | templateProperty = コード | ontologyProperty = areaCode }}
+	{{PropertyMapping | templateProperty = 隣接自治体 | ontologyProperty = neighboringMunicipality }}
+	{{GeocoordinatesMapping | latitude = latitude  | longitude = longitude  | latitudeSeconds = lat_sec  | longitudeDegrees = lon_deg  | longitudeMinutes = lon_min  | longitudeSeconds = lon_sec  | longitudeSeconds = longs  | longitudeDirection = longEW }}
+}}</text></revision></page><page><title>Mapping ja:日本の市 (廃止)</title><ns>232</ns><id>6682</id><revision><id>24649</id><timestamp>2013-03-27T03:12:49Z</timestamp><text>{{TemplateMapping
+| mapToClass = City
+| mappings =
+	{{PropertyMapping | templateProperty = 自治体名 | ontologyProperty = foaf:name }}
+	{{PropertyMapping | templateProperty = 郵便番号 | ontologyProperty = postalCode }}
+	{{PropertyMapping | templateProperty = 都道府県 | ontologyProperty = location }}
+	{{PropertyMapping | templateProperty = 所在地 | ontologyProperty = location }}
+	{{PropertyMapping | templateProperty = 外部リンク | ontologyProperty = foaf:homepage }}
+	{{PropertyMapping | templateProperty = 画像 | ontologyProperty = foaf:img }}
+	{{PropertyMapping | templateProperty = コード | ontologyProperty = areaCode }}
+	{{PropertyMapping | templateProperty = 隣接自治体 | ontologyProperty = neighboringMunicipality }}
+	{{PropertyMapping | templateProperty = 廃止日 | ontologyProperty = dissolutionDate }}
+	{{PropertyMapping | templateProperty = 人口 | ontologyProperty = populationTotal }}
+	{{PropertyMapping | templateProperty = 人口の時点 | ontologyProperty = populationAsOf }}
+	{{GeocoordinatesMapping | latitude = latitude  | longitude = longitude  | latitudeSeconds = lat_sec  | longitudeDegrees = lon_deg  | longitudeMinutes = lon_min  | longitudeSeconds = lon_sec  | longitudeSeconds = longs  | longitudeDirection = longEW }}
+}}</text></revision></page><page><title>Mapping ja:日本の温泉地</title><ns>232</ns><id>6666</id><revision><id>24662</id><timestamp>2013-03-27T03:47:37Z</timestamp><text>{{TemplateMapping
+| mapToClass = HotSpring
+| mappings =
+	{{PropertyMapping | templateProperty = 名称 | ontologyProperty = rdfs:label }}
+       {{PropertyMapping | templateProperty = 画像 | ontologyProperty = foaf:depiction }}
+      {{ PropertyMapping | templateProperty = 所在地 | ontologyProperty = address }}
+    {{ PropertyMapping | templateProperty = 外部リンク | ontologyProperty = foaf:homepage }}
+    {{ PropertyMapping | templateProperty = 年間浴客数 | ontologyProperty = numberOfVisitors}}
+   {{ GeocoordinatesMapping | latitudeDegrees = 緯度度 | latitudeMinutes = 緯度分 | latitudeSeconds = 緯度秒 | longitudeDegrees = 経度度 | longitudeMinutes = 経度分 | longitudeSeconds = 経度秒 }}
+}}</text></revision></page><page><title>Mapping ja:日本の町村</title><ns>232</ns><id>6679</id><revision><id>24631</id><timestamp>2013-03-27T02:49:10Z</timestamp><text>{{TemplateMapping
+| mapToClass = City
+| mappings =
+	{{PropertyMapping | templateProperty = 自治体名 | ontologyProperty = foaf:name }}
+	{{PropertyMapping | templateProperty = 郵便番号 | ontologyProperty = postalCode }}
+	{{PropertyMapping | templateProperty = 都道府県 | ontologyProperty = location }}
+	{{PropertyMapping | templateProperty = 所在地 | ontologyProperty = location }}
+	{{PropertyMapping | templateProperty = 外部リンク | ontologyProperty = foaf:homepage }}
+	{{PropertyMapping | templateProperty = 画像 | ontologyProperty = foaf:img }}
+	{{PropertyMapping | templateProperty = 画像の説明 | ontologyProperty = depictionDescription }}
+	{{PropertyMapping | templateProperty = コード | ontologyProperty = areaCode }}
+	{{PropertyMapping | templateProperty = 隣接自治体 | ontologyProperty = neighboringMunicipality }}
 }}</text></revision></page><page><title>Mapping ja:日本の高等学校</title><ns>232</ns><id>5909</id><revision><id>19653</id><timestamp>2012-09-27T09:09:23Z</timestamp><text>{{ TemplateMapping | mapToClass = School | mappings = 
     {{ PropertyMapping | templateProperty = 校名 | ontologyProperty = foaf:name }}
     {{ PropertyMapping | templateProperty = 過去校名 | ontologyProperty = formerName }}
@@ -1063,6 +1651,23 @@
     {{ PropertyMapping | templateProperty = 外部リンク | ontologyProperty = foaf:homepage }}
     {{ GeocoordinatesMapping | latitudeDirection = E(東経)及びW(西経)_ | latitudeDegrees = 緯度度 | latitudeMinutes = 緯度分 | latitudeSeconds = 緯度秒
       | longitudeDirection = N(北緯)及びS(南緯)_ | longitudeDegrees = 経度度 | longitudeMinutes = 経度分 | longitudeSeconds = 経度秒 }}
+}}</text></revision></page><page><title>Mapping ja:架空の人物</title><ns>232</ns><id>6659</id><revision><id>24568</id><timestamp>2013-03-27T02:11:33Z</timestamp><text>{{TemplateMapping 
+| mapToClass = Person 
+| mappings = 
+   {{ PropertyMapping | templateProperty = 名前 | ontologyProperty = foaf:name }}
+   {{ PropertyMapping | templateProperty = 出身地 | ontologyProperty = hometown }}
+   {{ PropertyMapping | templateProperty = 生年月日 | ontologyProperty = birthDate }} 
+   {{ PropertyMapping | templateProperty = 誕生日 | ontologyProperty = birthDate }}
+   {{ PropertyMapping | templateProperty = 職業 | ontologyProperty = occupation }}
+   {{ PropertyMapping | templateProperty = 声 | ontologyProperty = voice }}
+   {{ PropertyMapping | templateProperty = キャラクターデザイン | ontologyProperty = creator }}
+   {{ PropertyMapping | templateProperty = 性別 | ontologyProperty = gender }}
+   {{ PropertyMapping | templateProperty = 種族 | ontologyProperty = species }}
+   {{ PropertyMapping | templateProperty = 演 | ontologyProperty = portrayer }}
+   {{ PropertyMapping | templateProperty = スリーサイズ | ontologyProperty = measurements }}
+   {{ PropertyMapping | templateProperty = 年齢 | ontologyProperty = age }}
+   {{ PropertyMapping | templateProperty = 身長 | ontologyProperty = height }}
+   {{ PropertyMapping | templateProperty = 体重 | ontologyProperty = weight }}
 }}</text></revision></page><page><title>Mapping ja:生物分類表</title><ns>232</ns><id>5859</id><revision><id>19102</id><timestamp>2012-07-31T07:01:47Z</timestamp><text>{{ConditionalMapping
 | cases =
 {{Condition
@@ -1624,6 +2229,17 @@
    {{PropertyMapping | templateProperty = 和名 | ontologyProperty = foaf:name }}
    {{PropertyMapping | templateProperty = 英名 | ontologyProperty = foaf:name }}
    {{PropertyMapping | templateProperty = 省略 | ontologyProperty = foaf:name }}
+}}</text></revision></page><page><title>Mapping ja:神社</title><ns>232</ns><id>6652</id><revision><id>24675</id><timestamp>2013-03-27T05:45:45Z</timestamp><text>{{TemplateMapping 
+| mapToClass = Shrine
+| mappings = 
+   {{ PropertyMapping | templateProperty = 所在地 | ontologyProperty = address }}
+   {{ PropertyMapping | templateProperty = 名称 | ontologyProperty = foaf:name }}
+   {{ PropertyMapping | templateProperty = 別名 | ontologyProperty = alias }}
+   {{ PropertyMapping | templateProperty = 祭神 | ontologyProperty = enshrinedDeity }}
+   {{ PropertyMapping | templateProperty = 画像 | ontologyProperty = foaf:img }}
+   {{ PropertyMapping | templateProperty = 創建 | ontologyProperty = buildingEndYear }}
+   {{ GeocoordinatesMapping | latitudeDirection = E(東経)及びW(西経)_ | latitudeDegrees = 緯度度 | latitudeMinutes = 緯度分 | latitudeSeconds = 緯度秒
+      | longitudeDirection = N(北緯)及びS(南緯)_ | longitudeDegrees = 経度度 | longitudeMinutes = 経度分 | longitudeSeconds = 経度秒 }}
 }}</text></revision></page><page><title>Mapping ja:鉄道車両</title><ns>232</ns><id>6456</id><revision><id>23651</id><timestamp>2013-02-05T04:46:07Z</timestamp><text>{{ TemplateMapping
 | mapToClass = Train
 | mappings =
@@ -1631,7 +2247,7 @@
   {{ PropertyMapping | templateProperty = 製造メーカー | ontologyProperty = manufacturer }}
   {{ PropertyMapping | templateProperty = 車両定員 | ontologyProperty = capacity }}
   {{ PropertyMapping | templateProperty = 編成質量 | ontologyProperty = weight }}
-}}</text></revision></page><page><title>Mapping ja:駅情報</title><ns>232</ns><id>5908</id><revision><id>19650</id><timestamp>2012-09-27T09:03:03Z</timestamp><text>{{ TemplateMapping | mapToClass = Station | mappings = 
+}}</text></revision></page><page><title>Mapping ja:駅情報</title><ns>232</ns><id>5908</id><revision><id>24664</id><timestamp>2013-03-27T03:49:09Z</timestamp><text>{{ TemplateMapping | mapToClass = Station | mappings = 
     {{ PropertyMapping | templateProperty = 駅名 | ontologyProperty = foaf:name }}
     {{ PropertyMapping | templateProperty = よみがな | ontologyProperty = foaf:name }}
     {{ PropertyMapping | templateProperty = ローマ字 | ontologyProperty = foaf:name }}
@@ -1654,5 +2270,7 @@
     {{ PropertyMapping | templateProperty = 廃止年月日 | ontologyProperty = closingDate }}
     {{ PropertyMapping | templateProperty = 乗車人員 | ontologyProperty = passengersPerDay }}
     {{ PropertyMapping | templateProperty = 乗降人員 | ontologyProperty = passengersPerDay }}
-    {{ GeocoordinatesMapping | latitudeDirection = E(東経)及びW(西経)_ | latitudeDegrees = 緯度度 | latitudeMinutes = 緯度分 | latitudeSeconds = 緯度秒 | longitudeDirection = N(北緯)及びS(南緯)_ | longitudeDegrees = 経度度 | longitudeMinutes = 経度分 | longitudeSeconds = 経度秒 }}
+    {{ PropertyMapping | templateProperty = 次の駅 | ontologyProperty = subsequentInfrastructure }}
+    {{ PropertyMapping | templateProperty = 前の駅 | ontologyProperty = previousInfrastructure }}
+    {{ GeocoordinatesMapping | latitudeDirection = E(東経)及びW(西経) | latitudeDegrees = 緯度度 | latitudeMinutes = 緯度分 | latitudeSeconds = 緯度秒 | longitudeDirection = N(北緯)及びS(南緯) | longitudeDegrees = 経度度 | longitudeMinutes = 経度分 | longitudeSeconds = 経度秒 }}
  }}</text></revision></page></mediawiki>

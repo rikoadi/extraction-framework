@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><mediawiki xmlns="http://www.mediawiki.org/xml/export-0.6/"><page><title>Mapping ar:تجمع سكاني</title><ns>250</ns><id>5085</id><revision><id>18189</id><timestamp>2012-05-07T19:23:40Z</timestamp><text>{{ TemplateMapping | mapToClass = Settlement | mappings = 
+<?xml version="1.0" encoding="UTF-8"?><mediawiki xmlns="http://www.mediawiki.org/xml/export-0.8/"><page><title>Mapping ar:تجمع سكاني</title><ns>250</ns><id>5085</id><revision><id>18189</id><timestamp>2012-05-07T19:23:40Z</timestamp><text>{{ TemplateMapping | mapToClass = Settlement | mappings = 
 
     {{ PropertyMapping | templateProperty = الاسم الرسمي | ontologyProperty = foaf:name }}
     {{ PropertyMapping | templateProperty = اللقب | ontologyProperty = foaf:nick }}

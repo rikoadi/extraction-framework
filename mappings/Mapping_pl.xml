@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><mediawiki xmlns="http://www.mediawiki.org/xml/export-0.6/"><page><title>Mapping pl:Aktor infobox</title><ns>220</ns><id>2984</id><revision><id>16710</id><timestamp>2012-02-22T23:42:10Z</timestamp><text>{{TemplateMapping
+<?xml version="1.0" encoding="UTF-8"?><mediawiki xmlns="http://www.mediawiki.org/xml/export-0.8/"><page><title>Mapping pl:Aktor infobox</title><ns>220</ns><id>2984</id><revision><id>16710</id><timestamp>2012-02-22T23:42:10Z</timestamp><text>{{TemplateMapping
 | mapToClass = Actor
 | mappings =
 	{{PropertyMapping | templateProperty = Imię i nazwisko | ontologyProperty = foaf:name }}

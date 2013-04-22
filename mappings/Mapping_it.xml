@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><mediawiki xmlns="http://www.mediawiki.org/xml/export-0.6/"><page><title>Mapping it:Album</title><ns>212</ns><id>4333</id><revision><id>17024</id><timestamp>2012-03-23T15:19:09Z</timestamp><text>{{TemplateMapping
+<?xml version="1.0" encoding="UTF-8"?><mediawiki xmlns="http://www.mediawiki.org/xml/export-0.8/"><page><title>Mapping it:Album</title><ns>212</ns><id>4333</id><revision><id>17024</id><timestamp>2012-03-23T15:19:09Z</timestamp><text>{{TemplateMapping
 | mapToClass = Album
 | mappings =
 &lt;!-- Missing mappings: arrangiamenti, numero dischi d'oro, numero dischi di platino, numero dischi di diamante, info copertina, prima discografia --&gt;

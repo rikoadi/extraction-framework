@@ -1747,7 +1747,7 @@ object FlagTemplateParserConfig
               "ZMB"->"Zambia",
               "ZWE"->"Zimbabue",
               "ARE"->"Emiratos Árabes Unidos"
-           ) //end es
+           ), //end es
       "id" ->
           Map(
               "AFG"->"Afganistan",

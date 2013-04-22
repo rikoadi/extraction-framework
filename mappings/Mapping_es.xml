@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><mediawiki xmlns="http://www.mediawiki.org/xml/export-0.6/"><page><title>Mapping es:Cita publicación</title><ns>214</ns><id>4754</id><revision><id>16714</id><timestamp>2012-02-23T15:02:16Z</timestamp><text>[http://es.wikipedia.org/wiki/Plantilla:Cita_publicación Plantilla:Cita_publicación] is not an infobox - it contains information about a publication, not about the subject of a Wikipedia article - so it should not be extracted by the DBpedia mapping framework. Maybe later we can use templates like it, but not for now.
+<?xml version="1.0" encoding="UTF-8"?><mediawiki xmlns="http://www.mediawiki.org/xml/export-0.8/"><page><title>Mapping es:Cita publicación</title><ns>214</ns><id>4754</id><revision><id>16714</id><timestamp>2012-02-23T15:02:16Z</timestamp><text>[http://es.wikipedia.org/wiki/Plantilla:Cita_publicación Plantilla:Cita_publicación] is not an infobox - it contains information about a publication, not about the subject of a Wikipedia article - so it should not be extracted by the DBpedia mapping framework. Maybe later we can use templates like it, but not for now.
 
 &lt;!--
 {{TemplateMapping

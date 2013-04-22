@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><mediawiki xmlns="http://www.mediawiki.org/xml/export-0.6/"><page><title>Mapping en:Australia state or territory</title><ns>204</ns><id>3</id><revision><id>14575</id><timestamp>2011-07-27T14:58:19Z</timestamp><text>{{TemplateMapping
+<?xml version="1.0" encoding="UTF-8"?><mediawiki xmlns="http://www.mediawiki.org/xml/export-0.8/"><page><title>Mapping en:Australia state or territory</title><ns>204</ns><id>3</id><revision><id>14575</id><timestamp>2011-07-27T14:58:19Z</timestamp><text>{{TemplateMapping
 | mapToClass = AdministrativeRegion
 | mappings =
 	{{ConstantMapping | ontologyProperty = country | value = Australia }}
@@ -148,7 +148,7 @@
 | mappings =
         {{PropertyMapping | templateProperty = CASNo | ontologyProperty = casNumber }}
         {{PropertyMapping | templateProperty = InChI | ontologyProperty = inchi }}
-}}</text></revision></page><page><title>Mapping en:Cricketer Infobox</title><ns>204</ns><id>7</id><revision><id>10624</id><timestamp>2010-11-29T10:54:06Z</timestamp><text>{{TemplateMapping
+}}</text></revision></page><page><title>Mapping en:Cricketer Infobox</title><ns>204</ns><id>7</id><revision><id>24712</id><timestamp>2013-04-04T19:38:16Z</timestamp><text>{{TemplateMapping
 | mapToClass = Cricketer
 | mappings =
 	{{PropertyMapping | templateProperty = country | ontologyProperty = country }}
@@ -1509,7 +1509,7 @@
 	{{PropertyMapping | templateProperty = area_km2 | ontologyProperty = areaTotal | unit = squareKilometre }}
 	{{PropertyMapping | templateProperty = density_km2 | ontologyProperty = populationDensity | unit = inhabitantsPerSquareKilometre }}
 	{{GeocoordinatesMapping | latitudeDegrees = latd  | latitudeMinutes = latm  | latitudeSeconds = lats  | latitudeDirection = latNS  | longitudeDegrees = longd  | longitudeMinutes = longm  | longitudeSeconds = longs  | longitudeDirection = longEW }}
-}}</text></revision></page><page><title>Mapping en:Infobox Australian road</title><ns>204</ns><id>3342</id><revision><id>13941</id><timestamp>2011-06-28T10:53:17Z</timestamp><text>{{TemplateMapping
+}}</text></revision></page><page><title>Mapping en:Infobox Australian road</title><ns>204</ns><id>3342</id><revision><id>24771</id><timestamp>2013-04-07T14:55:33Z</timestamp><text>{{TemplateMapping
 | mapToClass = Road
 | mappings =
 	{{ConstantMapping | ontologyProperty = country | value = Australia }}
@@ -1530,7 +1530,7 @@
 	{{PropertyMapping | templateProperty = through | ontologyProperty = city }}
 	{{PropertyMapping | templateProperty = route | ontologyProperty = isPartOfRoute }}
 	{{PropertyMapping | templateProperty = exits | ontologyProperty = routeJunction }}
-	{{PropertyMapping | templateProperty = location | ontologyProperty = map }}
+{{PropertyMapping | templateProperty = location | ontologyProperty = map }}
 	
 	&lt;!-- not in template description but nonetheless used --&gt;
 	{{PropertyMapping | templateProperty = state | ontologyProperty = state }}
@@ -19219,7 +19219,7 @@ Template Properties not mapped yet:
 	{{PropertyMapping | templateProperty = pseudonym | ontologyProperty = pseudonym }}
 	{{PropertyMapping | templateProperty = parents | ontologyProperty = parent }}
 	{{PropertyMapping | templateProperty = website | ontologyProperty = foaf:homepage }}
-}}</text></revision></page><page><title>Mapping en:Infobox philosopher</title><ns>204</ns><id>196</id><revision><id>16649</id><timestamp>2012-02-14T12:08:43Z</timestamp><text>
+}}</text></revision></page><page><title>Mapping en:Infobox philosopher</title><ns>204</ns><id>196</id><revision><id>24724</id><timestamp>2013-04-04T20:19:24Z</timestamp><text>
 {{ TemplateMapping | mapToClass = Philosopher | mappings = 
     {{ PropertyMapping | templateProperty = name | ontologyProperty = foaf:name }}
     {{ PropertyMapping | templateProperty = birth_date | ontologyProperty = birthDate }}
@@ -20423,6 +20423,16 @@ Template Properties not mapped yet:
 | mappings =
 	{{PropertyMapping | templateProperty = Symbol | ontologyProperty = symbol }}
 	{{PropertyMapping | templateProperty = width | ontologyProperty = width }}
+}}</text></revision></page><page><title>Mapping en:Infobox public service</title><ns>204</ns><id>6748</id><revision><id>25020</id><timestamp>2013-04-18T11:16:36Z</timestamp><text>{{TemplateMapping
+| mapToClass = PublicService
+| mappings =
+	{{PropertyMapping | templateProperty = PS_Type | ontologyProperty = dct:type }}
+	{{PropertyMapping | templateProperty = PS_Title | ontologyProperty = dct:title }}
+	{{PropertyMapping | templateProperty = PS_Description | ontologyProperty = dct:description }}
+	{{PropertyMapping | templateProperty = PS_Input | ontologyProperty = hasInput}}
+	{{PropertyMapping | templateProperty = PS_Output | ontologyProperty = produces}}
+	{{PropertyMapping | templateProperty = PS_Location | ontologyProperty = dct:spatial }}
+	{{PropertyMapping | templateProperty = PS_PeriodOfTime | ontologyProperty = dct:temporal }}
 }}</text></revision></page><page><title>Mapping en:Infobox public transit</title><ns>204</ns><id>3624</id><revision><id>12864</id><timestamp>2011-05-17T15:43:14Z</timestamp><text>{{TemplateMapping
 | mapToClass = PublicTransitSystem
 | mappings =

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><mediawiki xmlns="http://www.mediawiki.org/xml/export-0.6/"><page><title>Mapping el:Fs player</title><ns>304</ns><id>6275</id><revision><id>21537</id><timestamp>2012-12-30T19:53:23Z</timestamp><text>{{ TemplateMapping
+<?xml version="1.0" encoding="UTF-8"?><mediawiki xmlns="http://www.mediawiki.org/xml/export-0.8/"><page><title>Mapping el:Fs player</title><ns>304</ns><id>6275</id><revision><id>21537</id><timestamp>2012-12-30T19:53:23Z</timestamp><text>{{ TemplateMapping
 | mapToClass = SoccerPlayer
 | mappings = 
     {{ PropertyMapping  | templateProperty = name | ontologyProperty = foaf:name }}

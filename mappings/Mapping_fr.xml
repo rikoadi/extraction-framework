@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><mediawiki xmlns="http://www.mediawiki.org/xml/export-0.6/"><page><title>Mapping fr:Chimiebox</title><ns>210</ns><id>2927</id><revision><id>18603</id><timestamp>2012-05-21T03:30:58Z</timestamp><text>{{TemplateMapping
+<?xml version="1.0" encoding="UTF-8"?><mediawiki xmlns="http://www.mediawiki.org/xml/export-0.8/"><page><title>Mapping fr:Chimiebox</title><ns>210</ns><id>2927</id><revision><id>18603</id><timestamp>2012-05-21T03:30:58Z</timestamp><text>{{TemplateMapping
 | mapToClass = ChemicalCompound
 | mappings =
         {{PropertyMapping | templateProperty = nom | ontologyProperty = foaf:name }}
@@ -468,26 +468,40 @@
         {{PropertyMapping | templateProperty = rég | ontologyProperty = isoCodeRegion }}
         {{PropertyMapping | templateProperty = prov | ontologyProperty = isoCodeRegion }}
        {{PropertyMapping | templateProperty = logo | ontologyProperty = foaf:logo }}
-}}</text></revision></page><page><title>Mapping fr:Infobox Commune de France</title><ns>210</ns><id>4381</id><revision><id>17342</id><timestamp>2012-04-20T15:05:12Z</timestamp><text>{{TemplateMapping
+}}</text></revision></page><page><title>Mapping fr:Infobox Commune de France</title><ns>210</ns><id>4381</id><revision><id>25077</id><timestamp>2013-04-21T14:46:12Z</timestamp><text>{{TemplateMapping
 | mapToClass = Settlement
 | mappings =
         {{ConstantMapping | ontologyProperty = country | value = France }}
-	{{PropertyMapping | templateProperty = nomcommune | ontologyProperty = foaf:name }}
+	{{PropertyMapping | templateProperty = nom | ontologyProperty = settlementName }}
+        {{PropertyMapping | templateProperty = image | ontologyProperty = thumbnail }}
+        {{PropertyMapping | templateProperty = légende | ontologyProperty = thumbnailCaption }}
+        {{PropertyMapping | templateProperty = blason | ontologyProperty = blazon }}
+        {{PropertyMapping | templateProperty = légende blason | ontologyProperty = blazonCaption }}
+        {{PropertyMapping | templateProperty = drapeau | ontologyProperty = flag }}
+        {{PropertyMapping | templateProperty = légende drapeau  | ontologyProperty = flagCaption }}
+        {{PropertyMapping | templateProperty = taille drapeau | ontologyProperty = flagSize }}
         {{PropertyMapping | templateProperty = région | ontologyProperty = region }}
         {{PropertyMapping | templateProperty = département | ontologyProperty = department }}
         {{PropertyMapping | templateProperty = arrondissement | ontologyProperty = arrondissement }}
         {{PropertyMapping | templateProperty = canton | ontologyProperty = canton }}
-        {{PropertyMapping | templateProperty = intercomm | ontologyProperty = intercommunality }}        
-        {{PropertyMapping | templateProperty = maire | ontologyProperty = mayor }}
-        {{PropertyMapping | templateProperty = km² | ontologyProperty = area | unit = squareKilometre  }}
-        {{PropertyMapping | templateProperty = alt maxi | ontologyProperty = maximumElevation | unit = metre }}
-	{{PropertyMapping | templateProperty = alt min  | ontologyProperty = minimumElevation | unit = metre }}
-        {{PropertyMapping | templateProperty = sans | ontologyProperty = populationTotal }}
-        {{PropertyMapping | templateProperty = date-sans | ontologyProperty = populationAsOf }}
-        {{PropertyMapping | templateProperty = cp | ontologyProperty = postalCode }}
         {{PropertyMapping | templateProperty = insee | ontologyProperty = inseeCode }}
-        {{PropertyMapping | templateProperty = siteweb | ontologyProperty = foaf:homepage }}
-	{{GeocoordinatesMapping | latitude = latitude  | longitude = longitude }}
+        {{PropertyMapping | templateProperty = cp | ontologyProperty = postalCode }}
+        {{PropertyMapping | templateProperty = maire | ontologyProperty = mayor }}
+        {{PropertyMapping | templateProperty = mandat maire | ontologyProperty = mayorMandate }}
+        {{PropertyMapping | templateProperty = intercomm | ontologyProperty = intercommunality }}        
+        {{GeocoordinatesMapping | latitude = latitude  | longitude = longitude }}
+        {{PropertyMapping | templateProperty = alt mini  | ontologyProperty = minimumElevation | unit = metre }}
+        {{PropertyMapping | templateProperty = alt maxi | ontologyProperty = maximumElevation | unit = metre }}
+        {{PropertyMapping | templateProperty = superficie | ontologyProperty = area | unit = squareKilometre }}
+        {{PropertyMapping | templateProperty = population | ontologyProperty = population | unit = people }}
+	{{PropertyMapping | templateProperty = année_pop | ontologyProperty = populationYear }}
+        {{PropertyMapping | templateProperty = population agglomération | ontologyProperty = agglomerationPopulation | unit = people }}
+	{{PropertyMapping | templateProperty = année_pop agglomération | ontologyProperty = agglomerationPopulationYear }}
+        {{PropertyMapping | templateProperty = gentilé | ontologyProperty = peopleNames }}
+        {{PropertyMapping | templateProperty = siteweb | ontologyProperty = website }}
+	{{PropertyMapping | templateProperty = géoloc-département | ontologyProperty = geolocDepartment }}
+        {{PropertyMapping | templateProperty = position | ontologyProperty = position }}
+        {{PropertyMapping | templateProperty = position-département | ontologyProperty = departmentPosition }}
 }}</text></revision></page><page><title>Mapping fr:Infobox Communes de France</title><ns>210</ns><id>5217</id><revision><id>17341</id><timestamp>2012-04-20T15:03:00Z</timestamp><text>#REDIRECT [[Mapping fr:Infobox Commune de France]]</text></revision></page><page><title>Mapping fr:Infobox Compétition sportive</title><ns>210</ns><id>4389</id><revision><id>14847</id><timestamp>2011-08-29T14:18:46Z</timestamp><text>{{TemplateMapping
 | mapToClass = SportsEvent
 | mappings =
@@ -1870,11 +1884,64 @@
 	{{PropertyMapping | templateProperty = genre | ontologyProperty = genre }}
 	{{PropertyMapping | templateProperty = mouvement | ontologyProperty = movement }}
 	{{PropertyMapping | templateProperty = distinctions | ontologyProperty = award }}
-}}</text></revision></page><page><title>Mapping fr:Infobox Édifice religieux</title><ns>210</ns><id>5880</id><revision><id>20171</id><timestamp>2012-12-14T10:22:29Z</timestamp><text>{{
- TemplateMapping 
- | mapToClass = ReligiousBuilding
- | mappings =
+}}</text></revision></page><page><title>Mapping fr:Infobox Édifice religieux</title><ns>210</ns><id>5880</id><revision><id>24853</id><timestamp>2013-04-10T21:18:22Z</timestamp><text>{{ConditionalMapping
+| cases =
+ {{Condition
+    | templateProperty = type
+    | operator = contains
+    | value = glise
+    | mapping = {{TemplateMapping | mapToClass = Church }}
+ }}
+ {{Condition
+    | templateProperty = type
+    | operator = equals
+    | value = Monastère
+    | mapping = {{TemplateMapping | mapToClass = Monastery }}
+ }}
+ {{Condition
+    | templateProperty = type
+    | operator = equals
+    | value = Abbaye
+    | mapping = {{TemplateMapping | mapToClass = Abbey }}
+ }}
+ {{Condition
+    | templateProperty = type
+    | operator = equals
+    | value = Mosquée
+    | mapping = {{TemplateMapping | mapToClass = Mosque }}
+ }}
+ {{Condition
+    | templateProperty = type
+    | operator = equals
+    | value = Synagogue
+    | mapping = {{TemplateMapping | mapToClass = Synagogue }}
+ }}
+
+{{Condition
+| operator = otherwise
+| mapping = {{TemplateMapping |mapToClass = ReligiousBuilding }}
+}}
+
+| defaultMappings =
+{{PropertyMapping | templateProperty = type | ontologyProperty = type }}
+{{PropertyMapping | templateProperty = style | ontologyProperty = architecturalStyle }}
+{{PropertyMapping | templateProperty = début constr | ontologyProperty = buildingStartDate }}
+{{PropertyMapping | templateProperty = fin const  | ontologyProperty = buildingEndDate }}
+{{PropertyMapping | templateProperty = architecte  | ontologyProperty = architect }}
+
+{{PropertyMapping | templateProperty = nommonument | ontologyProperty = foaf:name }}
+{{PropertyMapping | templateProperty = pays | ontologyProperty = country }}
+{{PropertyMapping | templateProperty = région | ontologyProperty = region }}
+{{PropertyMapping | templateProperty = département | ontologyProperty = department }}
 {{PropertyMapping | templateProperty = ville | ontologyProperty = city }}
+
+{{PropertyMapping | templateProperty = culte | ontologyProperty = religiousOrder }}
+{{PropertyMapping | templateProperty = rattachement | ontologyProperty = affiliation }}
+
+{{PropertyMapping | templateProperty = photo | ontologyProperty = foaf:depiction }}
+{{PropertyMapping | templateProperty = légende | ontologyProperty = depictionDescription }}
+
+{{GeocoordinatesMapping | latitude = latitude  | longitude = longitude }}
 }}</text></revision></page><page><title>Mapping fr:Infobox Émission de télévision</title><ns>210</ns><id>5059</id><revision><id>16639</id><timestamp>2012-01-25T09:50:05Z</timestamp><text>{{
  TemplateMapping | mapToClass = TelevisionShow
 }}</text></revision></page><page><title>Mapping fr:Infobox Épisode de série télévisée</title><ns>210</ns><id>5060</id><revision><id>16640</id><timestamp>2012-01-25T09:51:22Z</timestamp><text>{{

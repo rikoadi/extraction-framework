@@ -54,6 +54,7 @@
                                 <arg>/home/riko/TA/dbpedia</arg><!-- base dir -->
                                 <arg>src/main/statistics</arg><!-- statistics files dir -->
                                 <arg>false</arg><!-- pretty printing? ugly in log files. -->
+                                <arg>id</arg>
                                 <!-- all additional args are languages, comma or whitespace separated -->
                                 <!-- if none are given, all languages with a mapping namespace are used -->
                                 <!-- <arg>ar,bg,bn</arg> -->
