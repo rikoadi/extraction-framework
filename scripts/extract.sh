@@ -1,4 +1,4 @@
-DATADIR=$1
+DATADIR=/home/riko/TA/dbpedia
 DATE=`ls $DATADIR/idwiki | tail -2 | head -n 1`
 
 for lang in "ja" "ar" "ca" "cs" "bg" "ca" "cs" "de" "el" "es" "fr" "hu" "it" "ko" "pl" "pt" "ru" "sl" "tr" "en"
