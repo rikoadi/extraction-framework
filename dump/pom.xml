@@ -34,7 +34,7 @@
                                 <arg>/home/riko/TA/tables.sql</arg>
                                 <arg>localhost</arg><!-- MySQL host:port -->
                                 <arg>true</arg><!-- require-download-complete -->
-                                <arg>id</arg><!-- languages and article count ranges, comma-separated -->
+                                <arg>id</arg><!-- languages and article count ranges, comma-separate -->
                             </args>
                         </launcher>
 

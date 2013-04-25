@@ -492,6 +492,7 @@ class MyLinkNode(val n : LinkNode){
       case eln : ExternalLinkNode => eln.destination.toString
       case iln : InternalLinkNode => iln.destination.decoded
       case iwln : InterWikiLinkNode => iwln.destination.decoded
+      case _  =>  throw new IllegalStateException(n.toPlainText + ": Link type not supported!")
   }
   def getFullDestination(ns:String) : String = {
       val rawDestination = n.getDestination                    
