@@ -7,9 +7,6 @@ object ImageExtractorConfig
 {
     val wikipediaUrlPrefix = "http://upload.wikimedia.org/wikipedia/"
 
-    // "NonFreeRegex" holds a regex with the templates for each Wikipedia language edition the state non-free license.
-    // This is done in order to exclude these images completely from the extraction process and use only open-licensed images
-    // Note again that this rule is only on  what to exclude (NOT include)
     // For "ar" configuration, rendering right-to-left may seems like a bug, but it's not.
     // Don't change this else if you know how it is done.
     val NonFreeRegex = Map(
@@ -21,6 +18,7 @@ object ImageExtractorConfig
            "eu" -> """(?i)\{\{\s?(Cc-by-nc-sa-2.5|Wikimedia_logoa|Copyrightdun_logoa|Lizentzia_gabea|Album_azala|Aldizkari_azala|Fair_use|Bideo-zinta_azala|Dirua|DVD_azala|Egunkari_azala|Film_pantaila_irudia|Film_posterra|HQFL_logotipoa|Ikonoa|Ikurra|Irrati_logotipoa|Jatetxe_logotipoa|Joku_azala|Joku_pantaila_irudia|Kirol_logotipoa|Komiki_azala|Liburu_azala|Logotipoa|Mahai-joku_azala|Olinpiada_logotipoa|Politika_posterra|Propaganda|Software_azala|Software_pantaila_irudia|Zigilua|TB_pantaila_irudia|Web_pantaila_irudia)\s?\}\}""".r,
            "fr" -> """(?iu)\{\{\s?(Copyright by Wikimedia|Copyvio|Logo|Screenshot|Ordnance Survey Copyright|Fairuse|Noncommercial|PolandGov|nonderivative|NZCrownCopyright|PD-IndiaGov|ADRM2|Marque déposée)\s?\}\}""".r,
            "it" -> """(?iu)\{\{\s?(Sconosciuto|Riservato|NonCommerciale|Unknown|Noncommercial|Nonderivative|Copyrighted|Screenshot|Ordinance Survey Copyright|Fairuse|Cc-nc|cc-by-nc|cc-by-nc-2.0|cc-nc-sa|cc-by-nc-sa|Cc-by-nc-sa-1.0|cc-by-nc-sa-2.0|cc-nd-nc|cc-by-nd-nc|cc-by-nd-nc-2.0|cc-nd|cc-by-nd|cc-by-nd-2.0|TW-cc-by-nc-nd-2.0|TW-cc-by-nc-sa-2.0|Copyright by Wikimedia|CopyrightbyWikimedia)\s?\}\}""".r,
+           "id" -> """(?i)\{\{\s?(non-free|Fairuse|Logo|LogoOlahraga|LogoTV|FotoHistoris|GambarKarakter|Promophoto|Smithsonian|TampilanFilm|TampilanVideo|TampilanSitus|TampilanPermainan|GambarUang|GambarPerangko|SampulVideo|SampulPermainan|SampulAlbum|SampulBuku|Poster|GambarBerhakTayangBersyarat)\s?\}\}""".r,
            "nl" -> """(?i)\{\{\s?(Copyright by Wikimedia)\s?\}\}""".r,
            "pl" -> """(?iu)\{\{\s?(Copyright by Wikimedia|brak licencji|brak źródła|brak autora|brak pozwolenia|SWMPL|Zgoda PWM)\s?\}\}""".r,
            "pt" -> """(?iu)\{\{\s?(Unknown|Noncommercial|Nonderivative|Copyrighted|Screenshot|Ordnance Survey Copyright|Fairuse|Cc-nc|cc-by-nc|cc-by-nc-2.0|cc-nc-sa|cc-by-nc-sa|Cc-by-nc-sa-1.0|cc-by-nc-sa-2.0|cc-nd-nc|cc-by-nd-nc|cc-by-nd-nc-2.0|cc-nd|cc-by-nd|cc-by-nd-2.0|TW-cc-by-nc-nd-2.0|TW-cc-by-nc-sa-2.0|Copyright by Wikimedia|CopyrightbyWikimedia)\s?\}\}""".r,

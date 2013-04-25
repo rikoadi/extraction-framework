@@ -13,7 +13,8 @@ object InfoboxExtractorConfig
     val ignoreProperties = Map (
         "en"-> Set("image", "image_photo"),
         "ar"-> Set("صورة"),
-        "el"-> Set("εικόνα", "εικονα", "Εικόνα", "Εικονα", "χάρτης", "Χάρτης")
+        "el"-> Set("εικόνα", "εικονα", "Εικόνα", "Εικονα", "χάρτης", "Χάρτης"),
+        "id"-> Set("foto", "gambar")
     )
     
     // TODO: i18n

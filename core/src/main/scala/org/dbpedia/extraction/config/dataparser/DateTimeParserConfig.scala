@@ -15,6 +15,7 @@ object DateTimeParserConfig
         "es" -> Map("enero"->1,"febrero"->2,"marzo"->3,"abril"->4,"mayo"->5,"junio"->6,"julio"->7,"agosto"->8,"septiembre"->9,"octubre"->10,"noviembre"->11,"diciembre"->12),
         "fr" -> Map("janvier"->1,"février"->2,"mars"->3,"avril"->4,"mai"->5,"juin"->6,"juillet"->7,"août"->8,"septembre"->9,"octobre"->10,"novembre"->11,"décembre"->12),
         "hr" -> Map("siječanj"->1,"veljača"->2,"ožujak"->3,"travanj"->4,"svibanj"->5,"lipanj"->6,"srpanj"->7,"kolovoz"->8,"rujan"->9,"listopad"->10,"studeni"->11,"prosinac"->12),
+        "id" -> Map("januari"->1,"februari"->2,"maret"->3,"april"->4,"mei"->5,"juni"->6,"juli"->7,"agustus"->8,"september"->9,"oktober"->10,"november"->11,"desember"->12),
         "it" -> Map("gennaio"->1,"febbraio"->2,"marzo"->3,"aprile"->4,"maggio"->5,"giugno"->6,"luglio"->7,"agosto"->8,"settembre"->9,"ottobre"->10,"novembre"->11,"dicembre"->12),
         "nl" -> Map("januari"->1,"februari"->2,"maart"->3,"april"->4,"mei"->5,"juni"->6,"juli"->7,"augustus"->8,"september"->9,"oktober"->10,"november"->11,"december"->12),
         "pl" -> Map("stycznia"->1,"lutego"->2,"marca"->3,"kwietnia"->4,"maja"->5,"czerwca"->6,"lipca"->7,"sierpnia"->8,"września"->9,"października"->10,"listopada"->11,"grudnia"->12),
@@ -120,6 +121,16 @@ object DateTimeParserConfig
         "eu" -> Map(
             "adina"                -> Map ("year" -> "1", "month"-> "2", "day" -> "3"),
             "adin parentesigabea"  -> Map ("year" -> "1", "month"-> "2", "day" -> "3")
+        ),
+        "id" -> Map(
+            "Mula tanggal dan usia"          -> Map ("year" -> "3", "month"-> "2", "day" -> "1"),
+            "Tanggal lahir dan umur"         -> Map ("year" -> "3", "month"-> "2", "day" -> "1"),
+            "Tanggal kematian dan umur"      -> Map ("year" -> "3", "month"-> "2", "day" -> "1"),
+            "Umur pada tanggal"              -> Map ("year" -> "3", "month"-> "2", "day" -> "1"),
+            "umur"                           -> Map ("year" -> "3", "month"-> "2", "day" -> "1"),
+            "Tanggal lahir dan umur2/doc"    -> Map ("year" -> "3", "month"-> "2", "day" -> "1"),
+            "Tanggal lahir dan umur2"        -> Map ("year" -> "3", "month"-> "2", "day" -> "1"),
+            "lahirmati"                      -> Map ("year" -> "4", "month"-> "3", "day" -> "2")
         ),
         "it" -> Map(
             "Data nascita"        -> Map ("year" -> "3", "month"-> "2", "day" -> "1"),
